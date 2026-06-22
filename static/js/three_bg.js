@@ -1,6 +1,8 @@
 // Three.js 3D Background - Interactive Holographic Globe & Cargo Routes
 
 let scene, camera, renderer, globe, stars, routes = [];
+let controls;
+let isInteracting = false;
 const container = document.getElementById('three-canvas-container');
 
 // Configuration
@@ -27,7 +29,7 @@ function initThree() {
 
     // 2. Create Camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
-    camera.position.z = 8;
+    camera.position.set(0, 0, 8);
 
     // 3. Create WebGL Renderer
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -45,8 +47,31 @@ function initThree() {
     // 6. Create Glowing Logistics Routes
     createRoutes();
 
+    // Initialize OrbitControls if available
+    if (typeof THREE.OrbitControls !== 'undefined') {
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.enableZoom = true;
+        controls.minDistance = 4;
+        controls.maxDistance = 15;
+        
+        controls.addEventListener('start', () => {
+            isInteracting = true;
+        });
+        controls.addEventListener('end', () => {
+            setTimeout(() => {
+                isInteracting = false;
+            }, 1000);
+        });
+    } else {
+        document.addEventListener('mousemove', onDocumentMouseMove);
+    }
+
+    // Set initial position based on screen width
+    adjustGlobePosition();
+
     // 7. Event Listeners
-    document.addEventListener('mousemove', onDocumentMouseMove);
     window.addEventListener('resize', onWindowResize);
 
     // 8. Start Animation Loop
@@ -234,21 +259,41 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+    adjustGlobePosition();
+}
+
+function adjustGlobePosition() {
+    if (!globe) return;
+    if (window.innerWidth < 992) {
+        globe.position.x = 0;
+        globe.position.y = 1.6; // Shift globe up on mobile/tablet to leave space below
+    } else {
+        globe.position.x = 2.2;  // Shift globe right on desktop
+        globe.position.y = 0;
+    }
+    
+    if (controls) {
+        controls.target.copy(globe.position);
+        controls.update();
+    }
 }
 
 function animate() {
     requestAnimationFrame(animate);
 
-    // Smooth camera target movement based on mouse (parallax)
-    targetX = mouseX * 0.15;
-    targetY = mouseY * 0.15;
-
-    camera.position.x += (targetX - camera.position.x) * 0.05;
-    camera.position.y += (-targetY - camera.position.y) * 0.05;
-    camera.lookAt(scene.position);
+    if (controls) {
+        controls.update();
+    } else {
+        // Fallback parallax
+        targetX = mouseX * 0.15;
+        targetY = mouseY * 0.15;
+        camera.position.x += (targetX - camera.position.x) * 0.05;
+        camera.position.y += (-targetY - camera.position.y) * 0.05;
+        camera.lookAt(scene.position);
+    }
 
     // Slowly rotate the globe and routes
-    if (globe) {
+    if (globe && !isInteracting) {
         globe.rotation.y += 0.0012;
         globe.rotation.x += 0.0004;
     }
