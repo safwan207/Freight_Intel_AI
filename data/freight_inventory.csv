@@ -1,0 +1,1201 @@
+Shipment_ID,Origin,Destination,Distance_km,Shipment_Mode,Carrier,Quantity,Weight_kg,Volume_m3,Shipment_Value_INR,Weather_Conditions,Traffic_Conditions,Planned_Duration_Days,Actual_Duration_Days,Delay_Days,Status
+SH1000,Ahmedabad,Chennai,1330,Road,SCI,5784,32547.01,175.938,138702410.54,Sunny,Low,3,3.36,0.36,On Time
+SH1001,Kochi,Chennai,585,Road,TCI,6470,49178.71,135.077,150427664.99,Sunny,Moderate,1,2.0,1.0,On Time
+SH1002,Kochi,Chennai,389,Road,CONCOR,1949,12500.29,34.981,39545405.0,Rainy,Low,1,1.46,0.46,On Time
+SH1003,Bengaluru,Mumbai,2190,Rail,TCI,9720,73045.43,165.404,168251969.13,Sunny,Low,5,5.87,0.87,On Time
+SH1004,Kolkata,Mumbai,14805,Ocean,Gati,3893,10222.34,20.889,16469332.75,Foggy,High,29,30.44,1.44,Delayed
+SH1005,Kochi,Hyderabad,13268,Ocean,Gati,4909,36723.71,148.92,44394179.4,Sunny,Low,26,25.95,-0.05,On Time
+SH1006,Mumbai,Hyderabad,9258,Ocean,CONCOR,6786,58905.41,138.094,86532429.87,Foggy,Moderate,18,19.62,1.62,Delayed
+SH1007,Ahmedabad,Kochi,1604,Rail,CONCOR,2781,21780.54,47.295,61560010.18,Sunny,Moderate,4,4.95,0.95,On Time
+SH1008,Delhi,Ahmedabad,1070,Road,CONCOR,4538,39356.36,208.442,165636575.68,Sunny,High,3,6.05,3.05,Delayed
+SH1009,Bengaluru,Ahmedabad,2478,Rail,CONCOR,4686,14672.7,82.923,36785424.13,Sunny,High,6,9.11,3.11,Delayed
+SH1010,Mumbai,Bengaluru,1251,Road,TCI,3677,19450.83,42.363,75911883.11,Sunny,Low,3,3.27,0.27,On Time
+SH1011,Chennai,Kochi,8864,Air,CONCOR,7576,18133.48,53.82,206609382.81,Rainy,Low,7,8.17,1.17,Delayed
+SH1012,Kochi,Delhi,5853,Ocean,Blue Dart,6635,76754.63,322.331,105743996.38,Sunny,Low,11,16.42,5.42,Delayed
+SH1013,Bengaluru,Delhi,2461,Rail,Gati,5222,32004.11,64.658,77565047.98,Rainy,Moderate,6,7.62,1.62,Delayed
+SH1014,Kochi,Hyderabad,997,Rail,CONCOR,6337,64041.59,244.179,148986821.51,Sunny,Moderate,3,3.95,0.95,On Time
+SH1015,Chennai,Hyderabad,2643,Rail,Blue Dart,3026,15348.11,46.339,53196432.7,Rainy,Moderate,6,6.86,0.86,On Time
+SH1016,Delhi,Chennai,10287,Ocean,Gati,8865,61033.83,181.985,70991866.46,Sunny,High,20,19.38,-0.62,On Time
+SH1017,Chennai,Kolkata,1954,Rail,TCI,6345,32688.45,70.951,114054069.8,Foggy,Moderate,4,7.16,3.16,Delayed
+SH1018,Kochi,Bengaluru,352,Road,SCI,3011,7073.72,20.68,34522874.67,Rainy,Low,1,2.44,1.44,Delayed
+SH1019,Kolkata,Ahmedabad,1439,Rail,Blue Dart,4605,29248.02,78.473,71315690.08,Rainy,High,3,5.93,2.93,Delayed
+SH1020,Chennai,Mumbai,11022,Ocean,Blue Dart,8046,50212.86,143.383,80621040.32,Sunny,High,22,22.0,0.0,On Time
+SH1021,Kolkata,Delhi,1572,Road,Blue Dart,351,4077.4,8.368,21646949.16,Sunny,Low,4,3.53,-0.47,On Time
+SH1022,Ahmedabad,Delhi,12319,Ocean,Gati,1866,9402.68,21.107,16372086.67,Sunny,Low,24,23.45,-0.55,On Time
+SH1023,Delhi,Kolkata,12096,Ocean,Blue Dart,7393,50696.98,199.769,66545660.42,Sunny,Moderate,24,26.35,2.35,Delayed
+SH1024,Kolkata,Bengaluru,9655,Air,TCI,6052,26549.79,94.331,229864698.76,Rainy,Low,8,9.71,1.71,Delayed
+SH1025,Hyderabad,Delhi,6854,Air,CONCOR,2541,10815.74,24.595,107084475.73,Foggy,Moderate,5,7.5,2.5,Delayed
+SH1026,Hyderabad,Ahmedabad,3783,Rail,TCI,6849,80286.03,242.772,205947610.72,Stormy,Low,9,10.89,1.89,Delayed
+SH1027,Delhi,Kolkata,10805,Air,Blue Dart,7454,27723.21,57.255,364983825.39,Rainy,Moderate,9,10.45,1.45,Delayed
+SH1028,Kochi,Kolkata,896,Road,SCI,9485,9760.35,59.422,51881402.86,Rainy,Moderate,2,3.14,1.14,Delayed
+SH1029,Hyderabad,Bengaluru,10665,Ocean,SCI,2899,10147.3,65.316,17697772.53,Rainy,Moderate,21,22.73,1.73,Delayed
+SH1030,Kochi,Ahmedabad,1095,Road,CONCOR,901,6413.28,22.435,30470413.4,Sunny,Moderate,3,4.37,1.37,Delayed
+SH1031,Delhi,Chennai,7107,Air,Gati,8995,75149.43,429.631,768991278.77,Stormy,Low,5,10.3,5.3,Delayed
+SH1032,Kolkata,Mumbai,2316,Rail,CONCOR,462,439.2,1.482,1622071.16,Rainy,Moderate,5,6.62,1.62,Delayed
+SH1033,Mumbai,Ahmedabad,10806,Ocean,SCI,3490,29030.57,70.985,33678897.77,Sunny,Moderate,21,21.79,0.79,On Time
+SH1034,Mumbai,Kochi,11186,Ocean,Blue Dart,445,5127.84,11.485,6451435.01,Foggy,Moderate,22,23.49,1.49,Delayed
+SH1035,Bengaluru,Chennai,1367,Road,Blue Dart,1112,1722.34,5.332,5499626.35,Rainy,Moderate,3,5.64,2.64,Delayed
+SH1036,Delhi,Ahmedabad,10241,Air,Gati,2589,27104.22,61.119,297675849.01,Sunny,Low,8,8.12,0.12,On Time
+SH1037,Hyderabad,Kolkata,13580,Ocean,Blue Dart,1415,13933.78,28.936,24916956.91,Stormy,Low,27,28.45,1.45,Delayed
+SH1038,Hyderabad,Ahmedabad,9977,Ocean,CONCOR,4318,2722.79,8.67,2742650.0,Sunny,Low,19,19.46,0.46,On Time
+SH1039,Hyderabad,Delhi,11576,Ocean,Blue Dart,5079,28025.22,65.063,49925154.09,Rainy,Low,23,24.01,1.01,Delayed
+SH1040,Kolkata,Bengaluru,10190,Ocean,Blue Dart,3426,29124.8,94.228,43312914.86,Rainy,High,20,21.34,1.34,Delayed
+SH1041,Kochi,Mumbai,6719,Air,Gati,7533,54328.34,306.581,805187444.47,Foggy,Moderate,5,7.04,2.04,Delayed
+SH1042,Kolkata,Bengaluru,1724,Rail,SCI,1631,2244.75,4.685,6126195.02,Rainy,High,4,7.32,3.32,Delayed
+SH1043,Kochi,Delhi,345,Road,Blue Dart,7499,36596.96,74.769,193233258.19,Stormy,Moderate,1,3.04,2.04,Delayed
+SH1044,Kochi,Ahmedabad,908,Road,SCI,6039,66437.49,187.252,330292757.48,Stormy,Low,2,3.75,1.75,Delayed
+SH1045,Bengaluru,Hyderabad,8544,Ocean,Blue Dart,3469,12452.79,78.933,17165651.44,Sunny,High,17,16.31,-0.69,On Time
+SH1046,Mumbai,Kochi,1189,Road,CONCOR,6594,13459.51,84.083,67952552.29,Rainy,Moderate,3,3.36,0.36,On Time
+SH1047,Chennai,Kolkata,1531,Road,Blue Dart,4311,24510.06,52.298,93936580.02,Rainy,Moderate,4,6.29,2.29,Delayed
+SH1048,Mumbai,Kolkata,1183,Road,SCI,7991,49265.38,185.863,232771340.79,Sunny,Low,3,3.05,0.05,On Time
+SH1049,Kochi,Delhi,1418,Road,CONCOR,4238,49545.48,137.368,180119542.95,Stormy,Low,4,6.14,2.14,Delayed
+SH1050,Hyderabad,Bengaluru,10376,Ocean,TCI,2443,26344.09,135.055,32595106.44,Sunny,Low,20,20.46,0.46,On Time
+SH1051,Chennai,Ahmedabad,8432,Ocean,Gati,1326,15702.43,46.483,27262486.76,Sunny,Moderate,16,17.09,1.09,Delayed
+SH1052,Delhi,Bengaluru,8126,Air,CONCOR,1696,17317.97,41.997,142237778.01,Stormy,Low,6,9.4,3.4,Delayed
+SH1053,Ahmedabad,Delhi,285,Road,Gati,175,328.52,0.712,1517425.36,Rainy,Moderate,1,2.66,1.66,Delayed
+SH1054,Ahmedabad,Bengaluru,11943,Ocean,Blue Dart,6941,13654.15,54.765,17272352.76,Rainy,Moderate,23,22.86,-0.14,On Time
+SH1055,Hyderabad,Bengaluru,8622,Air,TCI,7036,10629.34,24.602,89175632.75,Stormy,Low,7,9.75,2.75,Delayed
+SH1056,Kochi,Ahmedabad,667,Road,TCI,8245,4625.03,9.414,20097581.8,Rainy,High,1,5.31,4.31,Delayed
+SH1057,Bengaluru,Kochi,1035,Road,CONCOR,8965,56815.86,241.931,190075528.67,Rainy,Low,2,3.24,1.24,Delayed
+SH1058,Chennai,Ahmedabad,6026,Ocean,CONCOR,3794,18006.9,58.276,25584675.94,Rainy,Low,12,18.27,6.27,Delayed
+SH1059,Chennai,Kochi,4604,Air,TCI,285,1481.42,3.109,22127219.87,Sunny,Low,3,3.1,0.1,On Time
+SH1060,Kochi,Bengaluru,8468,Air,CONCOR,9114,83217.86,193.603,1146403270.92,Sunny,Low,7,7.06,0.06,On Time
+SH1061,Delhi,Mumbai,2663,Rail,CONCOR,7854,31147.75,75.663,89698068.6,Sunny,High,6,8.27,2.27,Delayed
+SH1062,Hyderabad,Bengaluru,1262,Road,CONCOR,8439,95428.8,258.126,375116188.39,Sunny,Moderate,3,4.38,1.38,Delayed
+SH1063,Kolkata,Bengaluru,4120,Air,SCI,1000,2145.97,9.684,27894304.53,Sunny,Moderate,3,3.64,0.64,On Time
+SH1064,Bengaluru,Ahmedabad,10359,Ocean,TCI,7913,49664.49,146.524,67967853.21,Sunny,Moderate,20,27.25,7.25,Delayed
+SH1065,Chennai,Bengaluru,1477,Road,Gati,6216,36134.02,75.037,124587029.78,Rainy,Moderate,4,5.68,1.68,Delayed
+SH1066,Kolkata,Chennai,555,Road,TCI,3926,33894.12,166.647,154995324.52,Rainy,Moderate,1,3.54,2.54,Delayed
+SH1067,Hyderabad,Bengaluru,1845,Road,TCI,9447,95708.92,359.468,370244373.75,Sunny,Moderate,5,6.29,1.29,Delayed
+SH1068,Bengaluru,Delhi,10456,Ocean,SCI,8020,40733.1,120.481,70577373.07,Sunny,Low,20,19.85,-0.15,On Time
+SH1069,Kolkata,Chennai,4990,Air,TCI,3622,39917.08,144.189,481564336.95,Rainy,Low,4,5.43,1.43,Delayed
+SH1070,Kolkata,Delhi,6701,Air,TCI,5232,62595.93,192.149,761648191.89,Sunny,Moderate,5,5.34,0.34,On Time
+SH1071,Bengaluru,Delhi,11477,Air,CONCOR,2115,8209.4,20.528,95996918.93,Rainy,Moderate,9,10.27,1.27,Delayed
+SH1072,Kolkata,Delhi,12038,Ocean,CONCOR,4923,17789.57,47.388,23185805.13,Sunny,Low,24,24.16,0.16,On Time
+SH1073,Ahmedabad,Kolkata,14682,Ocean,SCI,8569,14543.72,33.825,16143206.69,Rainy,Low,29,30.21,1.21,Delayed
+SH1074,Hyderabad,Kochi,651,Road,TCI,8406,17841.24,61.051,69613197.04,Sunny,Moderate,1,2.35,1.35,Delayed
+SH1075,Delhi,Kolkata,908,Road,TCI,3644,12693.4,44.87,58518909.16,Sunny,Moderate,2,3.36,1.36,Delayed
+SH1076,Hyderabad,Delhi,11083,Ocean,CONCOR,5669,66368.65,156.931,70082627.19,Rainy,High,22,24.31,2.31,Delayed
+SH1077,Mumbai,Kolkata,2581,Rail,CONCOR,2591,30627.24,91.701,70456088.74,Sunny,Low,6,4.81,-1.19,On Time
+SH1078,Delhi,Bengaluru,240,Road,Gati,7234,37329.99,115.176,184997700.65,Sunny,Low,1,1.0,0.0,On Time
+SH1079,Chennai,Mumbai,2840,Rail,SCI,8696,61679.73,139.126,167008210.9,Stormy,Moderate,7,9.82,2.82,Delayed
+SH1080,Mumbai,Chennai,8490,Air,Gati,4174,20773.58,82.749,217908796.5,Rainy,Low,7,8.41,1.41,Delayed
+SH1081,Bengaluru,Delhi,12942,Ocean,TCI,1812,18441.8,41.327,32501792.0,Sunny,Moderate,25,25.49,0.49,On Time
+SH1082,Mumbai,Delhi,9760,Ocean,Blue Dart,110,925.83,3.064,1080421.84,Stormy,Moderate,19,22.6,3.6,Delayed
+SH1083,Kolkata,Chennai,1156,Road,Blue Dart,379,3199.31,9.623,10463767.47,Foggy,Moderate,3,5.54,2.54,Delayed
+SH1084,Bengaluru,Kochi,2023,Rail,Blue Dart,6659,40808.93,179.44,152152788.98,Foggy,Low,5,6.67,1.67,Delayed
+SH1085,Hyderabad,Ahmedabad,936,Rail,CONCOR,8057,94002.39,195.637,266014994.22,Stormy,High,3,7.56,4.56,Delayed
+SH1086,Mumbai,Kochi,11138,Ocean,TCI,8030,11121.24,28.248,13851452.72,Rainy,Low,22,22.89,0.89,On Time
+SH1087,Delhi,Mumbai,1649,Road,TCI,8552,49707.16,100.091,151141158.24,Sunny,Low,4,4.92,0.92,On Time
+SH1088,Kochi,Kolkata,5032,Air,SCI,8486,51064.38,144.55,505629726.2,Sunny,Low,4,5.47,1.47,Delayed
+SH1089,Mumbai,Chennai,12567,Ocean,Gati,6517,56886.0,159.708,67859489.33,Foggy,Low,25,25.85,0.85,On Time
+SH1090,Kolkata,Hyderabad,260,Road,SCI,9180,66723.67,135.119,359771978.76,Rainy,High,1,5.5,4.5,Delayed
+SH1091,Bengaluru,Ahmedabad,7564,Ocean,Gati,7324,18530.25,81.57,20691028.02,Stormy,Low,15,17.0,2.0,Delayed
+SH1092,Mumbai,Delhi,1976,Road,SCI,7707,49520.18,153.83,281782367.49,Stormy,Moderate,5,8.58,3.58,Delayed
+SH1093,Kochi,Kolkata,5218,Ocean,Blue Dart,6931,72182.67,166.576,109024947.79,Rainy,Low,10,11.17,1.17,Delayed
+SH1094,Kochi,Kolkata,2425,Rail,Gati,8278,25099.78,64.501,53543579.28,Stormy,Moderate,6,8.49,2.49,Delayed
+SH1095,Delhi,Chennai,1512,Road,CONCOR,2433,19639.65,43.868,105013275.73,Rainy,High,4,8.28,4.28,Delayed
+SH1096,Ahmedabad,Kolkata,206,Road,SCI,606,6378.88,39.809,33404092.98,Sunny,Low,1,1.26,0.26,On Time
+SH1097,Kolkata,Mumbai,1747,Road,Gati,5393,7912.23,29.942,35835959.56,Sunny,Low,4,4.35,0.35,On Time
+SH1098,Kochi,Hyderabad,1549,Road,CONCOR,5402,62524.95,231.87,295291233.6,Foggy,Low,4,5.88,1.88,Delayed
+SH1099,Chennai,Delhi,600,Road,Gati,9127,40867.56,111.259,129209889.7,Stormy,High,1,6.63,5.63,Delayed
+SH1100,Chennai,Hyderabad,1230,Road,SCI,9148,90998.81,324.831,474829017.84,Sunny,Low,3,3.54,0.54,On Time
+SH1101,Kolkata,Delhi,3038,Air,SCI,1148,3488.6,19.508,44526734.52,Rainy,Low,2,3.44,1.44,Delayed
+SH1102,Kolkata,Bengaluru,1068,Road,CONCOR,4229,21450.91,87.208,121355944.77,Sunny,High,3,4.03,1.03,Delayed
+SH1103,Ahmedabad,Chennai,5607,Ocean,TCI,6623,18826.3,103.494,20503214.49,Sunny,Moderate,11,19.11,8.11,Delayed
+SH1104,Kolkata,Bengaluru,577,Road,CONCOR,7775,45204.77,300.501,209368194.81,Rainy,Low,1,1.97,0.97,On Time
+SH1105,Hyderabad,Kochi,6433,Ocean,CONCOR,3838,8521.04,27.258,13050686.09,Sunny,High,12,11.97,-0.03,On Time
+SH1106,Chennai,Bengaluru,301,Road,Blue Dart,828,4989.39,26.72,18380102.68,Foggy,Low,1,2.7,1.7,Delayed
+SH1107,Delhi,Kolkata,4001,Ocean,Blue Dart,1999,1762.79,9.931,2280019.57,Sunny,Moderate,10,10.14,0.14,On Time
+SH1108,Delhi,Ahmedabad,13078,Ocean,TCI,1945,15207.85,38.281,15003039.73,Foggy,Low,26,27.91,1.91,Delayed
+SH1109,Hyderabad,Chennai,12442,Ocean,CONCOR,257,1746.91,4.006,2340766.46,Rainy,Moderate,24,29.07,5.07,Delayed
+SH1110,Ahmedabad,Chennai,4266,Air,Gati,3688,21785.38,53.071,307235556.83,Sunny,Low,3,3.35,0.35,On Time
+SH1111,Chennai,Kolkata,11946,Air,CONCOR,6286,33388.7,150.908,463540925.05,Sunny,High,9,8.2,-0.8,On Time
+SH1112,Kochi,Chennai,3579,Rail,TCI,3503,41538.47,253.224,146103469.09,Rainy,Moderate,8,9.4,1.4,Delayed
+SH1113,Chennai,Mumbai,1491,Road,CONCOR,579,4494.74,11.055,15237046.58,Rainy,High,4,6.07,2.07,Delayed
+SH1114,Hyderabad,Mumbai,7648,Air,TCI,1696,12412.28,35.183,156870731.89,Sunny,Moderate,6,6.92,0.92,On Time
+SH1115,Bengaluru,Ahmedabad,8555,Ocean,TCI,7112,40670.54,174.839,41554605.41,Sunny,Moderate,17,17.25,0.25,On Time
+SH1116,Hyderabad,Delhi,9895,Ocean,CONCOR,7165,61819.18,296.545,68050557.4,Sunny,Moderate,19,19.81,0.81,On Time
+SH1117,Kolkata,Hyderabad,819,Road,CONCOR,1006,898.52,1.814,3025402.96,Sunny,Low,2,2.16,0.16,On Time
+SH1118,Mumbai,Ahmedabad,14724,Ocean,SCI,5228,21621.94,66.015,21512123.88,Sunny,High,29,30.06,1.06,Delayed
+SH1119,Ahmedabad,Kochi,13110,Ocean,TCI,6344,5358.75,20.788,8316419.75,Sunny,Moderate,26,26.57,0.57,On Time
+SH1120,Mumbai,Ahmedabad,2181,Rail,SCI,9760,24763.29,63.104,85846949.16,Foggy,Moderate,5,7.64,2.64,Delayed
+SH1121,Kolkata,Chennai,1013,Road,TCI,3122,9304.38,24.446,38033342.13,Rainy,Low,2,4.08,2.08,Delayed
+SH1122,Delhi,Kochi,11848,Ocean,Blue Dart,6974,66235.1,190.082,104671149.23,Stormy,Moderate,23,26.31,3.31,Delayed
+SH1123,Mumbai,Ahmedabad,9450,Ocean,Blue Dart,1417,5546.13,14.704,6854134.62,Rainy,Moderate,18,19.11,1.11,Delayed
+SH1124,Bengaluru,Delhi,12927,Ocean,Blue Dart,6109,4084.91,11.492,4499503.23,Rainy,Moderate,25,24.89,-0.11,On Time
+SH1125,Kolkata,Ahmedabad,14582,Ocean,Gati,6620,4698.05,21.499,4539970.48,Rainy,High,29,29.93,0.93,On Time
+SH1126,Ahmedabad,Chennai,669,Road,CONCOR,6062,46068.44,138.311,222163014.42,Foggy,Moderate,1,2.48,1.48,Delayed
+SH1127,Bengaluru,Chennai,549,Road,CONCOR,1336,11132.69,52.143,49395038.35,Rainy,Low,1,3.05,2.05,Delayed
+SH1128,Delhi,Hyderabad,5798,Ocean,Blue Dart,5341,5336.96,14.362,9388672.01,Rainy,High,11,12.33,1.33,Delayed
+SH1129,Delhi,Mumbai,783,Road,Blue Dart,3275,11265.73,44.055,56182289.47,Stormy,Moderate,2,4.48,2.48,Delayed
+SH1130,Delhi,Mumbai,13776,Ocean,CONCOR,3229,33653.18,149.001,35012771.19,Sunny,Moderate,27,26.43,-0.57,On Time
+SH1131,Hyderabad,Bengaluru,11421,Ocean,Blue Dart,819,2995.26,8.344,4575874.61,Sunny,Moderate,22,21.83,-0.17,On Time
+SH1132,Chennai,Ahmedabad,6349,Ocean,CONCOR,5749,50763.07,144.035,60423031.59,Sunny,Low,12,11.91,-0.09,On Time
+SH1133,Chennai,Kochi,4707,Ocean,SCI,6754,67988.64,176.887,69262920.27,Rainy,Low,10,11.19,1.19,Delayed
+SH1134,Kolkata,Bengaluru,12533,Ocean,Gati,5341,43321.66,125.488,68177301.1,Sunny,Low,25,24.6,-0.4,On Time
+SH1135,Kochi,Mumbai,3632,Air,TCI,3769,36362.09,76.63,350621210.9,Sunny,Low,3,3.71,0.71,On Time
+SH1136,Kochi,Chennai,4285,Ocean,SCI,4087,14124.85,33.175,23819248.8,Rainy,Moderate,10,14.51,4.51,Delayed
+SH1137,Mumbai,Bengaluru,6496,Ocean,CONCOR,5349,19880.04,41.431,33668897.45,Sunny,Moderate,12,11.61,-0.39,On Time
+SH1138,Kolkata,Bengaluru,8107,Ocean,Blue Dart,8835,68218.8,176.73,96003232.8,Rainy,Low,16,16.19,0.19,On Time
+SH1139,Hyderabad,Chennai,9656,Ocean,Gati,9034,54317.61,209.071,79811669.94,Sunny,High,19,18.83,-0.17,On Time
+SH1140,Kolkata,Chennai,1101,Road,Blue Dart,5822,27518.53,158.28,85545751.22,Sunny,High,3,4.76,1.76,Delayed
+SH1141,Bengaluru,Ahmedabad,9777,Ocean,SCI,5997,61719.08,411.142,60167325.07,Rainy,Low,19,20.73,1.73,Delayed
+SH1142,Delhi,Kolkata,10525,Ocean,CONCOR,739,860.55,2.188,1537188.72,Sunny,Low,21,20.89,-0.11,On Time
+SH1143,Kochi,Chennai,2595,Rail,Blue Dart,1432,4352.18,20.645,13698550.83,Stormy,Moderate,6,8.66,2.66,Delayed
+SH1144,Kochi,Hyderabad,14331,Ocean,SCI,6190,57857.97,376.041,75769023.15,Sunny,Low,28,28.33,0.33,On Time
+SH1145,Ahmedabad,Hyderabad,10356,Ocean,Gati,8483,65632.43,298.873,66569530.94,Sunny,Low,20,20.3,0.3,On Time
+SH1146,Chennai,Ahmedabad,9887,Ocean,SCI,8011,15723.97,34.739,18310899.79,Rainy,High,19,20.96,1.96,Delayed
+SH1147,Mumbai,Delhi,6191,Air,Blue Dart,8666,72911.82,240.505,713274017.34,Stormy,Low,5,10.25,5.25,Delayed
+SH1148,Chennai,Ahmedabad,3573,Rail,Blue Dart,128,1373.18,4.462,4866979.55,Sunny,High,8,9.98,1.98,Delayed
+SH1149,Chennai,Kolkata,4668,Air,TCI,6470,32074.02,102.906,479221792.99,Foggy,High,3,6.97,3.97,Delayed
+SH1150,Delhi,Bengaluru,14229,Ocean,Gati,9815,14232.76,43.113,24410278.75,Stormy,Low,28,33.9,5.9,Delayed
+SH1151,Mumbai,Kolkata,10910,Ocean,Gati,2246,4357.66,13.789,4600482.16,Sunny,High,21,21.04,0.04,On Time
+SH1152,Kochi,Chennai,3521,Air,Blue Dart,9177,67754.83,369.732,720365970.87,Rainy,Low,2,2.47,0.47,On Time
+SH1153,Chennai,Kochi,8341,Air,Blue Dart,4925,54508.2,228.753,724157455.8,Sunny,High,6,5.96,-0.04,On Time
+SH1154,Ahmedabad,Kochi,3050,Rail,CONCOR,9610,108400.44,656.531,248066382.41,Sunny,Moderate,7,8.07,1.07,Delayed
+SH1155,Kochi,Chennai,3268,Rail,SCI,1426,9049.6,35.608,27047354.07,Rainy,High,8,11.51,3.51,Delayed
+SH1156,Ahmedabad,Mumbai,10272,Ocean,TCI,9526,101325.05,409.782,113780053.29,Stormy,Moderate,20,23.86,3.86,Delayed
+SH1157,Delhi,Mumbai,6547,Ocean,TCI,2699,27420.72,62.117,26577988.78,Rainy,Moderate,13,15.17,2.17,Delayed
+SH1158,Ahmedabad,Kochi,11378,Ocean,SCI,747,3537.46,11.522,5541575.87,Stormy,Moderate,22,25.4,3.4,Delayed
+SH1159,Mumbai,Bengaluru,5563,Air,SCI,3636,4529.79,12.832,54042149.42,Rainy,Moderate,4,6.41,2.41,Delayed
+SH1160,Ahmedabad,Chennai,1542,Road,CONCOR,713,3097.09,7.292,15245198.41,Stormy,Moderate,4,6.04,2.04,Delayed
+SH1161,Delhi,Ahmedabad,6810,Ocean,TCI,9568,114634.17,240.53,171923148.05,Sunny,Moderate,13,12.47,-0.53,On Time
+SH1162,Chennai,Ahmedabad,6125,Ocean,TCI,8316,74925.86,155.252,84701176.22,Rainy,High,12,13.91,1.91,Delayed
+SH1163,Hyderabad,Delhi,762,Road,SCI,1499,15449.25,67.482,62455017.45,Sunny,Moderate,2,3.99,1.99,Delayed
+SH1164,Kochi,Hyderabad,2425,Rail,TCI,7512,46644.29,153.994,152836505.4,Stormy,Low,6,8.82,2.82,Delayed
+SH1165,Kochi,Delhi,1125,Road,TCI,4763,17838.16,73.834,65947013.24,Foggy,Low,3,4.02,1.02,Delayed
+SH1166,Hyderabad,Ahmedabad,4204,Ocean,TCI,9082,55464.4,342.871,56164840.92,Foggy,Low,10,12.07,2.07,Delayed
+SH1167,Delhi,Chennai,1878,Road,SCI,1499,15020.71,35.285,70611927.68,Sunny,High,5,6.75,1.75,Delayed
+SH1168,Ahmedabad,Mumbai,4938,Air,CONCOR,6026,68641.65,140.494,637070545.84,Sunny,Moderate,4,4.33,0.33,On Time
+SH1169,Mumbai,Delhi,772,Road,Gati,6221,54821.72,315.641,269878627.97,Rainy,Low,2,2.76,0.76,On Time
+SH1170,Mumbai,Kolkata,4537,Air,Blue Dart,3187,5169.21,11.444,58004461.31,Rainy,Low,3,4.02,1.02,Delayed
+SH1171,Chennai,Ahmedabad,14271,Ocean,SCI,9419,40477.9,97.569,56518649.77,Sunny,High,28,28.59,0.59,On Time
+SH1172,Kolkata,Kochi,10823,Ocean,Gati,3917,36734.19,230.296,37276820.16,Sunny,High,21,20.61,-0.39,On Time
+SH1173,Kolkata,Ahmedabad,1401,Road,CONCOR,6902,80004.41,361.49,354584070.72,Sunny,Moderate,4,4.86,0.86,On Time
+SH1174,Bengaluru,Ahmedabad,2767,Rail,Gati,7021,59698.44,139.599,152489688.0,Stormy,High,6,10.45,4.45,Delayed
+SH1175,Kochi,Hyderabad,1487,Rail,CONCOR,8854,49261.17,134.831,105717534.02,Stormy,High,3,7.94,4.94,Delayed
+SH1176,Ahmedabad,Hyderabad,1756,Road,SCI,7379,17772.18,38.747,74236588.74,Sunny,Low,5,6.19,1.19,Delayed
+SH1177,Mumbai,Hyderabad,1605,Road,SCI,276,732.85,1.627,3824507.42,Rainy,Moderate,4,7.29,3.29,Delayed
+SH1178,Ahmedabad,Chennai,14964,Ocean,Gati,9396,99766.28,298.789,116252210.45,Sunny,Low,29,29.53,0.53,On Time
+SH1179,Chennai,Ahmedabad,4098,Air,Blue Dart,2376,18154.25,66.419,252164974.93,Sunny,High,3,2.62,-0.38,On Time
+SH1180,Kolkata,Bengaluru,1889,Rail,CONCOR,9177,4991.34,12.845,11442559.46,Rainy,High,4,6.36,2.36,Delayed
+SH1181,Ahmedabad,Bengaluru,8628,Ocean,CONCOR,9578,38267.78,101.075,66898823.83,Stormy,Moderate,17,22.16,5.16,Delayed
+SH1182,Delhi,Chennai,1474,Road,CONCOR,2504,6120.86,21.371,24786280.15,Sunny,Low,4,4.08,0.08,On Time
+SH1183,Ahmedabad,Bengaluru,14096,Ocean,Blue Dart,473,4261.21,9.041,5093129.98,Stormy,Low,28,32.84,4.84,Delayed
+SH1184,Mumbai,Hyderabad,10230,Air,Blue Dart,1581,12337.37,40.129,117564085.17,Sunny,Low,8,7.74,-0.26,On Time
+SH1185,Kolkata,Delhi,1020,Road,CONCOR,90,94.83,0.203,503253.4,Rainy,Moderate,2,3.65,1.65,Delayed
+SH1186,Ahmedabad,Hyderabad,631,Road,TCI,5204,18627.36,43.705,85035946.95,Rainy,Low,1,2.98,1.98,Delayed
+SH1187,Mumbai,Bengaluru,7577,Air,Blue Dart,7518,63799.1,356.873,917095267.47,Sunny,Low,6,5.66,-0.34,On Time
+SH1188,Kolkata,Bengaluru,10986,Air,TCI,3790,29772.21,76.981,265623298.52,Sunny,Moderate,9,8.95,-0.05,On Time
+SH1189,Chennai,Ahmedabad,1807,Road,Blue Dart,6766,40147.24,241.884,137000999.7,Sunny,High,5,5.9,0.9,On Time
+SH1190,Mumbai,Chennai,8410,Air,SCI,5858,37728.95,248.336,303855677.32,Sunny,Low,7,8.14,1.14,Delayed
+SH1191,Mumbai,Kochi,14621,Ocean,Blue Dart,1850,18299.91,73.318,30145330.06,Rainy,High,29,35.86,6.86,Delayed
+SH1192,Hyderabad,Kolkata,14366,Ocean,SCI,8260,43172.89,92.316,67340533.79,Rainy,Low,28,29.68,1.68,Delayed
+SH1193,Bengaluru,Ahmedabad,8806,Air,TCI,7043,24312.32,63.503,330707956.71,Rainy,Low,7,8.57,1.57,Delayed
+SH1194,Mumbai,Delhi,11922,Ocean,Blue Dart,5939,48632.01,125.491,61471481.38,Rainy,Low,23,24.31,1.31,Delayed
+SH1195,Kolkata,Kochi,4628,Air,CONCOR,6081,72361.02,165.584,930864997.21,Rainy,Moderate,3,3.93,0.93,On Time
+SH1196,Bengaluru,Hyderabad,1350,Road,Blue Dart,7496,74152.81,427.185,301836351.81,Stormy,Moderate,3,4.62,1.62,Delayed
+SH1197,Kolkata,Mumbai,6242,Ocean,TCI,3293,36359.02,120.856,44643352.24,Rainy,Low,12,14.03,2.03,Delayed
+SH1198,Mumbai,Ahmedabad,11835,Ocean,SCI,56,119.83,0.26,149852.64,Sunny,Low,23,22.89,-0.11,On Time
+SH1199,Ahmedabad,Kolkata,5829,Ocean,SCI,979,9966.04,28.226,14252818.97,Sunny,Low,11,12.21,1.21,Delayed
+SH1200,Hyderabad,Kolkata,8652,Ocean,TCI,7883,7476.66,46.487,9614308.65,Sunny,Low,17,16.5,-0.5,On Time
+SH1201,Bengaluru,Mumbai,9313,Air,TCI,8086,48120.38,157.542,720073702.5,Rainy,Low,7,8.33,1.33,Delayed
+SH1202,Mumbai,Bengaluru,1501,Road,TCI,3286,19701.55,58.585,68714594.59,Sunny,High,4,6.38,2.38,Delayed
+SH1203,Delhi,Mumbai,4382,Ocean,TCI,9798,113792.01,329.643,142434907.77,Rainy,Low,10,11.77,1.77,Delayed
+SH1204,Chennai,Hyderabad,10416,Ocean,CONCOR,3885,15367.61,58.202,24983407.08,Sunny,Moderate,20,20.43,0.43,On Time
+SH1205,Hyderabad,Kolkata,6162,Air,SCI,8508,38837.31,125.095,321024157.32,Rainy,Moderate,5,6.54,1.54,Delayed
+SH1206,Mumbai,Kochi,3882,Air,CONCOR,4811,56680.1,177.573,796062493.93,Rainy,Low,3,3.69,0.69,On Time
+SH1207,Chennai,Delhi,7536,Ocean,CONCOR,6118,72060.88,246.232,119269104.55,Stormy,Moderate,15,21.71,6.71,Delayed
+SH1208,Mumbai,Hyderabad,5384,Air,Blue Dart,3985,13008.62,50.194,127384776.7,Sunny,High,4,4.14,0.14,On Time
+SH1209,Hyderabad,Bengaluru,6906,Air,Gati,5979,46482.28,123.766,638600795.3,Sunny,Moderate,5,5.49,0.49,On Time
+SH1210,Hyderabad,Ahmedabad,1593,Road,Gati,4258,6526.83,43.278,20608280.37,Sunny,Moderate,4,4.59,0.59,On Time
+SH1211,Mumbai,Hyderabad,3550,Rail,Blue Dart,4947,6891.01,23.548,18691424.63,Sunny,Low,8,7.94,-0.06,On Time
+SH1212,Chennai,Kochi,1908,Road,Gati,2142,24598.35,73.891,94380060.04,Sunny,Moderate,5,5.85,0.85,On Time
+SH1213,Delhi,Kolkata,14350,Ocean,TCI,5459,20370.54,47.239,35455976.9,Sunny,High,28,28.44,0.44,On Time
+SH1214,Bengaluru,Ahmedabad,9789,Ocean,SCI,2878,21412.81,77.798,32208436.29,Sunny,High,19,20.69,1.69,Delayed
+SH1215,Kochi,Bengaluru,3159,Air,Gati,6605,21126.19,82.486,211891254.79,Rainy,Low,2,2.87,0.87,On Time
+SH1216,Kolkata,Ahmedabad,7945,Air,Gati,7066,64367.16,246.471,514997993.28,Rainy,Low,6,6.45,0.45,On Time
+SH1217,Chennai,Delhi,8232,Ocean,CONCOR,5843,23976.76,56.267,40980415.54,Sunny,High,16,16.76,0.76,On Time
+SH1218,Kolkata,Chennai,11662,Air,Gati,1998,9906.01,26.669,128054943.8,Sunny,Low,9,9.2,0.2,On Time
+SH1219,Kolkata,Chennai,630,Road,Blue Dart,9871,35467.81,112.101,167668526.34,Foggy,Low,1,1.98,0.98,On Time
+SH1220,Ahmedabad,Chennai,1578,Road,Gati,7985,37849.96,135.452,120335021.41,Stormy,Moderate,4,7.94,3.94,Delayed
+SH1221,Chennai,Kochi,1323,Road,SCI,9438,8619.68,29.913,47545679.29,Sunny,Moderate,3,4.01,1.01,Delayed
+SH1222,Kolkata,Bengaluru,1621,Rail,Blue Dart,8597,12735.81,77.162,40334534.76,Stormy,Moderate,4,5.53,1.53,Delayed
+SH1223,Hyderabad,Mumbai,10011,Air,Gati,724,4465.59,15.319,52321376.12,Rainy,Low,8,9.46,1.46,Delayed
+SH1224,Kolkata,Mumbai,918,Rail,TCI,2795,28947.79,82.384,61765130.19,Sunny,Low,3,3.27,0.27,On Time
+SH1225,Kochi,Hyderabad,10198,Ocean,Gati,2616,11780.11,42.055,11322298.03,Sunny,Moderate,20,19.46,-0.54,On Time
+SH1226,Ahmedabad,Kolkata,7426,Air,Blue Dart,8885,96346.58,241.744,1402965159.3,Rainy,Moderate,6,6.34,0.34,On Time
+SH1227,Ahmedabad,Hyderabad,13171,Ocean,Gati,6733,63523.65,286.474,99702070.05,Rainy,High,26,27.46,1.46,Delayed
+SH1228,Chennai,Kolkata,655,Road,TCI,5152,12285.62,32.763,63814327.66,Foggy,Low,1,2.63,1.63,Delayed
+SH1229,Hyderabad,Mumbai,2852,Rail,TCI,5989,18852.69,113.847,51418324.51,Sunny,Moderate,7,7.91,0.91,On Time
+SH1230,Delhi,Bengaluru,1613,Road,Gati,1982,11443.82,33.045,61088703.79,Sunny,High,4,5.26,1.26,Delayed
+SH1231,Kolkata,Kochi,5743,Air,CONCOR,7210,21773.13,70.092,314310569.88,Sunny,Low,4,6.03,2.03,Delayed
+SH1232,Kolkata,Chennai,2972,Rail,Gati,1346,15534.94,46.72,57639110.86,Stormy,Low,7,8.57,1.57,Delayed
+SH1233,Mumbai,Chennai,986,Rail,TCI,6023,62246.98,172.395,215496800.03,Stormy,Low,3,5.92,2.92,Delayed
+SH1234,Ahmedabad,Kolkata,5217,Air,TCI,5017,51436.71,126.972,445842875.36,Sunny,Low,4,4.0,0.0,On Time
+SH1235,Mumbai,Kochi,12858,Ocean,Gati,2226,2262.68,5.435,2878696.12,Sunny,Moderate,25,25.27,0.27,On Time
+SH1236,Mumbai,Ahmedabad,6765,Ocean,Blue Dart,4419,52643.93,184.578,75913948.01,Sunny,High,13,12.3,-0.7,On Time
+SH1237,Mumbai,Delhi,4772,Air,Blue Dart,2830,15454.28,38.472,184574715.63,Sunny,Low,3,3.07,0.07,On Time
+SH1238,Bengaluru,Chennai,14230,Ocean,Gati,7862,41854.55,98.917,56927296.93,Sunny,Low,28,27.82,-0.18,On Time
+SH1239,Ahmedabad,Bengaluru,8570,Ocean,TCI,320,3396.55,10.921,3531881.31,Stormy,Low,17,21.79,4.79,Delayed
+SH1240,Kochi,Mumbai,489,Road,Blue Dart,6664,6811.53,27.083,37575690.71,Sunny,Moderate,1,1.0,0.0,On Time
+SH1241,Hyderabad,Bengaluru,3527,Rail,SCI,4357,13723.64,91.177,44963501.19,Foggy,Low,8,10.16,2.16,Delayed
+SH1242,Ahmedabad,Delhi,1566,Road,Gati,8547,92345.8,211.652,342832316.1,Sunny,Low,4,3.41,-0.59,On Time
+SH1243,Hyderabad,Bengaluru,5991,Ocean,Blue Dart,8513,11937.29,35.05,18572380.4,Sunny,Moderate,11,10.47,-0.53,On Time
+SH1244,Chennai,Mumbai,6832,Ocean,TCI,5729,22402.9,56.0,35790084.28,Sunny,Moderate,13,13.7,0.7,On Time
+SH1245,Kochi,Mumbai,3967,Rail,CONCOR,7415,82243.01,209.212,269404798.91,Stormy,Low,9,11.72,2.72,Delayed
+SH1246,Bengaluru,Delhi,8357,Ocean,TCI,9573,22106.47,115.375,35422615.85,Rainy,Moderate,16,18.1,2.1,Delayed
+SH1247,Kochi,Chennai,8946,Ocean,CONCOR,1957,3777.8,8.803,5581190.07,Stormy,Low,17,19.74,2.74,Delayed
+SH1248,Hyderabad,Delhi,9287,Ocean,CONCOR,2290,9278.15,29.104,9830516.33,Foggy,Moderate,18,20.22,2.22,Delayed
+SH1249,Ahmedabad,Chennai,2337,Rail,CONCOR,4458,43072.47,181.233,133245949.21,Rainy,High,5,7.75,2.75,Delayed
+SH1250,Kochi,Chennai,8131,Air,SCI,189,1444.88,5.413,18969664.11,Sunny,Low,6,6.33,0.33,On Time
+SH1251,Chennai,Kochi,13665,Ocean,TCI,6482,51077.81,132.664,76162987.07,Sunny,Moderate,27,26.55,-0.45,On Time
+SH1252,Kochi,Chennai,10481,Ocean,Gati,4506,53054.73,305.569,74048952.33,Sunny,High,20,25.56,5.56,Delayed
+SH1253,Mumbai,Delhi,11162,Ocean,CONCOR,6291,38091.73,156.122,45765988.76,Rainy,High,22,27.2,5.2,Delayed
+SH1254,Hyderabad,Chennai,6195,Ocean,TCI,3604,28679.93,117.738,27896767.18,Foggy,Low,12,13.13,1.13,Delayed
+SH1255,Kolkata,Chennai,11619,Ocean,Blue Dart,2692,4624.63,22.649,8109654.86,Rainy,High,23,23.87,0.87,On Time
+SH1256,Delhi,Kochi,1083,Rail,Blue Dart,4446,32027.43,134.239,89290700.96,Foggy,Low,3,4.74,1.74,Delayed
+SH1257,Kochi,Bengaluru,3369,Air,CONCOR,2151,9165.44,19.859,78732129.11,Stormy,High,2,6.96,4.96,Delayed
+SH1258,Chennai,Mumbai,1059,Road,Blue Dart,4188,32806.34,139.775,162042994.33,Sunny,Low,3,2.88,-0.12,On Time
+SH1259,Ahmedabad,Kochi,9485,Ocean,SCI,2396,8019.26,46.655,10789997.37,Rainy,Moderate,18,27.81,9.81,Delayed
+SH1260,Delhi,Kolkata,474,Road,TCI,7660,28786.32,67.674,117943644.29,Rainy,Low,1,3.38,2.38,Delayed
+SH1261,Mumbai,Delhi,11786,Ocean,Blue Dart,344,1235.58,4.429,2115432.75,Rainy,Moderate,23,23.28,0.28,On Time
+SH1262,Chennai,Kolkata,2841,Rail,TCI,5788,65214.71,378.271,224553856.83,Sunny,Moderate,7,7.63,0.63,On Time
+SH1263,Bengaluru,Kolkata,12003,Ocean,TCI,3328,12419.89,31.086,12042991.48,Sunny,High,24,29.02,5.02,Delayed
+SH1264,Mumbai,Kolkata,441,Road,CONCOR,2718,27192.54,88.815,140953785.22,Sunny,High,1,2.28,1.28,Delayed
+SH1265,Bengaluru,Ahmedabad,6927,Air,Blue Dart,2641,25900.9,60.911,321832001.97,Sunny,Low,5,4.88,-0.12,On Time
+SH1266,Mumbai,Bengaluru,1229,Road,CONCOR,2644,11930.35,35.874,61481060.22,Stormy,Low,3,5.02,2.02,Delayed
+SH1267,Mumbai,Bengaluru,6700,Ocean,TCI,1697,3142.57,15.119,3022128.26,Rainy,Moderate,13,14.4,1.4,Delayed
+SH1268,Mumbai,Kochi,10081,Air,CONCOR,7167,13597.21,36.539,164186411.85,Sunny,Low,8,7.95,-0.05,On Time
+SH1269,Ahmedabad,Kolkata,7453,Ocean,TCI,5833,44257.63,128.317,57944348.15,Sunny,Moderate,14,14.07,0.07,On Time
+SH1270,Ahmedabad,Mumbai,8618,Air,SCI,6951,49471.71,313.609,723068621.79,Rainy,Moderate,7,9.04,2.04,Delayed
+SH1271,Bengaluru,Hyderabad,1674,Road,Gati,866,9908.41,23.492,46234185.88,Stormy,Moderate,4,7.02,3.02,Delayed
+SH1272,Chennai,Mumbai,7893,Ocean,TCI,9338,62191.56,140.501,102613965.61,Stormy,Moderate,15,18.07,3.07,Delayed
+SH1273,Delhi,Mumbai,1098,Road,CONCOR,3814,19878.57,52.767,61250894.9,Sunny,Low,3,3.1,0.1,On Time
+SH1274,Kochi,Bengaluru,14990,Ocean,Blue Dart,6041,70273.48,405.507,105732579.44,Sunny,Low,29,27.76,-1.24,On Time
+SH1275,Chennai,Kolkata,9951,Ocean,CONCOR,5676,26955.56,162.518,33801030.24,Foggy,Low,19,21.26,2.26,Delayed
+SH1276,Mumbai,Hyderabad,2305,Rail,SCI,5217,6596.0,15.769,19929807.34,Stormy,Moderate,5,9.03,4.03,Delayed
+SH1277,Kochi,Chennai,1382,Rail,TCI,9530,42790.37,149.218,97463119.64,Sunny,Moderate,3,3.52,0.52,On Time
+SH1278,Delhi,Hyderabad,1980,Road,Gati,2941,17499.23,43.667,65809473.87,Sunny,Low,5,4.72,-0.28,On Time
+SH1279,Hyderabad,Kochi,499,Road,CONCOR,3328,23017.0,64.904,78154463.47,Sunny,Moderate,1,1.82,0.82,On Time
+SH1280,Mumbai,Kochi,1038,Rail,CONCOR,2775,25265.48,110.443,73908294.09,Stormy,Moderate,3,5.79,2.79,Delayed
+SH1281,Kochi,Ahmedabad,1563,Road,Gati,3990,36309.57,179.118,131362013.41,Sunny,Low,4,4.36,0.36,On Time
+SH1282,Bengaluru,Hyderabad,1814,Road,SCI,2925,2773.67,7.234,10815228.25,Stormy,High,5,9.82,4.82,Delayed
+SH1283,Hyderabad,Bengaluru,5735,Air,CONCOR,9917,42210.24,102.486,576028550.93,Stormy,High,4,10.02,6.02,Delayed
+SH1284,Mumbai,Chennai,5964,Air,CONCOR,9191,64438.82,248.346,810665714.64,Sunny,Low,4,4.87,0.87,On Time
+SH1285,Kochi,Ahmedabad,1458,Road,Gati,8756,67272.89,148.652,309539445.63,Rainy,High,4,7.56,3.56,Delayed
+SH1286,Delhi,Bengaluru,9395,Ocean,CONCOR,6089,29592.35,105.679,43783731.6,Rainy,Moderate,18,19.08,1.08,Delayed
+SH1287,Hyderabad,Delhi,8383,Ocean,CONCOR,3011,14055.23,31.077,14792469.31,Foggy,Moderate,16,17.34,1.34,Delayed
+SH1288,Mumbai,Delhi,3917,Air,CONCOR,7032,51980.36,244.298,672416632.1,Sunny,Moderate,3,3.46,0.46,On Time
+SH1289,Chennai,Ahmedabad,1341,Road,TCI,7439,81586.86,218.344,454961239.22,Stormy,Moderate,3,7.45,4.45,Delayed
+SH1290,Hyderabad,Mumbai,3723,Rail,CONCOR,7225,9140.11,39.606,32926583.16,Rainy,Low,9,10.41,1.41,Delayed
+SH1291,Chennai,Ahmedabad,3002,Rail,SCI,7432,28204.25,65.451,105629617.83,Sunny,High,7,11.13,4.13,Delayed
+SH1292,Ahmedabad,Delhi,14846,Ocean,SCI,3855,7599.26,27.977,10074576.91,Sunny,Moderate,29,29.85,0.85,On Time
+SH1293,Delhi,Kolkata,6617,Ocean,Gati,9004,53076.18,217.528,55455134.89,Sunny,Low,13,12.18,-0.82,On Time
+SH1294,Hyderabad,Delhi,1519,Road,TCI,1992,19283.3,72.991,73977678.59,Sunny,Low,4,4.02,0.02,On Time
+SH1295,Bengaluru,Hyderabad,5148,Air,Gati,5507,24453.39,54.025,222146249.32,Sunny,Moderate,4,3.45,-0.55,On Time
+SH1296,Kolkata,Kochi,652,Road,Gati,1497,5975.54,23.063,18215559.72,Sunny,High,1,2.96,1.96,Delayed
+SH1297,Ahmedabad,Mumbai,12417,Ocean,Blue Dart,5258,37354.45,97.398,60242315.74,Stormy,Low,24,27.95,3.95,Delayed
+SH1298,Mumbai,Delhi,1441,Road,CONCOR,7174,43962.37,107.337,191246600.97,Sunny,High,4,5.79,1.79,Delayed
+SH1299,Ahmedabad,Kochi,6535,Ocean,SCI,9090,90039.61,274.05,142122249.99,Rainy,High,13,15.03,2.03,Delayed
+SH1300,Kochi,Delhi,3333,Rail,TCI,102,377.85,1.668,876595.28,Stormy,Low,8,11.29,3.29,Delayed
+SH1301,Mumbai,Kochi,8482,Ocean,CONCOR,7293,50343.77,112.931,81988767.97,Sunny,Moderate,16,16.42,0.42,On Time
+SH1302,Hyderabad,Bengaluru,1710,Road,TCI,4670,35818.88,99.47,113988148.11,Sunny,Low,4,4.59,0.59,On Time
+SH1303,Bengaluru,Delhi,9447,Ocean,Gati,5900,5668.01,22.491,6429420.04,Sunny,High,18,17.27,-0.73,On Time
+SH1304,Mumbai,Hyderabad,1495,Road,Gati,771,4933.32,12.444,27269235.38,Sunny,Moderate,4,5.25,1.25,Delayed
+SH1305,Kochi,Ahmedabad,2290,Rail,TCI,192,2106.62,6.414,6061227.86,Sunny,Low,5,5.78,0.78,On Time
+SH1306,Mumbai,Delhi,5717,Ocean,Blue Dart,9309,7327.8,23.856,8496456.55,Sunny,Moderate,11,16.33,5.33,Delayed
+SH1307,Mumbai,Chennai,1925,Road,CONCOR,7900,63140.2,282.161,285404658.53,Stormy,High,5,9.51,4.51,Delayed
+SH1308,Hyderabad,Bengaluru,1298,Rail,Blue Dart,4372,23231.48,92.049,59968807.78,Sunny,Low,3,3.3,0.3,On Time
+SH1309,Hyderabad,Kolkata,4051,Air,Gati,9815,111815.98,243.237,1473004356.66,Sunny,Low,3,3.95,0.95,On Time
+SH1310,Kolkata,Mumbai,3976,Rail,TCI,5416,29841.7,69.712,74208132.25,Sunny,Low,9,9.41,0.41,On Time
+SH1311,Kolkata,Mumbai,1715,Road,CONCOR,233,1711.37,8.444,9609500.55,Sunny,Moderate,4,4.71,0.71,On Time
+SH1312,Hyderabad,Kochi,2105,Rail,TCI,8052,31274.51,164.448,114079490.4,Stormy,Moderate,5,8.89,3.89,Delayed
+SH1313,Delhi,Hyderabad,1355,Road,Blue Dart,9511,25603.74,119.297,101134919.38,Sunny,High,3,4.16,1.16,Delayed
+SH1314,Hyderabad,Bengaluru,6341,Ocean,SCI,8235,32522.76,90.686,43074088.21,Sunny,Low,12,12.46,0.46,On Time
+SH1315,Ahmedabad,Kochi,1329,Rail,SCI,4109,43307.72,130.014,139643901.91,Sunny,Moderate,3,4.91,1.91,Delayed
+SH1316,Kochi,Ahmedabad,8287,Ocean,SCI,6059,43224.06,138.364,45805209.27,Foggy,Low,16,17.41,1.41,Delayed
+SH1317,Kolkata,Ahmedabad,3890,Air,SCI,7086,70261.32,142.158,689804296.51,Foggy,Moderate,3,8.14,5.14,Delayed
+SH1318,Kolkata,Delhi,8647,Ocean,SCI,2482,8458.33,24.018,10672173.02,Stormy,High,17,22.09,5.09,Delayed
+SH1319,Mumbai,Kochi,12848,Ocean,Blue Dart,4641,28052.61,63.136,32143820.61,Sunny,High,25,24.44,-0.56,On Time
+SH1320,Chennai,Bengaluru,13460,Ocean,CONCOR,9325,17385.56,36.462,26677235.91,Rainy,Low,26,27.4,1.4,Delayed
+SH1321,Delhi,Hyderabad,8621,Ocean,SCI,7616,57479.11,120.131,87132198.16,Sunny,Low,17,17.11,0.11,On Time
+SH1322,Kochi,Mumbai,1540,Road,SCI,1123,1928.81,7.034,7983435.68,Rainy,Moderate,4,5.5,1.5,Delayed
+SH1323,Kolkata,Kochi,5284,Air,Gati,807,3351.87,6.854,32970293.76,Sunny,High,4,6.59,2.59,Delayed
+SH1324,Ahmedabad,Mumbai,11119,Ocean,CONCOR,2895,26496.71,78.87,40514735.54,Sunny,Moderate,22,22.32,0.32,On Time
+SH1325,Hyderabad,Mumbai,10763,Ocean,TCI,3214,35428.56,148.916,59135167.85,Sunny,Moderate,21,21.28,0.28,On Time
+SH1326,Kolkata,Kochi,7962,Ocean,CONCOR,3227,1850.23,3.757,3277177.64,Sunny,Moderate,15,15.72,0.72,On Time
+SH1327,Hyderabad,Delhi,6806,Ocean,CONCOR,1022,12150.38,76.408,17824165.94,Rainy,Moderate,13,14.11,1.11,Delayed
+SH1328,Ahmedabad,Mumbai,1892,Rail,TCI,3021,6044.31,17.374,16766561.33,Stormy,Moderate,4,7.02,3.02,Delayed
+SH1329,Delhi,Chennai,5620,Ocean,SCI,7431,87009.15,440.752,100446768.19,Stormy,High,11,18.0,7.0,Delayed
+SH1330,Mumbai,Chennai,5012,Ocean,CONCOR,1931,21989.64,51.916,26904618.17,Sunny,Moderate,10,10.14,0.14,On Time
+SH1331,Delhi,Chennai,8686,Ocean,TCI,2109,11010.46,53.148,12621255.45,Sunny,Low,17,20.86,3.86,Delayed
+SH1332,Kolkata,Hyderabad,9543,Air,Gati,1144,1246.82,3.867,13833176.08,Sunny,Low,7,7.23,0.23,On Time
+SH1333,Kochi,Hyderabad,1211,Road,SCI,4983,22350.88,76.361,75411956.37,Sunny,High,3,5.18,2.18,Delayed
+SH1334,Chennai,Ahmedabad,1650,Road,SCI,2631,11521.35,44.455,38767226.35,Sunny,Moderate,4,5.28,1.28,Delayed
+SH1335,Kochi,Chennai,9781,Air,CONCOR,3798,5481.55,33.789,81830172.47,Sunny,Moderate,8,8.38,0.38,On Time
+SH1336,Kolkata,Chennai,8308,Air,CONCOR,9872,58030.91,158.214,631279611.76,Sunny,Low,6,6.01,0.01,On Time
+SH1337,Bengaluru,Ahmedabad,2976,Rail,CONCOR,936,1539.52,4.263,4489699.75,Sunny,Moderate,7,8.01,1.01,Delayed
+SH1338,Kochi,Delhi,2004,Rail,Gati,6904,23541.28,51.974,51319389.56,Sunny,High,5,7.22,2.22,Delayed
+SH1339,Delhi,Chennai,7009,Ocean,Blue Dart,2127,10312.03,51.512,10058815.28,Sunny,High,14,14.15,0.15,On Time
+SH1340,Kochi,Delhi,3150,Rail,SCI,1319,2646.18,7.308,9225972.5,Sunny,Moderate,7,8.46,1.46,Delayed
+SH1341,Kochi,Delhi,12713,Ocean,Blue Dart,3859,39296.89,123.207,63388346.54,Rainy,Moderate,25,25.67,0.67,On Time
+SH1342,Mumbai,Kochi,12718,Ocean,TCI,2222,1741.75,6.289,2471941.06,Stormy,Low,25,30.67,5.67,Delayed
+SH1343,Bengaluru,Chennai,3486,Rail,SCI,4585,44062.76,113.938,140531923.06,Foggy,Low,8,9.04,1.04,Delayed
+SH1344,Chennai,Kolkata,860,Road,CONCOR,5631,31461.61,190.833,152938203.2,Foggy,High,2,4.1,2.1,Delayed
+SH1345,Bengaluru,Hyderabad,1054,Road,CONCOR,2303,4282.46,28.548,21130881.62,Sunny,Low,3,1.61,-1.39,On Time
+SH1346,Hyderabad,Kochi,4935,Ocean,SCI,6444,64256.18,138.312,91540253.52,Stormy,Low,10,14.99,4.99,Delayed
+SH1347,Mumbai,Hyderabad,10754,Air,CONCOR,2625,31366.24,88.618,429319609.82,Sunny,Low,8,7.53,-0.47,On Time
+SH1348,Bengaluru,Chennai,2876,Rail,CONCOR,3794,29489.08,151.293,88831783.96,Rainy,Moderate,7,10.23,3.23,Delayed
+SH1349,Bengaluru,Kolkata,9331,Air,Blue Dart,1549,8666.48,23.68,120894941.71,Sunny,Low,7,6.7,-0.3,On Time
+SH1350,Kochi,Kolkata,4298,Ocean,SCI,973,9119.33,24.115,15131076.87,Foggy,Moderate,10,15.7,5.7,Delayed
+SH1351,Chennai,Kochi,8837,Ocean,Blue Dart,8155,18512.46,37.63,26243418.75,Sunny,High,17,24.62,7.62,Delayed
+SH1352,Kolkata,Delhi,2693,Rail,TCI,8156,92392.26,275.469,303201809.4,Foggy,High,6,9.8,3.8,Delayed
+SH1353,Kochi,Delhi,2457,Rail,CONCOR,7432,71236.99,272.632,214746006.16,Sunny,High,6,8.31,2.31,Delayed
+SH1354,Mumbai,Hyderabad,6618,Air,TCI,322,554.77,2.921,8092573.82,Stormy,Moderate,5,13.97,8.97,Delayed
+SH1355,Delhi,Kochi,10360,Ocean,Gati,3640,28977.32,59.858,31504232.39,Sunny,Moderate,20,21.21,1.21,Delayed
+SH1356,Hyderabad,Kolkata,6560,Ocean,TCI,1261,2989.33,7.344,3394134.29,Sunny,Moderate,13,13.51,0.51,On Time
+SH1357,Bengaluru,Kolkata,12947,Ocean,CONCOR,5980,41903.54,89.575,54177199.96,Sunny,Low,25,25.71,0.71,On Time
+SH1358,Chennai,Ahmedabad,7622,Ocean,Gati,8161,59136.03,134.414,60753811.82,Sunny,Moderate,15,14.75,-0.25,On Time
+SH1359,Ahmedabad,Hyderabad,3441,Air,Gati,2696,11445.53,39.749,139902617.1,Stormy,Moderate,2,6.24,4.24,Delayed
+SH1360,Hyderabad,Delhi,1452,Road,TCI,7847,59685.95,221.349,320185735.06,Sunny,Low,4,3.43,-0.57,On Time
+SH1361,Delhi,Hyderabad,3171,Air,Gati,2356,6306.45,20.293,83654448.88,Foggy,High,2,4.03,2.03,Delayed
+SH1362,Chennai,Mumbai,10748,Ocean,Gati,3293,37068.8,118.377,49454405.38,Sunny,Low,21,20.95,-0.05,On Time
+SH1363,Chennai,Ahmedabad,13145,Ocean,SCI,6609,65996.27,155.026,79065239.32,Stormy,Moderate,26,29.51,3.51,Delayed
+SH1364,Chennai,Ahmedabad,5395,Air,SCI,8276,9006.17,31.139,104309025.99,Sunny,Low,4,4.61,0.61,On Time
+SH1365,Bengaluru,Kolkata,11022,Air,SCI,3617,10204.21,42.458,89743846.05,Foggy,Moderate,9,12.07,3.07,Delayed
+SH1366,Mumbai,Bengaluru,6313,Ocean,CONCOR,1281,13046.86,51.403,13370910.94,Sunny,Low,12,11.38,-0.62,On Time
+SH1367,Mumbai,Ahmedabad,1164,Road,CONCOR,5699,63672.62,350.043,241987499.28,Rainy,Low,3,3.82,0.82,On Time
+SH1368,Kochi,Kolkata,336,Road,TCI,7285,18478.01,100.18,103197393.59,Rainy,Moderate,1,2.57,1.57,Delayed
+SH1369,Hyderabad,Mumbai,1289,Road,Gati,2088,3742.1,14.058,19156322.76,Sunny,Moderate,3,3.71,0.71,On Time
+SH1370,Chennai,Kolkata,10681,Ocean,SCI,9693,59452.12,160.356,94013632.4,Rainy,Low,21,22.76,1.76,Delayed
+SH1371,Mumbai,Chennai,14492,Ocean,Blue Dart,7254,61358.55,308.341,80335987.43,Rainy,Moderate,28,28.26,0.26,On Time
+SH1372,Kochi,Chennai,1243,Rail,SCI,2937,6829.91,14.163,24173130.92,Foggy,High,3,6.02,3.02,Delayed
+SH1373,Ahmedabad,Bengaluru,1881,Road,Blue Dart,1990,11790.77,34.304,53730088.26,Sunny,Moderate,5,5.95,0.95,On Time
+SH1374,Delhi,Ahmedabad,539,Road,CONCOR,2743,11798.88,28.732,48811880.19,Sunny,Moderate,1,1.0,0.0,On Time
+SH1375,Hyderabad,Bengaluru,11219,Air,Blue Dart,2035,7761.74,50.976,89055660.01,Sunny,Moderate,9,11.36,2.36,Delayed
+SH1376,Kochi,Kolkata,4378,Air,Blue Dart,5700,43863.45,127.999,475986794.05,Rainy,High,3,7.52,4.52,Delayed
+SH1377,Delhi,Bengaluru,922,Road,Blue Dart,4673,18229.83,76.113,71295751.69,Sunny,Low,2,1.79,-0.21,On Time
+SH1378,Kochi,Ahmedabad,12536,Ocean,SCI,8286,60172.13,201.06,88871441.77,Sunny,Low,25,24.86,-0.14,On Time
+SH1379,Kolkata,Hyderabad,4478,Ocean,TCI,1241,10166.37,23.669,17725195.32,Sunny,Low,10,10.45,0.45,On Time
+SH1380,Ahmedabad,Hyderabad,13873,Ocean,Gati,3726,41787.14,83.753,65394050.85,Sunny,High,27,31.12,4.12,Delayed
+SH1381,Chennai,Bengaluru,7471,Air,SCI,3389,15591.33,33.236,129127769.04,Rainy,Moderate,6,8.26,2.26,Delayed
+SH1382,Kochi,Ahmedabad,3178,Air,SCI,4136,9267.82,45.618,95457667.97,Sunny,Low,2,3.56,1.56,Delayed
+SH1383,Ahmedabad,Bengaluru,6933,Ocean,TCI,9457,73904.44,255.373,71371316.12,Rainy,High,13,14.19,1.19,Delayed
+SH1384,Ahmedabad,Delhi,10326,Ocean,Blue Dart,5636,64799.1,229.917,80672429.7,Sunny,Moderate,20,24.44,4.44,Delayed
+SH1385,Delhi,Mumbai,13164,Ocean,CONCOR,6741,14742.53,37.646,25855738.85,Rainy,Low,26,26.91,0.91,On Time
+SH1386,Delhi,Ahmedabad,7994,Air,CONCOR,9431,5272.93,17.238,45293314.76,Rainy,Low,6,8.12,2.12,Delayed
+SH1387,Ahmedabad,Delhi,868,Road,TCI,428,3355.96,13.033,17876360.41,Foggy,Low,2,2.68,0.68,On Time
+SH1388,Ahmedabad,Delhi,1521,Road,SCI,8931,45732.27,129.833,176478309.58,Sunny,Moderate,4,5.2,1.2,Delayed
+SH1389,Kochi,Hyderabad,1318,Road,Blue Dart,2989,26428.06,139.531,109007546.37,Stormy,Low,3,4.42,1.42,Delayed
+SH1390,Ahmedabad,Mumbai,1186,Rail,SCI,5530,11177.85,22.712,33752643.45,Foggy,High,3,5.64,2.64,Delayed
+SH1391,Bengaluru,Mumbai,4990,Air,SCI,4048,7698.13,26.047,64986949.66,Sunny,Moderate,4,3.76,-0.24,On Time
+SH1392,Mumbai,Kochi,6644,Ocean,SCI,1095,3012.01,6.891,4532919.29,Sunny,Moderate,13,13.64,0.64,On Time
+SH1393,Delhi,Kochi,10468,Ocean,SCI,1601,7730.86,22.103,10530303.36,Stormy,Low,20,25.64,5.64,Delayed
+SH1394,Hyderabad,Kochi,356,Road,CONCOR,2975,31464.24,78.08,115055200.63,Rainy,Low,1,2.01,1.01,Delayed
+SH1395,Mumbai,Hyderabad,7510,Ocean,TCI,7917,94487.8,408.234,94980802.98,Sunny,Low,15,15.29,0.29,On Time
+SH1396,Delhi,Kochi,4228,Ocean,CONCOR,344,3396.43,7.43,5466458.58,Rainy,Low,10,18.6,8.6,Delayed
+SH1397,Hyderabad,Kochi,1291,Road,Blue Dart,8293,86442.98,355.037,385725684.8,Stormy,Low,3,4.68,1.68,Delayed
+SH1398,Kochi,Kolkata,9103,Air,CONCOR,290,601.96,1.78,5594926.36,Sunny,Low,7,6.75,-0.25,On Time
+SH1399,Chennai,Hyderabad,1722,Road,Blue Dart,2651,4581.48,9.472,14661668.05,Sunny,Low,4,2.7,-1.3,On Time
+SH1400,Hyderabad,Ahmedabad,4133,Air,CONCOR,1960,3771.49,21.59,54181241.94,Sunny,High,3,3.49,0.49,On Time
+SH1401,Kolkata,Chennai,1903,Road,Gati,2945,5386.17,12.165,23572903.33,Sunny,High,5,7.86,2.86,Delayed
+SH1402,Bengaluru,Ahmedabad,11329,Ocean,SCI,5375,36347.83,176.482,55999176.27,Sunny,Low,22,22.93,0.93,On Time
+SH1403,Kolkata,Delhi,6129,Air,CONCOR,8131,24684.5,114.765,361769454.35,Sunny,Low,5,5.61,0.61,On Time
+SH1404,Mumbai,Ahmedabad,1366,Rail,CONCOR,3190,6774.89,16.238,14838321.28,Foggy,Low,3,5.46,2.46,Delayed
+SH1405,Ahmedabad,Hyderabad,5728,Air,CONCOR,7531,57932.1,133.825,491453000.96,Sunny,Low,4,3.46,-0.54,On Time
+SH1406,Ahmedabad,Mumbai,7321,Air,TCI,6319,20733.52,69.32,306321150.3,Rainy,Moderate,6,8.64,2.64,Delayed
+SH1407,Kolkata,Delhi,7593,Air,Gati,8371,40595.85,122.627,442159924.9,Sunny,Moderate,6,9.12,3.12,Delayed
+SH1408,Chennai,Mumbai,3023,Rail,CONCOR,3238,16022.54,89.912,36171458.76,Sunny,Low,7,6.67,-0.33,On Time
+SH1409,Mumbai,Hyderabad,316,Road,Gati,2465,17718.39,44.28,65185672.59,Sunny,Low,1,1.08,0.08,On Time
+SH1410,Delhi,Bengaluru,1777,Road,TCI,2198,16249.35,73.712,87876968.93,Sunny,Low,5,6.74,1.74,Delayed
+SH1411,Ahmedabad,Kolkata,10246,Air,CONCOR,8000,23925.29,52.535,205991082.7,Sunny,Moderate,8,8.23,0.23,On Time
+SH1412,Mumbai,Kolkata,1354,Road,Gati,836,5887.94,14.128,30613779.49,Sunny,Moderate,3,4.58,1.58,Delayed
+SH1413,Bengaluru,Kochi,3149,Rail,TCI,7105,6908.08,16.821,19207372.7,Sunny,Low,7,7.12,0.12,On Time
+SH1414,Kochi,Mumbai,8582,Ocean,TCI,6081,36628.2,95.987,41905072.06,Sunny,Moderate,17,17.36,0.36,On Time
+SH1415,Chennai,Hyderabad,6506,Ocean,Gati,447,4364.7,17.124,7717509.95,Rainy,Moderate,13,14.13,1.13,Delayed
+SH1416,Bengaluru,Chennai,14151,Ocean,Gati,1530,7063.33,26.476,9081065.03,Sunny,Moderate,28,28.09,0.09,On Time
+SH1417,Kochi,Mumbai,277,Road,CONCOR,2771,31235.63,94.514,136271550.74,Sunny,Low,1,1.56,0.56,On Time
+SH1418,Kolkata,Chennai,3922,Rail,CONCOR,1847,5320.15,11.876,11424818.19,Sunny,Moderate,9,9.89,0.89,On Time
+SH1419,Bengaluru,Hyderabad,9085,Air,Blue Dart,4550,41414.94,93.533,535509569.64,Foggy,Moderate,7,8.83,1.83,Delayed
+SH1420,Delhi,Hyderabad,6309,Air,Gati,3290,32731.81,176.468,443294718.11,Stormy,Moderate,5,7.85,2.85,Delayed
+SH1421,Mumbai,Hyderabad,4018,Ocean,Gati,3133,29028.62,81.29,32549780.14,Rainy,Moderate,10,11.71,1.71,Delayed
+SH1422,Kochi,Mumbai,4739,Ocean,Gati,9377,24721.85,137.544,32792216.47,Rainy,Moderate,10,11.15,1.15,Delayed
+SH1423,Kochi,Ahmedabad,9413,Ocean,SCI,2653,27327.07,166.297,27373957.72,Rainy,Low,18,19.33,1.33,Delayed
+SH1424,Bengaluru,Kochi,2205,Rail,Blue Dart,8169,74556.52,240.593,259450565.28,Sunny,Low,5,4.49,-0.51,On Time
+SH1425,Delhi,Kolkata,6838,Ocean,Gati,6250,6915.97,15.649,7324683.95,Sunny,Moderate,13,13.66,0.66,On Time
+SH1426,Delhi,Ahmedabad,11393,Ocean,TCI,3924,40806.41,150.483,61584257.65,Sunny,Moderate,22,22.15,0.15,On Time
+SH1427,Mumbai,Chennai,1441,Road,TCI,992,3742.72,11.307,19822060.53,Rainy,Low,4,4.4,0.4,On Time
+SH1428,Chennai,Kochi,7887,Air,Gati,1977,4897.02,14.337,44818462.84,Sunny,Low,6,5.62,-0.38,On Time
+SH1429,Ahmedabad,Chennai,1331,Road,TCI,6787,32817.46,90.876,106723757.62,Rainy,High,3,5.75,2.75,Delayed
+SH1430,Kochi,Bengaluru,743,Road,SCI,9662,76908.11,165.487,361354605.75,Sunny,Low,2,2.98,0.98,On Time
+SH1431,Ahmedabad,Kochi,4876,Air,Blue Dart,6204,52744.19,109.776,789505423.25,Sunny,Low,4,4.26,0.26,On Time
+SH1432,Ahmedabad,Hyderabad,10311,Air,SCI,8496,45821.6,131.711,373311552.51,Sunny,Moderate,8,9.03,1.03,Delayed
+SH1433,Hyderabad,Chennai,396,Road,Gati,927,2456.28,8.031,10656318.0,Stormy,Low,1,3.0,2.0,Delayed
+SH1434,Bengaluru,Delhi,5223,Ocean,SCI,9009,107850.87,668.395,124879886.97,Sunny,Low,10,10.1,0.1,On Time
+SH1435,Delhi,Hyderabad,1372,Rail,SCI,4803,43323.04,127.458,136197981.45,Sunny,Moderate,3,3.34,0.34,On Time
+SH1436,Ahmedabad,Hyderabad,14921,Ocean,TCI,7845,30981.38,98.04,34114739.45,Sunny,Low,29,36.16,7.16,Delayed
+SH1437,Hyderabad,Chennai,1768,Rail,TCI,2312,1351.5,3.447,4267166.78,Sunny,Low,4,4.9,0.9,On Time
+SH1438,Kochi,Kolkata,8022,Ocean,Blue Dart,6667,47961.11,111.737,80865673.3,Sunny,Moderate,16,15.32,-0.68,On Time
+SH1439,Ahmedabad,Hyderabad,11211,Ocean,Gati,3367,23277.48,137.644,41348961.66,Rainy,Low,22,23.05,1.05,Delayed
+SH1440,Hyderabad,Bengaluru,7157,Air,TCI,917,8002.55,16.31,75302753.28,Sunny,Low,5,4.41,-0.59,On Time
+SH1441,Ahmedabad,Hyderabad,5381,Ocean,CONCOR,1517,13068.31,39.298,13913881.76,Foggy,Moderate,10,14.83,4.83,Delayed
+SH1442,Delhi,Mumbai,6516,Air,CONCOR,3605,25098.93,132.674,307877069.33,Rainy,Moderate,5,7.13,2.13,Delayed
+SH1443,Ahmedabad,Mumbai,12283,Ocean,TCI,5061,34384.46,74.481,40597233.07,Sunny,Low,24,24.41,0.41,On Time
+SH1444,Chennai,Delhi,1610,Road,Gati,4422,22158.96,72.263,110391587.76,Sunny,Low,4,4.06,0.06,On Time
+SH1445,Kochi,Ahmedabad,12564,Ocean,SCI,5666,62101.33,408.12,101906673.84,Foggy,Low,25,26.89,1.89,Delayed
+SH1446,Kolkata,Delhi,11449,Air,TCI,9794,28903.41,63.732,424617165.24,Sunny,High,9,9.36,0.36,On Time
+SH1447,Kochi,Bengaluru,14153,Ocean,Blue Dart,772,5813.49,20.774,9351626.77,Sunny,Low,28,27.63,-0.37,On Time
+SH1448,Kolkata,Delhi,1119,Road,TCI,2094,13421.42,31.298,52867387.66,Rainy,Low,3,4.37,1.37,Delayed
+SH1449,Kochi,Bengaluru,10194,Air,TCI,6723,53951.97,118.476,523821446.76,Sunny,High,8,8.19,0.19,On Time
+SH1450,Kolkata,Mumbai,9654,Air,Blue Dart,6906,22830.86,46.75,335772743.83,Sunny,Low,8,7.67,-0.33,On Time
+SH1451,Kolkata,Mumbai,13365,Ocean,TCI,3432,3661.56,12.839,4602272.54,Sunny,Moderate,26,26.65,0.65,On Time
+SH1452,Delhi,Kolkata,9003,Ocean,Gati,6656,47459.06,96.038,55192279.62,Rainy,Moderate,18,25.66,7.66,Delayed
+SH1453,Delhi,Chennai,6603,Ocean,Gati,8227,33411.43,69.863,51079448.29,Sunny,Low,13,12.77,-0.23,On Time
+SH1454,Mumbai,Ahmedabad,7209,Ocean,Blue Dart,5221,15431.93,52.507,23940891.76,Sunny,Low,14,13.38,-0.62,On Time
+SH1455,Kochi,Bengaluru,7127,Ocean,TCI,3445,31301.05,202.716,46994381.37,Sunny,Low,14,14.77,0.77,On Time
+SH1456,Delhi,Mumbai,265,Road,TCI,2631,10516.34,24.227,40191541.16,Sunny,Moderate,1,2.7,1.7,Delayed
+SH1457,Kochi,Mumbai,9183,Air,SCI,5716,34044.5,127.593,410413102.0,Stormy,Moderate,7,12.93,5.93,Delayed
+SH1458,Kochi,Ahmedabad,8934,Ocean,SCI,5235,58584.73,302.584,88350448.82,Sunny,Moderate,17,17.4,0.4,On Time
+SH1459,Hyderabad,Bengaluru,8845,Ocean,Gati,4145,38669.92,203.646,58039013.19,Stormy,Moderate,17,20.77,3.77,Delayed
+SH1460,Ahmedabad,Hyderabad,8285,Air,SCI,7695,48021.76,189.22,473292484.71,Sunny,High,6,6.7,0.7,On Time
+SH1461,Delhi,Hyderabad,5932,Ocean,Blue Dart,3585,6191.96,16.409,10458963.92,Stormy,Moderate,11,15.8,4.8,Delayed
+SH1462,Kochi,Ahmedabad,3564,Air,CONCOR,2550,28927.97,79.553,400502438.34,Rainy,Low,2,2.74,0.74,On Time
+SH1463,Kolkata,Kochi,10207,Ocean,SCI,2469,19810.11,39.67,20265076.29,Sunny,Moderate,20,21.21,1.21,Delayed
+SH1464,Delhi,Chennai,7433,Air,CONCOR,8688,17167.7,45.469,255410331.67,Foggy,Moderate,6,7.57,1.57,Delayed
+SH1465,Kochi,Mumbai,4211,Air,SCI,3235,13211.77,39.573,111803092.7,Foggy,Low,3,6.23,3.23,Delayed
+SH1466,Bengaluru,Hyderabad,3102,Rail,TCI,9849,43779.74,114.18,95414707.67,Sunny,Low,7,7.4,0.4,On Time
+SH1467,Delhi,Kochi,3961,Rail,Gati,8236,17115.33,35.793,44771604.92,Sunny,Moderate,9,9.75,0.75,On Time
+SH1468,Kochi,Kolkata,3700,Rail,TCI,2361,24089.0,79.419,62611929.24,Rainy,Low,9,10.02,1.02,Delayed
+SH1469,Kolkata,Bengaluru,3838,Air,Blue Dart,3865,7482.66,22.41,65596290.09,Sunny,High,3,2.87,-0.13,On Time
+SH1470,Mumbai,Ahmedabad,1825,Road,SCI,1890,14543.5,41.169,72904821.43,Rainy,Low,5,6.88,1.88,Delayed
+SH1471,Mumbai,Ahmedabad,1747,Rail,Blue Dart,9959,42610.2,118.103,109255473.55,Stormy,Low,4,6.23,2.23,Delayed
+SH1472,Delhi,Hyderabad,3251,Rail,TCI,6770,4877.32,16.193,10036398.64,Foggy,Low,8,9.73,1.73,Delayed
+SH1473,Kochi,Chennai,5892,Air,Blue Dart,5627,51927.27,159.67,746843745.98,Sunny,Moderate,4,4.04,0.04,On Time
+SH1474,Kochi,Ahmedabad,2602,Rail,Blue Dart,8064,49788.56,106.143,180434995.55,Sunny,Low,6,4.87,-1.13,On Time
+SH1475,Mumbai,Kolkata,3175,Air,Gati,6064,14799.91,30.271,165317720.16,Foggy,Moderate,2,3.71,1.71,Delayed
+SH1476,Kochi,Bengaluru,5040,Air,Blue Dart,9857,52871.48,123.401,475297916.2,Sunny,Moderate,4,4.37,0.37,On Time
+SH1477,Hyderabad,Mumbai,3231,Rail,TCI,1632,5810.19,35.503,16252508.09,Stormy,Moderate,8,11.43,3.43,Delayed
+SH1478,Bengaluru,Mumbai,1037,Rail,CONCOR,8082,95645.69,245.033,232067611.14,Stormy,Low,3,5.65,2.65,Delayed
+SH1479,Kolkata,Bengaluru,11926,Ocean,TCI,8747,98543.97,205.616,109070068.76,Stormy,Moderate,23,31.13,8.13,Delayed
+SH1480,Mumbai,Bengaluru,3309,Rail,Blue Dart,6583,57752.42,361.308,153437344.65,Rainy,Low,8,9.37,1.37,Delayed
+SH1481,Chennai,Mumbai,12511,Ocean,SCI,9797,97247.82,194.584,110629338.76,Sunny,Moderate,25,24.99,-0.01,On Time
+SH1482,Bengaluru,Chennai,1597,Road,SCI,9168,40885.08,238.235,204154399.46,Rainy,Low,4,5.55,1.55,Delayed
+SH1483,Mumbai,Kolkata,8675,Ocean,Blue Dart,1214,13257.08,66.885,13332009.39,Sunny,Low,17,16.29,-0.71,On Time
+SH1484,Ahmedabad,Chennai,551,Road,Gati,8062,82183.0,268.519,404737509.54,Rainy,Low,1,1.65,0.65,On Time
+SH1485,Hyderabad,Kochi,8492,Ocean,CONCOR,2123,16562.99,36.755,20697224.06,Sunny,High,16,16.3,0.3,On Time
+SH1486,Kolkata,Mumbai,11129,Ocean,Gati,8838,68122.08,425.549,102232476.72,Sunny,Moderate,22,22.31,0.31,On Time
+SH1487,Delhi,Mumbai,1338,Road,TCI,4426,36027.21,133.344,111353038.31,Rainy,High,3,5.84,2.84,Delayed
+SH1488,Chennai,Mumbai,10867,Air,Blue Dart,8018,44828.46,110.34,431748831.72,Stormy,Moderate,9,12.09,3.09,Delayed
+SH1489,Delhi,Bengaluru,14912,Ocean,CONCOR,6034,36872.88,166.477,54812063.7,Sunny,High,29,29.41,0.41,On Time
+SH1490,Mumbai,Delhi,5392,Ocean,Gati,727,369.75,1.033,578369.48,Rainy,Low,10,10.75,0.75,On Time
+SH1491,Delhi,Ahmedabad,1501,Road,CONCOR,5832,33533.14,165.757,184889259.89,Sunny,Low,4,4.83,0.83,On Time
+SH1492,Ahmedabad,Kolkata,6123,Air,Gati,7114,79361.88,199.078,867620969.95,Rainy,Low,5,6.91,1.91,Delayed
+SH1493,Chennai,Mumbai,1595,Road,TCI,4278,49588.93,197.327,214016028.77,Foggy,Low,4,4.7,0.7,On Time
+SH1494,Kolkata,Bengaluru,5316,Ocean,SCI,3220,21358.41,42.837,34866541.23,Stormy,Moderate,10,12.66,2.66,Delayed
+SH1495,Mumbai,Chennai,5238,Ocean,Gati,1956,10154.15,20.593,15293120.59,Rainy,Low,10,11.05,1.05,Delayed
+SH1496,Delhi,Mumbai,1972,Rail,Blue Dart,1478,15087.63,75.91,43911121.06,Sunny,Low,4,4.3,0.3,On Time
+SH1497,Delhi,Hyderabad,8326,Ocean,TCI,5107,14353.12,33.241,24028728.96,Sunny,High,16,20.7,4.7,Delayed
+SH1498,Kochi,Ahmedabad,7677,Ocean,SCI,6413,42770.92,131.231,50321442.27,Rainy,Low,15,16.34,1.34,Delayed
+SH1499,Bengaluru,Hyderabad,837,Rail,TCI,9802,61625.51,147.499,175587028.68,Sunny,Moderate,3,3.67,0.67,On Time
+SH1500,Bengaluru,Kolkata,1720,Rail,Blue Dart,2468,19485.36,46.74,58916492.12,Sunny,Low,4,3.84,-0.16,On Time
+SH1501,Kolkata,Ahmedabad,5781,Ocean,Blue Dart,6393,41491.5,107.982,68237450.32,Sunny,Low,11,18.07,7.07,Delayed
+SH1502,Kochi,Bengaluru,7243,Ocean,Blue Dart,5145,45172.91,243.641,67011112.97,Sunny,Moderate,14,13.07,-0.93,On Time
+SH1503,Mumbai,Kolkata,1528,Road,Gati,3211,3249.06,12.934,13777387.25,Sunny,Moderate,4,5.32,1.32,Delayed
+SH1504,Ahmedabad,Delhi,10956,Air,Blue Dart,2283,15205.75,52.804,211928898.35,Sunny,Moderate,9,8.84,-0.16,On Time
+SH1505,Delhi,Mumbai,14165,Ocean,Blue Dart,9796,31747.64,74.197,43451265.53,Sunny,Low,28,27.85,-0.15,On Time
+SH1506,Bengaluru,Kolkata,11385,Ocean,SCI,4367,17605.6,108.472,21680274.99,Rainy,Moderate,22,23.41,1.41,Delayed
+SH1507,Mumbai,Delhi,9402,Ocean,TCI,9331,12887.58,33.701,14943800.77,Sunny,Low,18,18.59,0.59,On Time
+SH1508,Bengaluru,Kochi,1142,Road,SCI,9386,26086.12,57.201,103763483.27,Rainy,Low,3,4.93,1.93,Delayed
+SH1509,Kochi,Chennai,3495,Air,SCI,5872,68876.39,244.511,996159431.96,Rainy,Low,2,3.71,1.71,Delayed
+SH1510,Kochi,Chennai,2933,Rail,CONCOR,5071,9162.94,60.533,34352374.0,Stormy,Moderate,7,9.43,2.43,Delayed
+SH1511,Bengaluru,Hyderabad,1849,Road,CONCOR,3485,2465.06,13.266,10185437.04,Foggy,Moderate,5,7.1,2.1,Delayed
+SH1512,Kochi,Mumbai,6345,Air,Gati,4031,24608.49,66.729,359857539.18,Rainy,Moderate,5,7.28,2.28,Delayed
+SH1513,Hyderabad,Bengaluru,9123,Air,Gati,1224,5852.59,24.474,66852179.03,Sunny,High,7,9.16,2.16,Delayed
+SH1514,Mumbai,Chennai,14794,Ocean,Gati,1591,10437.9,30.119,11518045.05,Sunny,Low,29,28.94,-0.06,On Time
+SH1515,Kolkata,Kochi,8072,Air,CONCOR,5513,11355.16,56.502,146277408.6,Rainy,Moderate,6,7.52,1.52,Delayed
+SH1516,Hyderabad,Delhi,1043,Road,Blue Dart,1436,1915.63,4.836,7874633.32,Foggy,Moderate,2,2.88,0.88,On Time
+SH1517,Delhi,Hyderabad,11809,Air,SCI,6502,33232.75,121.844,445647265.8,Stormy,Low,9,12.46,3.46,Delayed
+SH1518,Mumbai,Bengaluru,838,Road,TCI,6104,28794.41,153.955,135651321.5,Sunny,High,2,5.63,3.63,Delayed
+SH1519,Kolkata,Bengaluru,14606,Ocean,Gati,6085,14180.05,51.761,18609399.78,Sunny,Moderate,29,28.17,-0.83,On Time
+SH1520,Delhi,Kolkata,3368,Rail,CONCOR,259,633.47,2.938,1278639.86,Sunny,Moderate,8,8.63,0.63,On Time
+SH1521,Delhi,Ahmedabad,11314,Ocean,TCI,262,2159.08,4.346,3673836.54,Sunny,Moderate,22,21.8,-0.2,On Time
+SH1522,Delhi,Chennai,915,Road,CONCOR,6956,27721.44,74.245,110082354.64,Foggy,Low,2,4.4,2.4,Delayed
+SH1523,Bengaluru,Kochi,11173,Ocean,TCI,5296,53007.56,152.791,84824684.78,Rainy,Low,22,23.99,1.99,Delayed
+SH1524,Hyderabad,Delhi,7232,Air,CONCOR,1827,20909.24,79.836,294332877.37,Stormy,Low,6,9.05,3.05,Delayed
+SH1525,Kochi,Ahmedabad,8656,Ocean,SCI,1292,846.79,3.057,1240470.41,Stormy,High,17,21.19,4.19,Delayed
+SH1526,Bengaluru,Delhi,11280,Ocean,SCI,5374,38357.71,101.825,37767447.33,Rainy,Moderate,22,23.59,1.59,Delayed
+SH1527,Kolkata,Mumbai,4469,Air,TCI,3672,19635.57,107.275,174362747.32,Sunny,Moderate,3,3.68,0.68,On Time
+SH1528,Kolkata,Chennai,2238,Rail,CONCOR,2952,15656.37,89.17,38810829.88,Foggy,Moderate,5,6.69,1.69,Delayed
+SH1529,Ahmedabad,Kochi,439,Road,Gati,8698,50181.85,104.381,242468780.81,Sunny,Moderate,1,1.5,0.5,On Time
+SH1530,Bengaluru,Ahmedabad,14171,Ocean,CONCOR,1728,4128.38,12.652,6842258.84,Rainy,Low,28,30.0,2.0,Delayed
+SH1531,Kochi,Mumbai,1612,Road,SCI,717,6049.31,16.09,32744144.33,Rainy,Moderate,4,6.77,2.77,Delayed
+SH1532,Ahmedabad,Mumbai,4391,Ocean,Blue Dart,1125,10267.71,26.147,18401165.2,Sunny,Moderate,10,10.26,0.26,On Time
+SH1533,Mumbai,Chennai,1337,Road,TCI,6721,7979.62,17.309,31242879.09,Sunny,Moderate,3,4.26,1.26,Delayed
+SH1534,Delhi,Ahmedabad,7403,Ocean,Blue Dart,6272,17500.79,58.594,22468634.37,Foggy,Moderate,14,14.61,0.61,On Time
+SH1535,Hyderabad,Kochi,7036,Air,Gati,3777,35196.97,144.309,427137409.07,Rainy,High,5,6.45,1.45,Delayed
+SH1536,Kolkata,Kochi,4132,Ocean,Blue Dart,3435,6700.25,19.981,7945452.6,Sunny,Moderate,10,15.92,5.92,Delayed
+SH1537,Kochi,Delhi,4963,Air,Gati,1016,1614.25,9.995,18554525.28,Rainy,Low,4,5.34,1.34,Delayed
+SH1538,Kolkata,Mumbai,327,Road,TCI,9068,32486.5,74.851,103542817.99,Rainy,Low,1,3.19,2.19,Delayed
+SH1539,Delhi,Chennai,1288,Rail,Gati,406,3107.16,9.165,10290373.15,Rainy,Moderate,3,5.08,2.08,Delayed
+SH1540,Ahmedabad,Bengaluru,5739,Air,CONCOR,9560,22774.5,92.229,192685671.48,Rainy,Low,4,4.99,0.99,On Time
+SH1541,Ahmedabad,Kochi,14844,Ocean,Blue Dart,1016,6051.51,39.426,6240339.7,Stormy,Moderate,29,34.82,5.82,Delayed
+SH1542,Delhi,Bengaluru,4103,Air,Blue Dart,9661,8214.41,45.182,114859812.77,Rainy,Moderate,3,3.78,0.78,On Time
+SH1543,Bengaluru,Mumbai,1646,Road,SCI,6998,83860.18,528.466,441251224.67,Sunny,High,4,7.4,3.4,Delayed
+SH1544,Hyderabad,Kolkata,772,Road,Gati,664,6959.79,21.422,22293433.79,Rainy,Moderate,2,4.34,2.34,Delayed
+SH1545,Mumbai,Delhi,992,Rail,CONCOR,3895,8417.17,27.622,21755720.54,Rainy,Moderate,3,3.47,0.47,On Time
+SH1546,Hyderabad,Ahmedabad,4604,Ocean,TCI,7190,76474.41,213.749,112463637.19,Sunny,Moderate,10,10.36,0.36,On Time
+SH1547,Hyderabad,Bengaluru,4665,Ocean,TCI,1129,12006.31,67.734,18654390.6,Foggy,Low,10,11.49,1.49,Delayed
+SH1548,Mumbai,Chennai,1302,Road,TCI,3323,27232.89,92.753,116885331.06,Sunny,Low,3,3.29,0.29,On Time
+SH1549,Kochi,Kolkata,13821,Ocean,CONCOR,4848,8974.96,37.678,15557518.05,Rainy,Moderate,27,29.02,2.02,Delayed
+SH1550,Chennai,Delhi,5353,Ocean,CONCOR,5037,33616.33,70.357,40978842.28,Stormy,Moderate,10,16.28,6.28,Delayed
+SH1551,Bengaluru,Ahmedabad,6098,Ocean,SCI,5111,31066.39,91.563,51179479.96,Sunny,High,12,12.92,0.92,On Time
+SH1552,Delhi,Kolkata,2115,Rail,TCI,5970,66819.85,138.702,141743805.74,Sunny,Moderate,5,6.65,1.65,Delayed
+SH1553,Ahmedabad,Kolkata,997,Rail,CONCOR,1129,4039.77,13.754,14432269.74,Stormy,Moderate,3,5.75,2.75,Delayed
+SH1554,Delhi,Kolkata,12791,Ocean,Gati,6041,43700.32,131.465,47450367.93,Sunny,Moderate,25,25.67,0.67,On Time
+SH1555,Bengaluru,Chennai,348,Road,TCI,839,4226.33,9.887,15986179.13,Rainy,High,1,4.34,3.34,Delayed
+SH1556,Ahmedabad,Hyderabad,3511,Rail,Gati,471,3785.67,16.345,13297939.21,Sunny,Moderate,8,7.58,-0.42,On Time
+SH1557,Chennai,Kolkata,6258,Air,Gati,4861,40277.93,93.425,480642117.93,Rainy,Moderate,5,5.32,0.32,On Time
+SH1558,Delhi,Mumbai,12934,Ocean,TCI,2188,8712.24,28.034,14349835.19,Foggy,Moderate,25,26.79,1.79,Delayed
+SH1559,Hyderabad,Mumbai,498,Road,Blue Dart,8887,13574.08,44.766,49596359.04,Sunny,Moderate,1,1.0,0.0,On Time
+SH1560,Chennai,Kochi,13552,Ocean,Gati,2311,10121.32,55.797,17891430.51,Stormy,Moderate,27,29.5,2.5,Delayed
+SH1561,Kolkata,Bengaluru,1625,Road,SCI,8073,91161.51,434.35,304591350.61,Rainy,High,4,8.34,4.34,Delayed
+SH1562,Bengaluru,Delhi,3440,Air,SCI,9771,67572.43,263.432,581474457.96,Sunny,Moderate,2,2.1,0.1,On Time
+SH1563,Chennai,Hyderabad,7264,Air,SCI,1515,17745.96,76.722,251443923.31,Sunny,Low,6,6.11,0.11,On Time
+SH1564,Hyderabad,Kochi,1618,Rail,Gati,1174,6708.57,13.519,14059851.26,Sunny,Moderate,4,5.27,1.27,Delayed
+SH1565,Delhi,Ahmedabad,579,Road,Blue Dart,2451,12790.22,47.987,43133532.8,Sunny,Moderate,1,1.0,0.0,On Time
+SH1566,Kolkata,Ahmedabad,820,Road,CONCOR,3006,21546.29,58.272,86433081.65,Rainy,Moderate,2,4.61,2.61,Delayed
+SH1567,Delhi,Bengaluru,4936,Air,CONCOR,3141,30739.92,93.708,257692732.62,Rainy,High,4,5.93,1.93,Delayed
+SH1568,Kolkata,Mumbai,1809,Road,Gati,3251,3865.89,11.674,13031901.97,Foggy,Low,5,6.09,1.09,Delayed
+SH1569,Delhi,Kochi,14386,Ocean,CONCOR,9404,21939.92,44.885,37920724.59,Sunny,Low,28,35.25,7.25,Delayed
+SH1570,Chennai,Ahmedabad,11612,Ocean,SCI,6795,37148.69,130.285,57188627.36,Rainy,Low,23,23.97,0.97,On Time
+SH1571,Mumbai,Chennai,1649,Road,Blue Dart,8213,32759.1,113.947,115242345.28,Rainy,High,4,5.57,1.57,Delayed
+SH1572,Bengaluru,Kochi,8922,Ocean,Blue Dart,3233,8786.18,40.51,14108513.58,Sunny,Moderate,17,16.51,-0.49,On Time
+SH1573,Delhi,Ahmedabad,1773,Road,TCI,2561,15501.3,40.71,68181164.68,Sunny,High,5,6.92,1.92,Delayed
+SH1574,Mumbai,Kochi,6175,Air,Gati,9475,50695.08,220.03,476381694.11,Sunny,Moderate,5,5.31,0.31,On Time
+SH1575,Hyderabad,Kochi,11844,Ocean,CONCOR,9541,28400.04,112.63,31385346.72,Sunny,High,23,23.38,0.38,On Time
+SH1576,Ahmedabad,Bengaluru,1975,Road,CONCOR,8677,60805.98,166.39,191248356.69,Sunny,Moderate,5,5.25,0.25,On Time
+SH1577,Bengaluru,Ahmedabad,7346,Ocean,CONCOR,7074,42192.63,161.632,67664119.65,Sunny,Low,14,14.74,0.74,On Time
+SH1578,Mumbai,Kochi,3955,Rail,Blue Dart,3010,32043.57,159.06,103951417.76,Foggy,Moderate,9,10.46,1.46,Delayed
+SH1579,Kolkata,Kochi,9108,Ocean,Blue Dart,2160,10397.47,31.687,12768059.99,Foggy,High,18,19.06,1.06,Delayed
+SH1580,Ahmedabad,Bengaluru,1029,Road,TCI,795,5898.42,34.446,24416455.42,Rainy,Moderate,2,4.59,2.59,Delayed
+SH1581,Kochi,Delhi,1024,Road,SCI,3176,3059.23,7.087,12302732.9,Stormy,High,2,5.99,3.99,Delayed
+SH1582,Hyderabad,Kochi,694,Road,Blue Dart,8579,94224.31,347.733,442214414.06,Sunny,Low,1,1.0,0.0,On Time
+SH1583,Mumbai,Bengaluru,6158,Ocean,SCI,3279,9491.61,39.936,15537393.14,Sunny,Low,12,12.91,0.91,On Time
+SH1584,Bengaluru,Delhi,1122,Road,CONCOR,8049,73229.77,213.659,381722650.02,Foggy,Moderate,3,4.67,1.67,Delayed
+SH1585,Kochi,Delhi,8243,Ocean,Blue Dart,9630,54177.35,122.396,64068633.95,Sunny,Moderate,16,15.52,-0.48,On Time
+SH1586,Kolkata,Bengaluru,9439,Ocean,Blue Dart,6499,72954.22,256.817,114742251.0,Sunny,Low,18,17.74,-0.26,On Time
+SH1587,Chennai,Kolkata,8725,Ocean,Gati,6337,61662.48,260.798,105792735.62,Foggy,High,17,18.9,1.9,Delayed
+SH1588,Hyderabad,Bengaluru,8302,Air,CONCOR,1356,15094.56,45.382,122173379.77,Sunny,High,6,6.11,0.11,On Time
+SH1589,Kochi,Chennai,5019,Ocean,Gati,1453,1277.04,3.582,1788229.61,Sunny,Low,10,10.11,0.11,On Time
+SH1590,Mumbai,Hyderabad,776,Road,Blue Dart,1839,18649.41,49.209,70357562.62,Foggy,Low,2,3.62,1.62,Delayed
+SH1591,Mumbai,Kolkata,8348,Ocean,TCI,1231,3617.31,19.366,5564357.21,Sunny,Moderate,16,15.41,-0.59,On Time
+SH1592,Ahmedabad,Delhi,11283,Air,SCI,3289,21843.61,47.713,237443731.38,Sunny,Low,9,9.8,0.8,On Time
+SH1593,Ahmedabad,Mumbai,10981,Ocean,Gati,414,3188.62,8.3,3399318.44,Foggy,Low,21,22.69,1.69,Delayed
+SH1594,Kochi,Delhi,3967,Rail,SCI,402,1616.54,4.26,3909939.21,Sunny,High,9,10.76,1.76,Delayed
+SH1595,Hyderabad,Chennai,4865,Ocean,Gati,5379,41612.06,105.411,64804215.24,Sunny,High,10,10.15,0.15,On Time
+SH1596,Kolkata,Mumbai,8108,Ocean,CONCOR,9341,41866.92,96.755,52725857.07,Sunny,High,16,15.07,-0.93,On Time
+SH1597,Bengaluru,Delhi,1204,Road,SCI,4268,39987.26,173.982,219654558.92,Rainy,Low,3,4.12,1.12,Delayed
+SH1598,Delhi,Chennai,10313,Air,Blue Dart,5358,52574.62,114.214,517400178.86,Sunny,Moderate,8,8.09,0.09,On Time
+SH1599,Ahmedabad,Mumbai,6240,Air,CONCOR,4943,30364.77,100.044,404525042.14,Sunny,High,5,5.88,0.88,On Time
+SH1600,Ahmedabad,Hyderabad,6597,Ocean,Blue Dart,4940,34610.1,86.494,60487106.27,Foggy,High,13,13.88,0.88,On Time
+SH1601,Kochi,Hyderabad,1995,Road,Blue Dart,9311,41401.36,119.466,133915130.23,Stormy,Low,5,7.32,2.32,Delayed
+SH1602,Kolkata,Hyderabad,5933,Air,Gati,5056,58817.92,139.101,479786269.34,Rainy,Moderate,4,7.49,3.49,Delayed
+SH1603,Kolkata,Bengaluru,14093,Ocean,CONCOR,8428,57747.7,344.397,57566383.74,Rainy,Moderate,28,29.02,1.02,Delayed
+SH1604,Hyderabad,Kochi,11759,Air,SCI,7052,34849.0,109.005,365390565.0,Sunny,High,9,9.57,0.57,On Time
+SH1605,Delhi,Mumbai,10203,Ocean,SCI,306,3645.95,9.578,3654638.5,Sunny,High,20,20.41,0.41,On Time
+SH1606,Mumbai,Kochi,1271,Road,Blue Dart,4201,42801.2,106.251,138995357.91,Sunny,Moderate,3,1.89,-1.11,On Time
+SH1607,Delhi,Mumbai,7515,Air,SCI,9826,9499.14,20.219,131382283.16,Sunny,Moderate,6,10.41,4.41,Delayed
+SH1608,Ahmedabad,Delhi,4246,Ocean,TCI,9033,107289.63,655.195,162020433.15,Sunny,High,10,9.62,-0.38,On Time
+SH1609,Bengaluru,Ahmedabad,5108,Air,Gati,3664,9801.55,27.947,93180443.5,Stormy,High,4,9.59,5.59,Delayed
+SH1610,Delhi,Ahmedabad,1019,Road,Blue Dart,7888,16884.46,51.449,88592609.6,Sunny,Moderate,2,2.15,0.15,On Time
+SH1611,Bengaluru,Kolkata,1772,Road,Blue Dart,7764,48194.21,141.514,168103892.18,Stormy,High,5,8.52,3.52,Delayed
+SH1612,Delhi,Ahmedabad,3296,Rail,TCI,9686,26513.5,65.29,60179241.79,Stormy,Moderate,8,9.42,1.42,Delayed
+SH1613,Hyderabad,Mumbai,14576,Ocean,CONCOR,3791,19455.54,54.638,20135444.9,Sunny,Low,29,29.29,0.29,On Time
+SH1614,Ahmedabad,Mumbai,2366,Rail,Blue Dart,9727,114024.9,455.752,312618007.64,Rainy,Low,5,5.13,0.13,On Time
+SH1615,Chennai,Kolkata,10641,Air,CONCOR,3938,15618.13,42.315,141403616.94,Sunny,Moderate,8,8.35,0.35,On Time
+SH1616,Chennai,Hyderabad,8311,Ocean,Blue Dart,8898,13609.33,45.091,17132329.91,Rainy,Low,16,16.42,0.42,On Time
+SH1617,Kochi,Mumbai,3822,Rail,SCI,3189,15910.97,53.84,44885812.54,Sunny,Low,9,9.3,0.3,On Time
+SH1618,Chennai,Mumbai,3031,Rail,Gati,2226,12891.17,59.214,30528232.19,Sunny,High,7,8.15,1.15,Delayed
+SH1619,Bengaluru,Hyderabad,1187,Rail,Blue Dart,5951,54549.94,112.596,182805394.31,Stormy,Moderate,3,4.44,1.44,Delayed
+SH1620,Ahmedabad,Hyderabad,1345,Road,CONCOR,6487,48302.57,106.167,275183947.07,Rainy,Moderate,3,3.2,0.2,On Time
+SH1621,Mumbai,Chennai,8239,Ocean,Blue Dart,4478,46962.92,106.239,77945536.72,Rainy,Low,16,16.36,0.36,On Time
+SH1622,Ahmedabad,Delhi,4864,Ocean,SCI,8713,5635.59,12.385,7524983.81,Sunny,Low,10,9.32,-0.68,On Time
+SH1623,Mumbai,Kolkata,11287,Ocean,CONCOR,8173,91809.67,203.768,141610973.49,Sunny,Low,22,22.15,0.15,On Time
+SH1624,Bengaluru,Ahmedabad,10107,Ocean,SCI,9728,65596.86,148.573,69865557.53,Sunny,Moderate,20,19.72,-0.28,On Time
+SH1625,Delhi,Mumbai,727,Road,SCI,9950,7557.41,39.881,35226481.09,Stormy,Low,2,3.65,1.65,Delayed
+SH1626,Delhi,Mumbai,10282,Air,Gati,6299,43740.32,107.997,458569991.69,Rainy,Moderate,8,8.97,0.97,On Time
+SH1627,Chennai,Delhi,8512,Ocean,SCI,4312,11862.65,27.0,19666437.14,Sunny,High,17,17.5,0.5,On Time
+SH1628,Kolkata,Mumbai,2556,Rail,Blue Dart,9133,29608.39,61.731,90499590.65,Sunny,Moderate,6,6.35,0.35,On Time
+SH1629,Bengaluru,Hyderabad,3258,Rail,SCI,4149,27295.1,62.934,89723402.17,Rainy,Low,8,10.4,2.4,Delayed
+SH1630,Ahmedabad,Hyderabad,543,Road,Blue Dart,4311,38502.66,210.488,214487325.34,Rainy,Moderate,1,3.18,2.18,Delayed
+SH1631,Mumbai,Chennai,10152,Ocean,Blue Dart,5964,39644.96,102.629,51960924.22,Rainy,Moderate,20,20.17,0.17,On Time
+SH1632,Ahmedabad,Hyderabad,1488,Rail,Gati,9074,107867.71,483.078,217959092.94,Foggy,Low,3,4.76,1.76,Delayed
+SH1633,Mumbai,Ahmedabad,4952,Ocean,Blue Dart,2534,6478.61,13.912,8380966.37,Sunny,Moderate,10,9.08,-0.92,On Time
+SH1634,Mumbai,Bengaluru,544,Road,SCI,6889,48274.15,235.446,235435772.39,Rainy,Moderate,1,3.67,2.67,Delayed
+SH1635,Kolkata,Bengaluru,3073,Rail,CONCOR,7414,60606.03,366.54,155853753.39,Rainy,Low,7,7.92,0.92,On Time
+SH1636,Mumbai,Bengaluru,9729,Ocean,SCI,3733,22623.86,58.024,36523158.09,Sunny,High,19,19.85,0.85,On Time
+SH1637,Kolkata,Hyderabad,5142,Air,SCI,6234,49162.56,300.824,607170000.94,Stormy,Moderate,4,8.29,4.29,Delayed
+SH1638,Kochi,Hyderabad,3759,Rail,SCI,6526,61033.64,176.156,216362054.69,Rainy,Moderate,9,12.64,3.64,Delayed
+SH1639,Kochi,Kolkata,3358,Air,Gati,7548,18477.95,50.309,240821991.45,Rainy,Moderate,2,3.04,1.04,Delayed
+SH1640,Chennai,Ahmedabad,7722,Air,SCI,4235,45831.02,188.895,594834463.05,Sunny,Low,6,7.09,1.09,Delayed
+SH1641,Chennai,Ahmedabad,4501,Air,CONCOR,3130,2768.19,9.945,26739292.45,Sunny,Low,3,3.52,0.52,On Time
+SH1642,Chennai,Kochi,1588,Road,SCI,3966,4477.11,15.302,15723206.8,Sunny,Moderate,4,5.49,1.49,Delayed
+SH1643,Mumbai,Ahmedabad,5211,Ocean,TCI,1210,11878.1,65.752,17727277.54,Foggy,Low,10,17.6,7.6,Delayed
+SH1644,Bengaluru,Mumbai,378,Road,Gati,2010,11285.53,67.882,34720282.73,Foggy,Low,1,3.62,2.62,Delayed
+SH1645,Hyderabad,Kochi,1241,Road,Gati,641,4845.47,26.815,19776712.14,Rainy,Moderate,3,5.05,2.05,Delayed
+SH1646,Ahmedabad,Kolkata,11494,Air,SCI,882,3469.17,7.33,33334036.36,Rainy,Moderate,9,10.94,1.94,Delayed
+SH1647,Kolkata,Delhi,1230,Rail,CONCOR,8543,95070.88,599.677,286875762.75,Rainy,Low,3,4.43,1.43,Delayed
+SH1648,Chennai,Kolkata,3586,Rail,TCI,8311,85952.06,221.343,199968526.67,Sunny,High,8,9.7,1.7,Delayed
+SH1649,Bengaluru,Hyderabad,1571,Road,Gati,8285,84595.04,361.938,350601504.01,Rainy,Moderate,4,6.12,2.12,Delayed
+SH1650,Chennai,Hyderabad,3782,Rail,SCI,9500,66673.57,243.291,177818872.73,Sunny,Moderate,9,10.52,1.52,Delayed
+SH1651,Mumbai,Hyderabad,5189,Ocean,SCI,7392,42430.82,117.214,65392916.16,Sunny,High,10,9.64,-0.36,On Time
+SH1652,Delhi,Bengaluru,7023,Air,SCI,4017,12562.86,27.717,103433312.0,Foggy,Low,5,8.24,3.24,Delayed
+SH1653,Bengaluru,Mumbai,13447,Ocean,Blue Dart,939,3599.78,23.212,5193990.8,Sunny,Low,26,26.33,0.33,On Time
+SH1654,Delhi,Kolkata,1680,Road,Gati,5433,51231.01,124.285,200545825.86,Rainy,High,4,6.22,2.22,Delayed
+SH1655,Hyderabad,Kochi,2297,Rail,Blue Dart,1165,8141.3,25.209,26709798.59,Sunny,High,5,6.0,1.0,On Time
+SH1656,Hyderabad,Delhi,12051,Ocean,SCI,6695,40535.79,87.404,72374677.07,Sunny,Moderate,24,25.14,1.14,Delayed
+SH1657,Ahmedabad,Hyderabad,14944,Ocean,CONCOR,1934,3866.15,9.02,4993565.1,Sunny,High,29,28.86,-0.14,On Time
+SH1658,Chennai,Ahmedabad,9144,Air,Blue Dart,8954,74557.32,387.426,655831081.98,Sunny,Moderate,7,6.4,-0.6,On Time
+SH1659,Hyderabad,Chennai,1844,Road,TCI,8105,7534.07,24.638,25170900.61,Sunny,High,5,8.43,3.43,Delayed
+SH1660,Kochi,Ahmedabad,8008,Ocean,Blue Dart,9154,44728.29,224.422,66419393.29,Rainy,High,16,16.55,0.55,On Time
+SH1661,Kochi,Bengaluru,454,Road,Gati,4240,42667.54,210.591,134089310.8,Stormy,Low,1,2.04,1.04,Delayed
+SH1662,Kolkata,Bengaluru,7150,Air,SCI,4815,35859.72,75.093,345617339.82,Sunny,Low,5,7.07,2.07,Delayed
+SH1663,Mumbai,Bengaluru,10630,Air,SCI,2318,21252.53,69.334,216097941.78,Sunny,Low,8,8.94,0.94,On Time
+SH1664,Bengaluru,Kochi,1918,Rail,Blue Dart,7687,84579.65,232.999,252025954.61,Foggy,Moderate,4,5.54,1.54,Delayed
+SH1665,Delhi,Kolkata,12464,Ocean,Gati,4137,29113.85,104.989,46450925.51,Sunny,Moderate,24,31.75,7.75,Delayed
+SH1666,Kolkata,Delhi,3522,Rail,TCI,2600,10284.61,23.854,25464750.3,Rainy,Low,8,9.63,1.63,Delayed
+SH1667,Mumbai,Hyderabad,3009,Rail,SCI,8302,78291.27,178.92,164731903.81,Rainy,Low,7,8.02,1.02,Delayed
+SH1668,Mumbai,Ahmedabad,1098,Road,Gati,7049,72842.66,268.53,409980403.95,Foggy,Low,3,3.45,0.45,On Time
+SH1669,Hyderabad,Bengaluru,1858,Rail,Blue Dart,3709,7768.52,39.929,17925279.04,Foggy,Moderate,4,6.82,2.82,Delayed
+SH1670,Hyderabad,Chennai,885,Rail,TCI,1880,14598.97,60.831,53434349.58,Sunny,High,3,3.39,0.39,On Time
+SH1671,Mumbai,Hyderabad,5377,Ocean,CONCOR,5074,45292.14,116.117,75182598.29,Sunny,Moderate,10,10.08,0.08,On Time
+SH1672,Ahmedabad,Mumbai,5750,Ocean,CONCOR,4077,12062.68,64.531,18501473.43,Rainy,High,11,19.77,8.77,Delayed
+SH1673,Hyderabad,Bengaluru,530,Road,SCI,820,1193.06,5.501,5025636.65,Rainy,High,1,5.42,4.42,Delayed
+SH1674,Kochi,Kolkata,654,Road,Gati,4458,27597.37,67.342,140451169.38,Sunny,Low,1,1.0,0.0,On Time
+SH1675,Ahmedabad,Delhi,11989,Ocean,Blue Dart,6305,24178.76,65.327,25606963.69,Rainy,Low,23,22.87,-0.13,On Time
+SH1676,Delhi,Mumbai,1530,Road,Gati,8634,60627.78,175.021,260959545.23,Stormy,Low,4,6.49,2.49,Delayed
+SH1677,Chennai,Mumbai,1860,Road,Gati,5742,45452.78,161.824,253149434.91,Sunny,Low,5,5.57,0.57,On Time
+SH1678,Kochi,Kolkata,13304,Ocean,CONCOR,6115,60989.3,327.721,106861630.77,Stormy,Low,26,31.72,5.72,Delayed
+SH1679,Bengaluru,Kolkata,8712,Air,CONCOR,492,3750.27,9.927,35223465.58,Sunny,Moderate,7,6.97,-0.03,On Time
+SH1680,Mumbai,Delhi,1140,Rail,Blue Dart,7912,30771.51,204.28,73595666.56,Sunny,High,3,4.44,1.44,Delayed
+SH1681,Kolkata,Mumbai,9981,Air,Blue Dart,9571,41658.72,187.189,443439492.87,Sunny,Moderate,8,7.15,-0.85,On Time
+SH1682,Kochi,Kolkata,1690,Rail,CONCOR,5970,67311.25,238.66,212846906.83,Sunny,Low,4,4.12,0.12,On Time
+SH1683,Delhi,Hyderabad,1303,Road,SCI,9517,84829.3,304.649,281827851.09,Rainy,High,3,7.51,4.51,Delayed
+SH1684,Bengaluru,Kochi,7460,Air,CONCOR,320,1447.62,4.221,15224283.56,Sunny,Moderate,6,6.09,0.09,On Time
+SH1685,Mumbai,Bengaluru,8861,Ocean,SCI,7286,12168.91,72.779,11736474.6,Sunny,Moderate,17,16.9,-0.1,On Time
+SH1686,Hyderabad,Kochi,1698,Rail,SCI,6486,47315.55,100.752,160690887.51,Foggy,High,4,7.89,3.89,Delayed
+SH1687,Kochi,Delhi,719,Road,SCI,6761,42076.49,132.898,228812135.72,Sunny,Low,2,2.47,0.47,On Time
+SH1688,Delhi,Ahmedabad,2056,Rail,TCI,3755,6539.59,37.503,19819125.41,Rainy,Moderate,5,6.77,1.77,Delayed
+SH1689,Bengaluru,Delhi,10910,Air,Gati,3758,20949.55,134.047,178523150.18,Rainy,High,9,12.23,3.23,Delayed
+SH1690,Bengaluru,Chennai,1066,Road,SCI,8115,23447.17,149.252,101180326.83,Rainy,Low,3,4.95,1.95,Delayed
+SH1691,Chennai,Kolkata,1850,Road,CONCOR,8584,51355.24,209.839,160104773.19,Rainy,Low,5,6.24,1.24,Delayed
+SH1692,Ahmedabad,Delhi,2315,Rail,CONCOR,2917,5850.65,14.862,13811224.92,Sunny,Low,5,5.13,0.13,On Time
+SH1693,Kolkata,Bengaluru,1582,Road,SCI,7615,14904.05,42.803,61102812.19,Sunny,Low,4,4.66,0.66,On Time
+SH1694,Mumbai,Kolkata,3065,Rail,CONCOR,865,5948.28,27.935,16765685.94,Foggy,Moderate,7,10.21,3.21,Delayed
+SH1695,Hyderabad,Kolkata,1809,Road,Blue Dart,9079,40876.47,88.429,175419709.98,Rainy,High,5,7.53,2.53,Delayed
+SH1696,Kochi,Bengaluru,3747,Rail,Gati,397,2240.8,5.255,6906371.48,Sunny,Low,9,8.08,-0.92,On Time
+SH1697,Ahmedabad,Mumbai,6274,Ocean,CONCOR,2627,11101.08,31.227,11278838.88,Stormy,Moderate,12,16.26,4.26,Delayed
+SH1698,Bengaluru,Delhi,6285,Ocean,SCI,7095,82656.07,201.017,91541937.12,Sunny,Moderate,12,13.02,1.02,Delayed
+SH1699,Bengaluru,Hyderabad,6422,Ocean,SCI,2478,16581.33,53.649,18833107.87,Sunny,Low,12,12.29,0.29,On Time
+SH1700,Hyderabad,Kolkata,4754,Ocean,TCI,776,7181.62,14.828,12249610.31,Sunny,Low,10,10.15,0.15,On Time
+SH1701,Kolkata,Mumbai,3634,Air,Gati,1124,9583.98,63.659,135139441.44,Sunny,Moderate,3,4.11,1.11,Delayed
+SH1702,Kochi,Chennai,13443,Ocean,CONCOR,3872,5133.76,12.474,5157162.24,Rainy,Low,26,26.88,0.88,On Time
+SH1703,Ahmedabad,Delhi,2280,Rail,Blue Dart,8043,39352.55,81.159,101429477.28,Foggy,High,5,7.74,2.74,Delayed
+SH1704,Chennai,Bengaluru,12422,Ocean,CONCOR,9440,36737.72,236.495,42061334.99,Sunny,Moderate,24,24.39,0.39,On Time
+SH1705,Delhi,Kochi,2836,Rail,SCI,126,222.98,0.751,569472.33,Sunny,Low,7,7.95,0.95,On Time
+SH1706,Kochi,Hyderabad,6659,Air,TCI,2469,23927.67,51.511,349055585.62,Stormy,Low,5,8.81,3.81,Delayed
+SH1707,Ahmedabad,Bengaluru,445,Road,SCI,1708,15258.03,101.623,70581280.65,Foggy,Low,1,2.91,1.91,Delayed
+SH1708,Delhi,Chennai,1993,Rail,SCI,5729,30138.14,94.422,74174109.22,Sunny,Low,4,5.33,1.33,Delayed
+SH1709,Bengaluru,Kochi,9127,Air,Blue Dart,6726,55963.88,150.317,804026830.64,Sunny,Moderate,7,6.67,-0.33,On Time
+SH1710,Mumbai,Kolkata,8412,Ocean,TCI,9830,58132.33,127.11,84414880.64,Rainy,High,16,18.27,2.27,Delayed
+SH1711,Hyderabad,Ahmedabad,13643,Ocean,SCI,8604,68439.71,232.3,89020913.14,Rainy,Low,27,28.73,1.73,Delayed
+SH1712,Bengaluru,Delhi,3318,Air,Blue Dart,5738,61059.95,190.903,720155334.99,Foggy,High,2,3.04,1.04,Delayed
+SH1713,Kolkata,Ahmedabad,11874,Ocean,Gati,9975,82717.97,392.984,103346590.26,Sunny,Low,23,22.35,-0.65,On Time
+SH1714,Mumbai,Hyderabad,8656,Ocean,Blue Dart,5480,57792.72,138.598,80388792.85,Rainy,High,17,17.33,0.33,On Time
+SH1715,Chennai,Kolkata,9493,Ocean,Blue Dart,5664,30082.49,75.215,50641926.89,Sunny,Moderate,18,17.9,-0.1,On Time
+SH1716,Ahmedabad,Kolkata,4329,Ocean,TCI,6792,74553.61,149.824,78215488.17,Sunny,High,10,10.41,0.41,On Time
+SH1717,Chennai,Mumbai,5593,Air,SCI,9354,97439.23,390.99,1247932471.06,Rainy,Low,4,4.47,0.47,On Time
+SH1718,Hyderabad,Kolkata,906,Road,CONCOR,1467,9250.99,20.09,36936107.35,Sunny,Moderate,2,2.74,0.74,On Time
+SH1719,Kochi,Hyderabad,1224,Road,TCI,6443,19058.21,87.05,78861687.36,Sunny,Moderate,3,5.39,2.39,Delayed
+SH1720,Bengaluru,Chennai,14102,Ocean,Gati,5825,66773.31,208.8,118721315.87,Sunny,High,28,28.34,0.34,On Time
+SH1721,Delhi,Kochi,11217,Air,Gati,224,1393.95,6.196,11737732.97,Sunny,Low,9,8.59,-0.41,On Time
+SH1722,Kolkata,Chennai,10436,Air,SCI,5724,14460.17,39.926,149785027.85,Rainy,Low,8,9.04,1.04,Delayed
+SH1723,Kochi,Delhi,5018,Ocean,TCI,5243,2978.69,10.575,3017574.88,Foggy,Moderate,10,10.94,0.94,On Time
+SH1724,Hyderabad,Kochi,4107,Ocean,SCI,9214,83447.22,255.874,84861568.6,Rainy,High,10,11.86,1.86,Delayed
+SH1725,Kochi,Ahmedabad,4508,Ocean,TCI,3489,21634.4,83.325,34465322.66,Sunny,Low,10,10.31,0.31,On Time
+SH1726,Kolkata,Chennai,7065,Ocean,TCI,956,2413.93,5.885,2828490.09,Sunny,Low,14,14.04,0.04,On Time
+SH1727,Kochi,Hyderabad,13179,Ocean,CONCOR,2632,9856.29,42.55,15539633.81,Sunny,Moderate,26,26.11,0.11,On Time
+SH1728,Bengaluru,Kolkata,1050,Road,Gati,6146,15340.91,31.615,81510564.4,Sunny,Low,3,3.08,0.08,On Time
+SH1729,Ahmedabad,Bengaluru,1147,Rail,Blue Dart,4005,9574.02,22.191,32416965.19,Sunny,Low,3,1.96,-1.04,On Time
+SH1730,Mumbai,Ahmedabad,10630,Ocean,CONCOR,615,569.55,1.688,883958.07,Sunny,Low,21,20.87,-0.13,On Time
+SH1731,Hyderabad,Chennai,4540,Ocean,CONCOR,864,5119.37,15.823,8063417.61,Sunny,Moderate,10,10.81,0.81,On Time
+SH1732,Mumbai,Kochi,2079,Rail,TCI,6213,31939.85,161.363,92205470.27,Sunny,Moderate,5,6.14,1.14,Delayed
+SH1733,Delhi,Kochi,2935,Rail,TCI,2230,14500.02,70.95,45915384.84,Rainy,Low,7,7.09,0.09,On Time
+SH1734,Kolkata,Delhi,7859,Ocean,SCI,1233,7133.39,30.631,10606970.89,Sunny,High,15,15.48,0.48,On Time
+SH1735,Kochi,Hyderabad,5239,Ocean,Blue Dart,9574,42556.49,144.876,66607265.96,Rainy,High,10,9.71,-0.29,On Time
+SH1736,Bengaluru,Kochi,1392,Road,TCI,5822,60064.08,255.946,322600453.24,Sunny,Moderate,3,3.97,0.97,On Time
+SH1737,Bengaluru,Mumbai,1565,Road,SCI,5352,11549.24,24.464,48650432.32,Foggy,Moderate,4,7.27,3.27,Delayed
+SH1738,Hyderabad,Ahmedabad,8889,Ocean,TCI,607,5354.66,12.13,6043779.25,Sunny,Moderate,17,16.93,-0.07,On Time
+SH1739,Delhi,Bengaluru,1473,Road,CONCOR,8956,14250.51,53.462,57482072.73,Sunny,Moderate,4,5.12,1.12,Delayed
+SH1740,Mumbai,Delhi,6063,Ocean,TCI,2027,1183.03,6.905,1561869.19,Sunny,Low,12,12.56,0.56,On Time
+SH1741,Kolkata,Ahmedabad,8798,Ocean,Blue Dart,9465,67710.07,384.099,118656487.51,Sunny,High,17,16.55,-0.45,On Time
+SH1742,Kolkata,Mumbai,2714,Rail,SCI,8889,15850.83,78.582,43577366.37,Sunny,Low,6,6.48,0.48,On Time
+SH1743,Bengaluru,Chennai,14155,Ocean,Blue Dart,3948,29905.99,67.997,32666323.08,Rainy,Moderate,28,28.48,0.48,On Time
+SH1744,Kolkata,Chennai,7939,Ocean,Gati,6071,49645.12,136.648,74496654.54,Sunny,High,15,14.91,-0.09,On Time
+SH1745,Kolkata,Delhi,1245,Road,SCI,9704,28858.6,65.755,163502401.7,Rainy,Low,3,3.54,0.54,On Time
+SH1746,Ahmedabad,Mumbai,6340,Ocean,SCI,9845,7934.38,22.886,9044986.54,Sunny,Moderate,12,13.3,1.3,Delayed
+SH1747,Bengaluru,Delhi,312,Road,SCI,5928,15697.22,52.508,70663274.34,Rainy,Moderate,1,3.53,2.53,Delayed
+SH1748,Mumbai,Delhi,3099,Rail,SCI,9912,47419.66,196.076,157884340.06,Stormy,Moderate,7,10.75,3.75,Delayed
+SH1749,Kochi,Mumbai,11074,Ocean,Blue Dart,4046,11501.77,42.736,15646049.46,Sunny,Moderate,22,21.95,-0.05,On Time
+SH1750,Mumbai,Bengaluru,14225,Ocean,TCI,2466,13598.89,36.703,16945360.94,Sunny,Moderate,28,27.57,-0.43,On Time
+SH1751,Hyderabad,Delhi,7364,Air,CONCOR,1527,2585.84,5.951,21390333.14,Rainy,Low,6,7.88,1.88,Delayed
+SH1752,Kolkata,Chennai,4056,Ocean,Gati,2293,22452.15,80.523,23913016.42,Sunny,Low,10,9.91,-0.09,On Time
+SH1753,Delhi,Bengaluru,6293,Ocean,Blue Dart,8903,79777.62,355.99,86322593.82,Sunny,High,12,11.72,-0.28,On Time
+SH1754,Kolkata,Delhi,4885,Air,TCI,1099,7080.27,16.214,83758822.34,Sunny,Low,4,4.04,0.04,On Time
+SH1755,Ahmedabad,Kolkata,1276,Road,TCI,2689,16941.72,54.211,62922196.01,Rainy,Low,3,3.68,0.68,On Time
+SH1756,Delhi,Mumbai,876,Road,CONCOR,3492,16604.42,40.571,85113201.45,Stormy,Moderate,2,3.06,1.06,Delayed
+SH1757,Mumbai,Ahmedabad,4376,Ocean,SCI,4263,50171.32,219.033,73963218.68,Sunny,Low,10,10.42,0.42,On Time
+SH1758,Kochi,Ahmedabad,8747,Air,TCI,7274,10851.83,22.712,115543491.36,Rainy,Moderate,7,8.02,1.02,Delayed
+SH1759,Mumbai,Bengaluru,780,Road,Blue Dart,670,2381.52,6.006,12325219.96,Sunny,Low,2,1.34,-0.66,On Time
+SH1760,Chennai,Kochi,9767,Ocean,TCI,7520,80652.01,257.06,121966261.09,Stormy,Low,19,26.03,7.03,Delayed
+SH1761,Kolkata,Delhi,13915,Ocean,TCI,6843,64536.19,188.0,97786392.73,Sunny,Moderate,27,27.78,0.78,On Time
+SH1762,Kolkata,Mumbai,7676,Air,Gati,2467,6064.12,16.322,66335976.3,Rainy,Low,6,7.68,1.68,Delayed
+SH1763,Kolkata,Delhi,2460,Rail,Gati,4704,35077.38,92.11,94819020.15,Foggy,Moderate,6,7.68,1.68,Delayed
+SH1764,Kolkata,Chennai,1688,Road,CONCOR,9593,34689.03,138.773,130452192.63,Stormy,Low,4,4.93,0.93,On Time
+SH1765,Delhi,Ahmedabad,335,Road,SCI,6708,36472.82,124.583,121932070.18,Rainy,Moderate,1,3.28,2.28,Delayed
+SH1766,Bengaluru,Delhi,1312,Road,TCI,4080,45856.65,105.8,241527134.21,Sunny,Moderate,3,4.73,1.73,Delayed
+SH1767,Ahmedabad,Kochi,7469,Ocean,CONCOR,2598,6138.09,15.528,10671183.92,Sunny,Low,14,15.11,1.11,Delayed
+SH1768,Mumbai,Bengaluru,4482,Air,CONCOR,7044,23527.5,55.169,292723181.05,Rainy,Low,3,4.04,1.04,Delayed
+SH1769,Chennai,Kochi,4730,Ocean,Blue Dart,8650,51669.35,267.85,89877015.53,Sunny,Moderate,10,8.5,-1.5,On Time
+SH1770,Hyderabad,Chennai,3666,Air,SCI,931,7911.75,20.054,102279518.05,Sunny,High,3,2.91,-0.09,On Time
+SH1771,Mumbai,Chennai,10803,Air,TCI,6624,64800.66,156.112,680313640.55,Foggy,Low,9,10.92,1.92,Delayed
+SH1772,Chennai,Kolkata,10263,Ocean,Blue Dart,5297,50547.69,145.128,89173368.38,Sunny,Low,20,19.31,-0.69,On Time
+SH1773,Hyderabad,Bengaluru,331,Road,TCI,3369,12450.04,24.958,67430507.5,Rainy,High,1,5.95,4.95,Delayed
+SH1774,Mumbai,Hyderabad,1827,Rail,TCI,7472,22769.14,69.163,67407432.65,Rainy,Moderate,4,6.89,2.89,Delayed
+SH1775,Kochi,Chennai,10715,Air,Blue Dart,8390,85872.88,262.762,1136634329.38,Sunny,Low,8,7.85,-0.15,On Time
+SH1776,Mumbai,Ahmedabad,5663,Ocean,SCI,2391,20794.23,60.404,35756106.49,Rainy,Moderate,11,12.24,1.24,Delayed
+SH1777,Chennai,Kochi,5028,Ocean,Gati,6068,15757.71,32.842,25121850.09,Sunny,Low,10,9.73,-0.27,On Time
+SH1778,Ahmedabad,Kochi,1778,Road,CONCOR,234,1110.13,2.756,3889152.1,Rainy,Moderate,5,6.76,1.76,Delayed
+SH1779,Chennai,Mumbai,5152,Ocean,Blue Dart,9446,47765.67,163.403,68356606.36,Sunny,High,10,10.21,0.21,On Time
+SH1780,Bengaluru,Mumbai,12890,Ocean,TCI,5831,60204.95,154.226,84098457.58,Stormy,Moderate,25,29.81,4.81,Delayed
+SH1781,Hyderabad,Bengaluru,295,Road,TCI,3809,29618.8,65.527,96332724.32,Stormy,Moderate,1,4.52,3.52,Delayed
+SH1782,Chennai,Mumbai,3830,Air,Blue Dart,4260,16859.12,47.851,179238889.49,Rainy,High,3,5.26,2.26,Delayed
+SH1783,Bengaluru,Kochi,1822,Road,Blue Dart,6796,52929.48,211.525,268505398.38,Rainy,Low,5,4.84,-0.16,On Time
+SH1784,Chennai,Mumbai,7866,Air,TCI,752,2978.35,14.285,32315721.2,Sunny,Moderate,6,5.79,-0.21,On Time
+SH1785,Mumbai,Hyderabad,1201,Road,SCI,9742,76728.21,182.884,262144124.19,Stormy,Low,3,5.04,2.04,Delayed
+SH1786,Delhi,Ahmedabad,10412,Ocean,Blue Dart,8557,32363.95,72.651,42824397.9,Stormy,High,20,21.94,1.94,Delayed
+SH1787,Bengaluru,Kochi,1103,Rail,TCI,7591,16774.09,54.161,44873586.36,Rainy,Low,3,4.34,1.34,Delayed
+SH1788,Bengaluru,Ahmedabad,959,Rail,Gati,6374,14249.29,33.337,50631074.71,Sunny,Moderate,3,3.69,0.69,On Time
+SH1789,Ahmedabad,Hyderabad,14528,Ocean,Gati,7691,5586.41,13.71,7648319.54,Stormy,High,29,34.54,5.54,Delayed
+SH1790,Bengaluru,Hyderabad,7605,Ocean,SCI,1657,3134.21,14.993,3840249.6,Rainy,Moderate,15,21.92,6.92,Delayed
+SH1791,Kolkata,Mumbai,4186,Air,Blue Dart,1823,4817.54,26.054,50792610.92,Rainy,Low,3,4.16,1.16,Delayed
+SH1792,Chennai,Kochi,12998,Ocean,Gati,2716,31218.32,138.651,43518274.46,Rainy,Moderate,25,26.09,1.09,Delayed
+SH1793,Delhi,Mumbai,4868,Ocean,TCI,4912,19669.18,44.919,22496466.88,Sunny,Moderate,10,10.36,0.36,On Time
+SH1794,Hyderabad,Kochi,8876,Ocean,TCI,4704,53154.02,138.023,54365221.45,Sunny,High,17,25.25,8.25,Delayed
+SH1795,Chennai,Kolkata,12562,Ocean,CONCOR,378,3104.55,8.603,3166361.85,Sunny,Low,25,25.49,0.49,On Time
+SH1796,Kolkata,Hyderabad,11379,Air,SCI,9351,53164.5,120.989,461788835.86,Rainy,Low,9,10.77,1.77,Delayed
+SH1797,Kolkata,Kochi,11508,Ocean,Gati,640,6492.81,18.354,7590133.9,Rainy,Moderate,23,22.97,-0.03,On Time
+SH1798,Kolkata,Delhi,313,Road,Blue Dart,1596,3659.03,16.463,17813681.1,Sunny,Moderate,1,1.0,0.0,On Time
+SH1799,Hyderabad,Bengaluru,6882,Ocean,Blue Dart,220,448.87,0.935,734142.65,Sunny,Moderate,13,12.46,-0.54,On Time
+SH1800,Kochi,Hyderabad,4679,Ocean,Gati,286,647.19,1.377,656316.66,Sunny,Low,10,10.84,0.84,On Time
+SH1801,Hyderabad,Mumbai,11080,Ocean,SCI,4992,49216.3,152.501,55737919.39,Rainy,Moderate,22,23.4,1.4,Delayed
+SH1802,Chennai,Kolkata,1048,Road,SCI,8303,31887.74,153.446,175095999.35,Sunny,Low,2,3.02,1.02,Delayed
+SH1803,Bengaluru,Kolkata,7759,Ocean,Blue Dart,5145,11935.21,30.341,12517750.3,Rainy,Low,15,15.37,0.37,On Time
+SH1804,Bengaluru,Mumbai,10321,Ocean,CONCOR,329,895.31,2.333,929793.58,Rainy,Low,20,21.66,1.66,Delayed
+SH1805,Kolkata,Kochi,12142,Ocean,SCI,8521,59399.22,123.56,66781310.69,Rainy,High,24,27.21,3.21,Delayed
+SH1806,Chennai,Kolkata,9101,Air,Blue Dart,6399,7340.69,24.952,88473071.27,Sunny,Moderate,7,7.24,0.24,On Time
+SH1807,Hyderabad,Bengaluru,7201,Ocean,TCI,8012,50756.28,191.445,70398033.64,Sunny,Low,14,15.07,1.07,Delayed
+SH1808,Bengaluru,Kolkata,4973,Ocean,CONCOR,1458,14739.01,30.17,19580345.72,Sunny,High,10,9.44,-0.56,On Time
+SH1809,Kolkata,Chennai,13063,Ocean,Blue Dart,5560,16527.4,41.27,26973480.12,Sunny,Low,26,31.1,5.1,Delayed
+SH1810,Delhi,Bengaluru,8717,Air,Blue Dart,8881,27566.1,86.618,316788385.42,Sunny,Low,7,7.17,0.17,On Time
+SH1811,Bengaluru,Mumbai,1572,Rail,SCI,1837,18263.21,82.427,42476370.43,Sunny,Low,3,3.98,0.98,On Time
+SH1812,Chennai,Ahmedabad,12125,Ocean,SCI,4023,21838.83,54.016,30322133.0,Rainy,Low,24,26.46,2.46,Delayed
+SH1813,Bengaluru,Ahmedabad,981,Rail,SCI,1946,21847.66,80.674,47766489.19,Sunny,Moderate,3,2.55,-0.45,On Time
+SH1814,Kolkata,Chennai,6304,Ocean,Blue Dart,3393,26670.17,55.709,25646639.67,Rainy,Moderate,12,12.52,0.52,On Time
+SH1815,Kochi,Mumbai,489,Road,Blue Dart,678,3624.48,8.472,15500073.39,Rainy,High,1,4.28,3.28,Delayed
+SH1816,Mumbai,Bengaluru,4825,Ocean,TCI,7326,8064.64,43.963,12205410.53,Rainy,Low,10,17.47,7.47,Delayed
+SH1817,Mumbai,Kochi,3163,Rail,Blue Dart,1069,8468.06,28.69,30723078.79,Stormy,Low,7,8.01,1.01,Delayed
+SH1818,Hyderabad,Delhi,7273,Ocean,CONCOR,5160,17799.97,49.747,17323254.82,Sunny,Moderate,14,17.96,3.96,Delayed
+SH1819,Ahmedabad,Chennai,3089,Air,TCI,1301,10355.21,25.724,145387570.79,Sunny,High,2,2.21,0.21,On Time
+SH1820,Chennai,Mumbai,11041,Ocean,TCI,8758,104644.43,546.165,101772775.16,Stormy,Low,22,27.84,5.84,Delayed
+SH1821,Kolkata,Hyderabad,5896,Ocean,CONCOR,3107,3106.21,6.66,4358494.3,Rainy,High,11,12.14,1.14,Delayed
+SH1822,Delhi,Ahmedabad,4965,Ocean,SCI,5014,23639.39,68.351,35908887.36,Foggy,Moderate,10,11.71,1.71,Delayed
+SH1823,Mumbai,Chennai,8053,Ocean,Gati,6189,9423.93,55.318,11993698.36,Rainy,Moderate,16,17.34,1.34,Delayed
+SH1824,Ahmedabad,Bengaluru,890,Road,SCI,6667,24721.98,115.992,111487694.93,Sunny,Low,2,2.99,0.99,On Time
+SH1825,Bengaluru,Mumbai,14009,Ocean,TCI,1434,1402.96,8.875,1786424.01,Sunny,Moderate,28,28.73,0.73,On Time
+SH1826,Hyderabad,Kolkata,509,Road,TCI,1729,12393.39,44.336,38280444.93,Sunny,Moderate,1,1.75,0.75,On Time
+SH1827,Kolkata,Delhi,10158,Ocean,Gati,7521,27790.68,61.15,40800900.92,Rainy,Moderate,20,20.35,0.35,On Time
+SH1828,Ahmedabad,Delhi,1126,Road,TCI,5330,8980.94,39.114,27376633.49,Sunny,Low,3,4.4,1.4,Delayed
+SH1829,Ahmedabad,Hyderabad,2684,Rail,TCI,8553,36822.39,150.647,106601319.59,Sunny,Moderate,6,6.98,0.98,On Time
+SH1830,Ahmedabad,Mumbai,11771,Ocean,TCI,1963,17308.04,40.199,28126290.23,Foggy,Moderate,23,25.37,2.37,Delayed
+SH1831,Delhi,Bengaluru,6673,Ocean,CONCOR,7132,71772.03,150.664,114123097.67,Stormy,Moderate,13,17.51,4.51,Delayed
+SH1832,Ahmedabad,Kochi,5899,Air,TCI,4839,53049.82,116.685,631697227.54,Sunny,Low,4,6.97,2.97,Delayed
+SH1833,Delhi,Ahmedabad,984,Road,Blue Dart,6207,67168.13,139.542,275209189.65,Sunny,Low,2,1.43,-0.57,On Time
+SH1834,Kolkata,Mumbai,8133,Air,CONCOR,2732,30690.79,117.6,447328876.83,Sunny,Low,6,6.59,0.59,On Time
+SH1835,Hyderabad,Kolkata,9942,Air,CONCOR,8809,28730.17,155.061,282172749.32,Sunny,Low,8,9.0,1.0,On Time
+SH1836,Kochi,Ahmedabad,3358,Rail,Blue Dart,8126,87493.89,230.937,277916439.21,Sunny,High,8,10.61,2.61,Delayed
+SH1837,Kolkata,Chennai,808,Road,TCI,7503,78539.8,236.759,446261669.76,Sunny,Low,2,2.77,0.77,On Time
+SH1838,Ahmedabad,Kolkata,999,Rail,SCI,3540,2805.95,7.483,9995645.55,Stormy,Moderate,3,5.95,2.95,Delayed
+SH1839,Hyderabad,Kochi,12080,Ocean,SCI,3885,7369.24,20.302,11424863.96,Sunny,Low,24,24.16,0.16,On Time
+SH1840,Kolkata,Mumbai,1726,Road,CONCOR,7382,20005.12,110.917,78748702.38,Sunny,Moderate,4,4.12,0.12,On Time
+SH1841,Delhi,Kolkata,3974,Air,Blue Dart,4419,5415.88,28.846,67978762.12,Sunny,Low,3,2.96,-0.04,On Time
+SH1842,Chennai,Kochi,1414,Road,Gati,496,4359.54,18.597,15202815.91,Foggy,Moderate,4,6.05,2.05,Delayed
+SH1843,Kolkata,Ahmedabad,4557,Ocean,Blue Dart,3780,14272.7,90.058,21195186.82,Sunny,Moderate,10,10.06,0.06,On Time
+SH1844,Chennai,Bengaluru,1250,Road,Gati,6034,50412.32,134.349,155293492.49,Stormy,Low,3,5.09,2.09,Delayed
+SH1845,Kochi,Delhi,5507,Ocean,TCI,6453,49623.55,112.887,75927276.02,Sunny,Low,11,11.25,0.25,On Time
+SH1846,Kochi,Ahmedabad,1108,Road,SCI,5101,54653.05,121.678,289000826.79,Sunny,Low,3,3.19,0.19,On Time
+SH1847,Kochi,Chennai,12955,Ocean,CONCOR,9666,19408.3,62.733,31845035.62,Stormy,Moderate,25,33.94,8.94,Delayed
+SH1848,Ahmedabad,Delhi,5031,Ocean,Blue Dart,6961,14681.22,44.543,17083539.17,Sunny,Low,10,10.66,0.66,On Time
+SH1849,Kochi,Mumbai,3910,Rail,Gati,4509,15240.87,32.998,39365630.77,Sunny,Low,9,8.55,-0.45,On Time
+SH1850,Kochi,Ahmedabad,5548,Ocean,Gati,8609,55788.26,143.787,57575202.21,Sunny,Moderate,11,10.51,-0.49,On Time
+SH1851,Delhi,Chennai,5395,Ocean,CONCOR,7579,41041.43,84.327,64321639.39,Rainy,Moderate,10,11.56,1.56,Delayed
+SH1852,Mumbai,Kochi,2657,Rail,SCI,111,1056.35,2.871,2695129.78,Rainy,Low,6,8.68,2.68,Delayed
+SH1853,Chennai,Mumbai,6796,Air,SCI,6316,35969.81,73.552,308869886.33,Sunny,Moderate,5,8.21,3.21,Delayed
+SH1854,Delhi,Bengaluru,4106,Ocean,TCI,4804,17136.3,35.083,18755030.95,Stormy,High,10,12.81,2.81,Delayed
+SH1855,Delhi,Ahmedabad,5301,Ocean,CONCOR,9000,13194.18,33.959,20204140.32,Rainy,High,10,16.8,6.8,Delayed
+SH1856,Mumbai,Kolkata,7517,Ocean,TCI,2060,11271.99,22.876,11660329.3,Foggy,Moderate,15,16.35,1.35,Delayed
+SH1857,Delhi,Kolkata,14265,Ocean,TCI,1401,7594.12,41.154,11239587.23,Sunny,Moderate,28,32.02,4.02,Delayed
+SH1858,Kolkata,Kochi,11778,Ocean,TCI,1474,6823.61,41.126,11397651.78,Foggy,High,23,24.53,1.53,Delayed
+SH1859,Delhi,Chennai,12702,Ocean,SCI,8733,102427.19,412.28,180362617.42,Sunny,Moderate,25,25.13,0.13,On Time
+SH1860,Delhi,Hyderabad,9176,Air,SCI,2663,25846.88,108.223,283213292.94,Stormy,High,7,10.07,3.07,Delayed
+SH1861,Delhi,Kochi,1452,Rail,Gati,4996,12059.17,28.359,29395415.64,Sunny,Low,3,2.19,-0.81,On Time
+SH1862,Hyderabad,Kochi,9749,Air,Blue Dart,9871,56638.99,128.628,839700399.43,Stormy,Low,8,9.02,1.02,Delayed
+SH1863,Kolkata,Chennai,1632,Road,TCI,7754,10328.39,24.293,41754443.07,Sunny,Moderate,4,5.38,1.38,Delayed
+SH1864,Kochi,Kolkata,687,Road,Blue Dart,3794,16311.85,53.163,64608396.95,Sunny,High,1,1.98,0.98,On Time
+SH1865,Ahmedabad,Kochi,5606,Air,CONCOR,575,638.13,2.715,8658336.31,Sunny,High,4,4.43,0.43,On Time
+SH1866,Hyderabad,Delhi,4014,Ocean,CONCOR,2465,4930.59,10.033,8329701.89,Stormy,High,10,14.05,4.05,Delayed
+SH1867,Delhi,Chennai,4791,Ocean,Blue Dart,2141,16057.22,55.41,24114863.19,Sunny,High,10,9.73,-0.27,On Time
+SH1868,Chennai,Mumbai,7270,Air,TCI,6814,9082.08,35.849,84961120.24,Rainy,Low,6,6.18,0.18,On Time
+SH1869,Chennai,Hyderabad,1861,Rail,SCI,4645,42210.76,94.553,112224896.42,Sunny,High,4,7.74,3.74,Delayed
+SH1870,Hyderabad,Kolkata,1437,Road,CONCOR,9180,19806.4,45.224,109264334.68,Rainy,Low,4,4.4,0.4,On Time
+SH1871,Mumbai,Kochi,14776,Ocean,Gati,1597,18291.48,41.361,31432751.51,Stormy,Moderate,29,31.68,2.68,Delayed
+SH1872,Mumbai,Bengaluru,4932,Ocean,SCI,7290,5054.04,15.22,7806817.18,Foggy,Low,10,16.97,6.97,Delayed
+SH1873,Mumbai,Chennai,9429,Ocean,CONCOR,7298,31071.4,95.735,54847071.2,Rainy,Moderate,18,19.15,1.15,Delayed
+SH1874,Bengaluru,Kochi,3033,Rail,Gati,6397,49369.67,187.97,120034272.46,Sunny,Low,7,7.26,0.26,On Time
+SH1875,Ahmedabad,Mumbai,11852,Ocean,CONCOR,8687,8065.18,50.654,12749960.58,Sunny,Moderate,23,22.7,-0.3,On Time
+SH1876,Mumbai,Kochi,11230,Ocean,Blue Dart,1611,3901.88,9.891,6303164.5,Sunny,Low,22,21.51,-0.49,On Time
+SH1877,Kolkata,Ahmedabad,3397,Rail,TCI,5372,10504.76,23.911,36906597.78,Sunny,Moderate,8,9.54,1.54,Delayed
+SH1878,Hyderabad,Bengaluru,9774,Ocean,Gati,229,910.83,2.126,1131302.73,Sunny,High,19,19.32,0.32,On Time
+SH1879,Kochi,Chennai,9856,Air,Blue Dart,6507,33894.4,70.091,476487677.93,Sunny,Low,8,7.91,-0.09,On Time
+SH1880,Kolkata,Chennai,7290,Ocean,CONCOR,9688,12982.84,45.978,20206819.32,Sunny,Moderate,14,14.22,0.22,On Time
+SH1881,Mumbai,Delhi,14942,Ocean,SCI,8113,32983.12,138.561,41178540.31,Sunny,Low,29,29.95,0.95,On Time
+SH1882,Kochi,Bengaluru,5755,Ocean,TCI,6277,16401.02,58.037,28066770.38,Sunny,Moderate,11,11.16,0.16,On Time
+SH1883,Chennai,Hyderabad,1701,Road,TCI,9684,76073.6,235.198,234880558.36,Sunny,Low,4,3.94,-0.06,On Time
+SH1884,Kolkata,Mumbai,9060,Air,Gati,8739,99727.08,372.896,1024850194.33,Foggy,Moderate,7,13.14,6.14,Delayed
+SH1885,Chennai,Kolkata,236,Road,CONCOR,8333,53163.72,111.882,285256766.82,Sunny,Low,1,1.36,0.36,On Time
+SH1886,Kolkata,Kochi,12455,Ocean,TCI,1336,10709.96,24.157,15006467.09,Sunny,Moderate,24,23.99,-0.01,On Time
+SH1887,Bengaluru,Mumbai,9467,Ocean,Blue Dart,8346,93635.25,233.48,150029868.41,Sunny,Moderate,18,18.06,0.06,On Time
+SH1888,Mumbai,Kolkata,9969,Ocean,Blue Dart,4989,51128.94,102.791,78262580.0,Foggy,High,19,20.78,1.78,Delayed
+SH1889,Kolkata,Ahmedabad,7097,Ocean,SCI,5151,30446.57,182.546,51787201.34,Sunny,Moderate,14,14.52,0.52,On Time
+SH1890,Kochi,Mumbai,4008,Ocean,Blue Dart,3717,11379.99,27.621,15103343.09,Rainy,Moderate,10,11.03,1.03,Delayed
+SH1891,Kochi,Delhi,1951,Road,TCI,7207,6804.06,34.911,24750047.62,Stormy,High,5,7.18,2.18,Delayed
+SH1892,Ahmedabad,Chennai,3473,Air,TCI,1842,6506.44,37.663,68852118.53,Stormy,Low,2,6.67,4.67,Delayed
+SH1893,Mumbai,Kochi,5615,Air,Blue Dart,1824,8584.42,17.797,88449966.16,Sunny,High,4,4.26,0.26,On Time
+SH1894,Kochi,Mumbai,3922,Air,Blue Dart,5808,68420.71,199.192,559346568.05,Rainy,Low,3,4.75,1.75,Delayed
+SH1895,Kolkata,Chennai,6060,Ocean,CONCOR,2437,2465.0,5.965,2530240.44,Rainy,Low,12,13.48,1.48,Delayed
+SH1896,Bengaluru,Delhi,14281,Ocean,Gati,4609,10471.05,27.827,11658756.99,Stormy,Low,28,37.49,9.49,Delayed
+SH1897,Chennai,Hyderabad,1504,Rail,SCI,5811,42824.26,135.794,137981844.72,Sunny,Low,3,3.97,0.97,On Time
+SH1898,Hyderabad,Kochi,1071,Rail,TCI,3421,9675.88,19.923,27858831.81,Foggy,Moderate,3,4.79,1.79,Delayed
+SH1899,Ahmedabad,Delhi,10980,Ocean,CONCOR,3762,9381.64,34.836,12225494.72,Sunny,Moderate,21,26.6,5.6,Delayed
+SH1900,Hyderabad,Kolkata,878,Road,Gati,5693,13714.07,53.71,61367040.26,Stormy,Low,2,3.38,1.38,Delayed
+SH1901,Ahmedabad,Kolkata,2046,Rail,SCI,2214,6242.48,20.78,17882060.13,Sunny,High,5,6.43,1.43,Delayed
+SH1902,Kochi,Mumbai,9571,Ocean,Blue Dart,108,282.84,1.51,501800.19,Sunny,Low,19,19.4,0.4,On Time
+SH1903,Mumbai,Ahmedabad,9765,Ocean,SCI,485,456.82,1.572,745173.12,Rainy,Moderate,19,20.31,1.31,Delayed
+SH1904,Ahmedabad,Mumbai,2126,Rail,Gati,5695,43836.53,102.48,109198240.15,Rainy,Moderate,5,6.86,1.86,Delayed
+SH1905,Mumbai,Hyderabad,7112,Air,Gati,9258,25527.11,115.107,319607501.02,Stormy,Moderate,5,10.07,5.07,Delayed
+SH1906,Ahmedabad,Chennai,3428,Rail,SCI,6814,46016.77,248.63,167099914.32,Sunny,Low,8,9.33,1.33,Delayed
+SH1907,Kochi,Kolkata,1330,Rail,TCI,5906,58594.32,329.25,204910226.54,Sunny,High,3,4.3,1.3,Delayed
+SH1908,Kochi,Chennai,5377,Air,Gati,1860,21375.22,49.695,270948276.24,Rainy,Moderate,4,5.31,1.31,Delayed
+SH1909,Bengaluru,Hyderabad,6596,Air,TCI,4089,15865.78,66.42,195779925.32,Rainy,Low,5,5.48,0.48,On Time
+SH1910,Ahmedabad,Mumbai,7055,Ocean,SCI,709,2105.49,4.763,2764605.9,Rainy,High,14,16.29,2.29,Delayed
+SH1911,Kochi,Hyderabad,6177,Air,TCI,4561,2435.9,10.366,25007873.08,Foggy,High,5,8.43,3.43,Delayed
+SH1912,Chennai,Kolkata,1458,Road,CONCOR,1616,3995.58,9.512,14521037.76,Sunny,High,4,7.73,3.73,Delayed
+SH1913,Hyderabad,Mumbai,729,Road,SCI,9508,86123.15,185.624,473985719.15,Sunny,Low,2,2.21,0.21,On Time
+SH1914,Delhi,Kochi,7635,Air,Gati,8711,43496.21,90.373,423058102.12,Rainy,Moderate,6,6.9,0.9,On Time
+SH1915,Delhi,Hyderabad,2472,Rail,SCI,4977,19672.05,67.815,63094282.65,Foggy,Low,6,8.8,2.8,Delayed
+SH1916,Mumbai,Bengaluru,826,Road,CONCOR,832,5011.19,11.022,20025351.24,Foggy,Moderate,2,3.17,1.17,Delayed
+SH1917,Delhi,Chennai,13034,Ocean,Gati,1160,12278.1,31.758,15468762.61,Rainy,Moderate,26,27.61,1.61,Delayed
+SH1918,Delhi,Bengaluru,699,Road,SCI,5681,28834.5,59.63,141560189.28,Sunny,High,1,4.74,3.74,Delayed
+SH1919,Mumbai,Ahmedabad,4197,Ocean,CONCOR,7901,28748.16,190.563,37637022.55,Rainy,Moderate,10,10.95,0.95,On Time
+SH1920,Kochi,Chennai,1389,Road,CONCOR,6705,74624.22,186.87,299980138.63,Rainy,Low,3,3.5,0.5,On Time
+SH1921,Delhi,Bengaluru,4568,Air,SCI,3331,6727.45,18.77,74980133.95,Sunny,Low,3,3.44,0.44,On Time
+SH1922,Mumbai,Ahmedabad,4347,Ocean,SCI,3392,2998.98,16.489,3002782.97,Sunny,Moderate,10,10.81,0.81,On Time
+SH1923,Chennai,Mumbai,9670,Air,TCI,4435,23037.83,93.709,205480490.2,Stormy,High,8,11.6,3.6,Delayed
+SH1924,Mumbai,Bengaluru,3907,Rail,SCI,3380,23457.36,76.25,73460866.79,Foggy,Moderate,9,9.65,0.65,On Time
+SH1925,Kolkata,Kochi,1925,Road,CONCOR,3189,11589.78,25.402,58866979.89,Sunny,Moderate,5,5.33,0.33,On Time
+SH1926,Chennai,Kolkata,5865,Ocean,Gati,1426,9231.35,29.457,15536451.36,Foggy,Moderate,11,12.19,1.19,Delayed
+SH1927,Bengaluru,Hyderabad,11046,Air,TCI,6500,51557.38,317.936,733258788.84,Rainy,Moderate,9,10.73,1.73,Delayed
+SH1928,Mumbai,Kochi,1554,Road,CONCOR,4571,37971.75,109.391,131820103.34,Sunny,High,4,6.39,2.39,Delayed
+SH1929,Kolkata,Chennai,590,Road,Blue Dart,4294,10147.83,24.821,42552181.04,Sunny,Moderate,1,2.06,1.06,Delayed
+SH1930,Ahmedabad,Hyderabad,9851,Air,Blue Dart,7393,52960.91,113.707,428100619.97,Sunny,Low,8,7.1,-0.9,On Time
+SH1931,Mumbai,Ahmedabad,1233,Road,Gati,2341,11193.77,45.133,42178625.91,Sunny,Low,3,4.01,1.01,Delayed
+SH1932,Ahmedabad,Delhi,3093,Rail,Gati,3129,13289.0,56.994,39030497.85,Foggy,Moderate,7,9.32,2.32,Delayed
+SH1933,Kochi,Delhi,9190,Air,TCI,2854,12162.47,37.91,177425902.29,Sunny,Low,7,7.31,0.31,On Time
+SH1934,Hyderabad,Mumbai,230,Road,CONCOR,8681,27135.11,171.002,110191303.24,Sunny,Moderate,1,1.72,0.72,On Time
+SH1935,Bengaluru,Mumbai,9378,Ocean,Blue Dart,355,593.64,1.839,917240.24,Sunny,Low,18,16.92,-1.08,On Time
+SH1936,Hyderabad,Bengaluru,2601,Rail,CONCOR,8418,67868.69,153.503,202057715.97,Sunny,Moderate,6,7.76,1.76,Delayed
+SH1937,Hyderabad,Kolkata,9768,Ocean,TCI,561,3027.99,14.05,4873779.84,Sunny,Low,19,19.65,0.65,On Time
+SH1938,Hyderabad,Kochi,14472,Ocean,SCI,2857,1464.21,3.147,2107004.62,Sunny,High,28,27.6,-0.4,On Time
+SH1939,Hyderabad,Ahmedabad,9274,Ocean,SCI,9878,110888.87,457.137,120415462.51,Sunny,Moderate,18,22.58,4.58,Delayed
+SH1940,Bengaluru,Hyderabad,8029,Ocean,Gati,6495,75384.88,493.09,128076297.89,Sunny,High,16,16.98,0.98,On Time
+SH1941,Hyderabad,Bengaluru,11399,Ocean,SCI,7004,72219.44,302.284,87930293.08,Stormy,Low,22,25.99,3.99,Delayed
+SH1942,Hyderabad,Chennai,9311,Ocean,TCI,8842,101452.86,507.772,157771549.15,Sunny,Low,18,18.71,0.71,On Time
+SH1943,Kochi,Delhi,312,Road,TCI,1984,3972.88,10.623,20237572.63,Stormy,Low,1,3.74,2.74,Delayed
+SH1944,Mumbai,Delhi,2066,Rail,CONCOR,2868,26702.23,153.53,92021159.46,Sunny,Moderate,5,6.16,1.16,Delayed
+SH1945,Delhi,Kolkata,10518,Air,CONCOR,1228,13562.11,30.287,156915410.09,Rainy,High,8,8.13,0.13,On Time
+SH1946,Kolkata,Kochi,1668,Road,SCI,5941,21681.83,60.366,112009381.24,Sunny,Low,4,4.67,0.67,On Time
+SH1947,Hyderabad,Mumbai,1817,Road,TCI,7452,35588.77,151.163,177202752.47,Sunny,High,5,7.21,2.21,Delayed
+SH1948,Delhi,Kolkata,14121,Ocean,Gati,2829,31264.79,101.66,49561419.04,Sunny,Low,28,28.86,0.86,On Time
+SH1949,Delhi,Kochi,3412,Rail,Blue Dart,6409,26297.56,73.181,72671662.04,Foggy,Low,8,8.9,0.9,On Time
+SH1950,Delhi,Ahmedabad,1221,Road,TCI,5384,49973.03,127.876,194829194.98,Rainy,Low,3,4.25,1.25,Delayed
+SH1951,Kolkata,Ahmedabad,9380,Ocean,Blue Dart,8120,82997.59,326.851,134858653.86,Sunny,High,18,18.19,0.19,On Time
+SH1952,Bengaluru,Kolkata,562,Road,CONCOR,3901,25738.2,64.925,96052605.51,Foggy,Moderate,1,3.59,2.59,Delayed
+SH1953,Kolkata,Bengaluru,11803,Ocean,TCI,7514,88389.65,282.81,145551108.29,Rainy,Moderate,23,24.49,1.49,Delayed
+SH1954,Bengaluru,Kolkata,8153,Air,CONCOR,2306,13993.85,31.727,199722952.84,Sunny,Low,6,6.41,0.41,On Time
+SH1955,Ahmedabad,Delhi,13447,Ocean,TCI,7757,31277.96,67.008,52867445.35,Sunny,Low,26,25.84,-0.16,On Time
+SH1956,Mumbai,Hyderabad,816,Rail,SCI,6526,54774.55,244.17,191753562.24,Sunny,Low,3,3.15,0.15,On Time
+SH1957,Bengaluru,Delhi,3461,Rail,SCI,6701,12225.2,41.269,30078159.74,Sunny,Moderate,8,9.8,1.8,Delayed
+SH1958,Delhi,Hyderabad,13388,Ocean,TCI,9038,79656.62,203.561,141251332.49,Stormy,Low,26,29.29,3.29,Delayed
+SH1959,Hyderabad,Bengaluru,11530,Ocean,TCI,3157,33515.75,122.167,35251183.44,Foggy,Moderate,23,24.64,1.64,Delayed
+SH1960,Ahmedabad,Mumbai,1982,Road,CONCOR,5070,45682.8,123.569,184523119.83,Sunny,Moderate,5,6.85,1.85,Delayed
+SH1961,Kochi,Kolkata,1750,Road,Blue Dart,4866,56791.68,316.762,308790875.72,Sunny,Low,5,4.91,-0.09,On Time
+SH1962,Hyderabad,Mumbai,953,Road,TCI,8265,71440.13,161.825,240268866.1,Stormy,Moderate,2,5.18,3.18,Delayed
+SH1963,Hyderabad,Mumbai,1855,Road,Blue Dart,6437,53491.35,147.594,242979221.02,Stormy,High,5,8.65,3.65,Delayed
+SH1964,Mumbai,Delhi,14041,Ocean,TCI,8540,30138.87,199.1,41476680.82,Sunny,Moderate,28,27.98,-0.02,On Time
+SH1965,Ahmedabad,Chennai,961,Road,Blue Dart,1486,16420.89,42.328,85344584.21,Sunny,Low,2,1.64,-0.36,On Time
+SH1966,Ahmedabad,Kochi,2065,Rail,TCI,703,711.72,1.676,2268778.03,Sunny,High,5,7.42,2.42,Delayed
+SH1967,Kolkata,Chennai,9360,Ocean,SCI,4161,8265.2,31.618,8314963.15,Rainy,High,18,19.54,1.54,Delayed
+SH1968,Ahmedabad,Kolkata,5011,Air,Gati,3094,29974.97,108.299,285428697.9,Foggy,Low,4,6.54,2.54,Delayed
+SH1969,Mumbai,Hyderabad,1665,Road,SCI,4433,25874.57,84.142,118836371.66,Sunny,Low,4,4.32,0.32,On Time
+SH1970,Kochi,Kolkata,1180,Rail,SCI,1578,12105.94,37.998,32699974.96,Foggy,High,3,6.96,3.96,Delayed
+SH1971,Ahmedabad,Mumbai,5787,Ocean,Gati,9578,44353.08,125.594,45334568.33,Sunny,High,11,10.96,-0.04,On Time
+SH1972,Ahmedabad,Delhi,572,Road,Blue Dart,7104,34653.3,102.381,187550638.25,Foggy,Low,1,1.81,0.81,On Time
+SH1973,Mumbai,Chennai,9064,Air,SCI,7194,65491.81,131.698,705841227.69,Sunny,Low,7,7.06,0.06,On Time
+SH1974,Chennai,Mumbai,11804,Ocean,Gati,5587,18007.89,55.258,21389582.3,Foggy,Moderate,23,24.28,1.28,Delayed
+SH1975,Mumbai,Bengaluru,6379,Ocean,Gati,9224,40132.29,128.426,69783096.88,Foggy,Low,12,12.14,0.14,On Time
+SH1976,Hyderabad,Mumbai,9518,Ocean,Gati,1982,22632.85,45.369,28861467.27,Rainy,High,19,19.05,0.05,On Time
+SH1977,Mumbai,Delhi,4987,Air,TCI,7723,80655.77,249.936,968274751.3,Rainy,Moderate,4,4.89,0.89,On Time
+SH1978,Delhi,Mumbai,7257,Air,TCI,518,5645.13,13.072,56006282.85,Stormy,High,6,12.36,6.36,Delayed
+SH1979,Hyderabad,Kolkata,1391,Road,Blue Dart,7815,84122.51,491.378,454172653.19,Rainy,Low,3,4.34,1.34,Delayed
+SH1980,Bengaluru,Delhi,4712,Ocean,Blue Dart,9923,42921.42,238.957,75248797.22,Rainy,Low,10,10.63,0.63,On Time
+SH1981,Chennai,Delhi,3355,Rail,Blue Dart,2460,1466.21,7.773,3546926.17,Sunny,High,8,10.34,2.34,Delayed
+SH1982,Bengaluru,Chennai,10553,Ocean,TCI,3144,12277.14,35.425,19158225.64,Rainy,Moderate,21,21.94,0.94,On Time
+SH1983,Kolkata,Delhi,856,Road,TCI,1087,9703.48,27.289,41102960.9,Stormy,Low,2,5.68,3.68,Delayed
+SH1984,Bengaluru,Chennai,1955,Road,SCI,4405,31479.99,94.085,109129216.0,Rainy,Moderate,5,7.31,2.31,Delayed
+SH1985,Kolkata,Ahmedabad,14663,Ocean,Blue Dart,6406,60171.88,172.087,62436460.05,Sunny,Moderate,29,29.47,0.47,On Time
+SH1986,Ahmedabad,Hyderabad,1014,Road,Gati,504,1662.42,3.637,5933824.54,Stormy,Moderate,2,6.27,4.27,Delayed
+SH1987,Bengaluru,Delhi,1620,Road,Blue Dart,5145,3299.71,9.223,17814176.42,Rainy,High,4,7.26,3.26,Delayed
+SH1988,Chennai,Kochi,6366,Ocean,SCI,6571,71472.63,167.546,93068699.47,Rainy,Moderate,12,13.64,1.64,Delayed
+SH1989,Kochi,Hyderabad,9943,Ocean,CONCOR,7496,66384.24,167.84,103675582.72,Sunny,Moderate,19,19.63,0.63,On Time
+SH1990,Kolkata,Delhi,4442,Ocean,Blue Dart,3986,21551.31,57.899,36190927.93,Sunny,Low,10,9.55,-0.45,On Time
+SH1991,Kolkata,Delhi,5825,Ocean,CONCOR,9865,11244.57,58.148,15510054.5,Sunny,Low,11,18.46,7.46,Delayed
+SH1992,Kolkata,Ahmedabad,9679,Air,CONCOR,2838,23650.43,79.871,305377107.01,Stormy,Moderate,8,11.47,3.47,Delayed
+SH1993,Kochi,Bengaluru,1331,Road,CONCOR,8470,101424.19,430.42,535558650.6,Stormy,Low,3,4.62,1.62,Delayed
+SH1994,Kolkata,Kochi,4937,Ocean,Blue Dart,7039,5221.43,16.679,6059571.75,Rainy,Moderate,10,9.68,-0.32,On Time
+SH1995,Kolkata,Mumbai,13886,Ocean,Gati,9631,106256.34,429.839,118776266.3,Sunny,Moderate,27,26.89,-0.11,On Time
+SH1996,Mumbai,Chennai,9735,Ocean,SCI,6663,79448.19,405.245,79559840.1,Rainy,High,19,20.95,1.95,Delayed
+SH1997,Delhi,Hyderabad,866,Road,Blue Dart,2284,15538.92,50.36,83519173.86,Sunny,Low,2,2.01,0.01,On Time
+SH1998,Delhi,Mumbai,10617,Air,Blue Dart,3765,38319.01,127.357,414203671.63,Sunny,Moderate,8,7.24,-0.76,On Time
+SH1999,Ahmedabad,Chennai,5269,Ocean,SCI,6766,49233.65,199.739,54510922.54,Stormy,High,10,13.22,3.22,Delayed
+SH2000,Kochi,Mumbai,10407,Air,Gati,7247,9513.25,28.035,135529323.0,Rainy,Moderate,8,9.41,1.41,Delayed
+SH2001,Bengaluru,Kolkata,1797,Road,Gati,3907,41230.94,170.232,147862582.54,Sunny,High,5,8.0,3.0,Delayed
+SH2002,Hyderabad,Ahmedabad,9758,Ocean,SCI,3101,17223.46,100.63,27372509.41,Rainy,Moderate,19,21.01,2.01,Delayed
+SH2003,Ahmedabad,Hyderabad,631,Road,CONCOR,1053,10047.99,24.308,36127688.05,Sunny,Moderate,1,1.39,0.39,On Time
+SH2004,Chennai,Kolkata,6999,Air,CONCOR,6677,79616.15,205.422,766139524.64,Sunny,Moderate,5,5.34,0.34,On Time
+SH2005,Hyderabad,Ahmedabad,10587,Ocean,Blue Dart,5141,9894.5,28.469,17413667.2,Stormy,Moderate,21,25.54,4.54,Delayed
+SH2006,Delhi,Chennai,4209,Ocean,Blue Dart,4995,6418.86,21.665,7487950.84,Sunny,High,10,9.35,-0.65,On Time
+SH2007,Bengaluru,Kochi,13094,Ocean,Blue Dart,5288,23723.9,107.577,38867969.03,Sunny,Low,26,26.67,0.67,On Time
+SH2008,Bengaluru,Kochi,2821,Rail,CONCOR,6182,26173.4,63.965,91843266.82,Sunny,Low,7,6.78,-0.22,On Time
+SH2009,Delhi,Mumbai,11129,Air,CONCOR,6784,69515.62,167.255,700687081.38,Sunny,Low,9,9.04,0.04,On Time
+SH2010,Ahmedabad,Chennai,14502,Ocean,Blue Dart,2787,3849.2,12.198,6288568.8,Stormy,Moderate,29,32.28,3.28,Delayed
+SH2011,Kochi,Mumbai,1029,Road,CONCOR,7300,59918.64,191.906,279917013.13,Sunny,Low,2,2.24,0.24,On Time
+SH2012,Kochi,Delhi,4002,Air,CONCOR,6494,10908.12,24.333,133183461.76,Foggy,Moderate,3,4.54,1.54,Delayed
+SH2013,Mumbai,Delhi,1381,Rail,Blue Dart,1817,11093.81,55.942,35260964.6,Rainy,Low,3,3.25,0.25,On Time
+SH2014,Ahmedabad,Kochi,11409,Ocean,Gati,5539,42783.79,125.27,49380525.54,Sunny,Moderate,22,22.27,0.27,On Time
+SH2015,Hyderabad,Mumbai,9438,Ocean,Blue Dart,523,1365.54,4.573,1760514.57,Rainy,High,18,19.55,1.55,Delayed
+SH2016,Hyderabad,Kolkata,3140,Rail,Blue Dart,9332,81304.09,205.315,249975641.74,Rainy,Moderate,7,8.24,1.24,Delayed
+SH2017,Kolkata,Hyderabad,11103,Ocean,SCI,982,3797.99,9.793,4652582.56,Stormy,Low,22,31.03,9.03,Delayed
+SH2018,Bengaluru,Delhi,9087,Ocean,CONCOR,4773,41812.14,172.301,61962476.4,Rainy,High,18,18.21,0.21,On Time
+SH2019,Ahmedabad,Delhi,12128,Ocean,CONCOR,2114,12859.89,48.089,13235097.36,Rainy,Low,24,25.6,1.6,Delayed
+SH2020,Kolkata,Bengaluru,12330,Ocean,TCI,6517,61102.17,131.578,75786271.87,Foggy,Low,24,24.9,0.9,On Time
+SH2021,Kochi,Ahmedabad,864,Rail,Blue Dart,4760,22893.87,149.895,73579661.81,Sunny,Moderate,3,3.56,0.56,On Time
+SH2022,Ahmedabad,Chennai,1432,Road,SCI,1536,14252.53,77.075,72778727.21,Sunny,Low,4,5.24,1.24,Delayed
+SH2023,Kochi,Bengaluru,1953,Road,Blue Dart,4240,36600.03,137.906,149305994.36,Rainy,Moderate,5,5.59,0.59,On Time
+SH2024,Chennai,Mumbai,1771,Road,TCI,8103,95907.63,426.515,444088176.67,Stormy,Low,5,7.05,2.05,Delayed
+SH2025,Bengaluru,Hyderabad,689,Road,CONCOR,4009,43093.3,133.883,199686027.31,Sunny,Low,1,1.66,0.66,On Time
+SH2026,Kochi,Kolkata,5550,Ocean,CONCOR,7191,78883.31,320.799,109198012.63,Foggy,Low,11,12.22,1.22,Delayed
+SH2027,Hyderabad,Kochi,2926,Rail,SCI,1608,4283.73,28.015,15839505.24,Sunny,High,7,9.55,2.55,Delayed
+SH2028,Kochi,Ahmedabad,7139,Ocean,CONCOR,4785,40945.53,108.001,40995031.21,Sunny,Low,14,18.54,4.54,Delayed
+SH2029,Kochi,Ahmedabad,1842,Rail,SCI,1284,14601.28,32.257,30916288.43,Rainy,Low,4,5.36,1.36,Delayed
+SH2030,Kolkata,Delhi,338,Road,Blue Dart,8388,28567.98,108.001,127662919.01,Sunny,High,1,3.19,2.19,Delayed
+SH2031,Hyderabad,Kolkata,6555,Ocean,TCI,1200,1673.96,5.165,1815268.42,Stormy,Moderate,13,17.88,4.88,Delayed
+SH2032,Bengaluru,Hyderabad,651,Road,Blue Dart,7210,65868.23,382.126,325459432.89,Rainy,High,1,1.7,0.7,On Time
+SH2033,Kochi,Delhi,3539,Air,TCI,4805,40081.09,118.103,590200719.99,Sunny,Moderate,2,2.54,0.54,On Time
+SH2034,Kochi,Hyderabad,5895,Ocean,Blue Dart,2550,16979.3,73.616,26907752.09,Rainy,Moderate,11,11.33,0.33,On Time
+SH2035,Ahmedabad,Chennai,8938,Air,CONCOR,801,6986.74,17.837,82621952.69,Rainy,High,7,8.54,1.54,Delayed
+SH2036,Hyderabad,Delhi,11648,Ocean,Gati,2364,18901.84,87.482,19146315.76,Sunny,Low,23,22.41,-0.59,On Time
+SH2037,Kochi,Mumbai,10209,Ocean,TCI,2306,17496.52,85.639,25272070.5,Stormy,Low,20,23.35,3.35,Delayed
+SH2038,Kolkata,Ahmedabad,5643,Ocean,SCI,7395,29255.05,144.551,33646753.09,Sunny,Moderate,11,11.86,0.86,On Time
+SH2039,Kochi,Ahmedabad,1853,Road,Gati,9266,19199.09,55.98,89282778.02,Rainy,Moderate,5,6.03,1.03,Delayed
+SH2040,Chennai,Kochi,7194,Ocean,Gati,5400,55678.22,245.373,56480465.08,Rainy,Low,14,19.42,5.42,Delayed
+SH2041,Kolkata,Kochi,5299,Ocean,Gati,3530,28378.84,83.533,45491806.66,Stormy,High,10,12.45,2.45,Delayed
+SH2042,Ahmedabad,Mumbai,5373,Ocean,CONCOR,9198,31097.56,174.674,40386830.19,Sunny,Low,10,10.36,0.36,On Time
+SH2043,Mumbai,Kochi,9970,Ocean,CONCOR,7350,26714.24,56.787,44237179.27,Foggy,Low,19,20.51,1.51,Delayed
+SH2044,Bengaluru,Delhi,10351,Ocean,SCI,734,5952.96,14.794,6991121.44,Sunny,Low,20,20.38,0.38,On Time
+SH2045,Bengaluru,Hyderabad,1783,Rail,TCI,2029,4151.85,16.522,13116752.92,Rainy,Moderate,4,6.16,2.16,Delayed
+SH2046,Chennai,Kolkata,12741,Ocean,SCI,6280,52118.35,111.898,66920746.47,Stormy,Moderate,25,27.81,2.81,Delayed
+SH2047,Chennai,Ahmedabad,7426,Air,SCI,1228,8689.62,47.35,79270277.03,Sunny,Low,6,6.62,0.62,On Time
+SH2048,Hyderabad,Kolkata,11388,Air,CONCOR,1342,11733.95,25.591,146332825.4,Sunny,Moderate,9,10.49,1.49,Delayed
+SH2049,Ahmedabad,Chennai,1426,Rail,CONCOR,7733,38409.14,87.845,107143713.43,Rainy,High,3,8.25,5.25,Delayed
+SH2050,Chennai,Kolkata,4543,Air,Blue Dart,5819,68915.43,207.135,949992563.88,Rainy,High,3,4.76,1.76,Delayed
+SH2051,Kolkata,Mumbai,5046,Air,Blue Dart,3271,36042.0,102.599,474577386.72,Sunny,Low,4,6.79,2.79,Delayed
+SH2052,Kolkata,Bengaluru,8318,Ocean,Blue Dart,2830,10668.18,26.661,15330015.86,Foggy,Low,16,20.36,4.36,Delayed
+SH2053,Bengaluru,Mumbai,6360,Ocean,SCI,1234,13983.15,31.25,23348357.67,Foggy,Moderate,12,13.6,1.6,Delayed
+SH2054,Chennai,Kochi,1860,Road,CONCOR,5319,23859.16,53.91,120666874.36,Sunny,Low,5,4.9,-0.1,On Time
+SH2055,Hyderabad,Mumbai,1933,Road,SCI,9510,31639.88,78.106,159119694.98,Sunny,Low,5,5.66,0.66,On Time
+SH2056,Ahmedabad,Delhi,1255,Road,CONCOR,9799,89598.02,398.39,443139554.92,Sunny,High,3,4.97,1.97,Delayed
+SH2057,Ahmedabad,Bengaluru,3569,Air,TCI,9636,86036.05,457.521,1141217885.89,Sunny,Low,2,2.58,0.58,On Time
+SH2058,Chennai,Mumbai,14970,Ocean,CONCOR,4721,10951.55,52.484,16602414.45,Rainy,Low,29,36.4,7.4,Delayed
+SH2059,Mumbai,Bengaluru,11707,Air,TCI,6433,5552.85,16.951,72967827.39,Sunny,Low,9,9.46,0.46,On Time
+SH2060,Kochi,Kolkata,9023,Ocean,Gati,1395,8206.37,35.438,11935837.26,Foggy,Moderate,18,18.92,0.92,On Time
+SH2061,Mumbai,Kochi,5223,Ocean,TCI,5042,8940.05,20.592,14811043.04,Stormy,Moderate,10,15.55,5.55,Delayed
+SH2062,Hyderabad,Mumbai,3207,Rail,Blue Dart,5077,38770.16,130.559,119150230.23,Stormy,Moderate,8,10.42,2.42,Delayed
+SH2063,Ahmedabad,Delhi,2108,Rail,CONCOR,8739,24308.94,59.813,74742739.31,Sunny,Low,5,4.51,-0.49,On Time
+SH2064,Hyderabad,Ahmedabad,2486,Rail,TCI,5062,34123.27,79.42,70411522.54,Foggy,Moderate,6,8.12,2.12,Delayed
+SH2065,Bengaluru,Ahmedabad,10066,Ocean,Blue Dart,9637,53025.84,153.452,53490288.4,Rainy,Low,20,20.74,0.74,On Time
+SH2066,Kochi,Hyderabad,14293,Ocean,CONCOR,9879,90185.99,247.749,94198543.52,Sunny,Moderate,28,27.59,-0.41,On Time
+SH2067,Delhi,Kochi,1807,Rail,Blue Dart,159,1197.11,2.512,2804186.42,Stormy,Low,4,5.2,1.2,Delayed
+SH2068,Ahmedabad,Mumbai,14860,Ocean,CONCOR,7070,37481.69,146.868,56655917.35,Foggy,Moderate,29,30.1,1.1,Delayed
+SH2069,Mumbai,Hyderabad,8167,Air,Blue Dart,8998,102094.69,222.223,876719556.41,Rainy,Low,6,7.17,1.17,Delayed
+SH2070,Chennai,Kolkata,5381,Ocean,CONCOR,1551,9124.15,40.351,11320943.29,Foggy,Moderate,10,10.97,0.97,On Time
+SH2071,Chennai,Bengaluru,8342,Ocean,CONCOR,1170,2889.71,5.922,4053254.96,Rainy,High,16,17.9,1.9,Delayed
+SH2072,Kochi,Chennai,6413,Ocean,Blue Dart,8704,53255.02,280.469,54880328.89,Sunny,Low,12,12.02,0.02,On Time
+SH2073,Delhi,Kolkata,11933,Air,TCI,6437,39772.21,87.239,565204350.58,Sunny,High,9,9.97,0.97,On Time
+SH2074,Ahmedabad,Mumbai,588,Road,Blue Dart,5993,57499.46,162.568,277192854.4,Sunny,Moderate,1,1.84,0.84,On Time
+SH2075,Delhi,Chennai,1190,Road,CONCOR,2716,3106.03,9.491,16637654.19,Sunny,Moderate,3,3.89,0.89,On Time
+SH2076,Ahmedabad,Chennai,4658,Ocean,TCI,5826,33203.4,76.134,46761184.03,Sunny,Moderate,10,10.07,0.07,On Time
+SH2077,Delhi,Bengaluru,1408,Road,TCI,3018,27736.45,114.203,107191886.55,Rainy,Low,4,5.83,1.83,Delayed
+SH2078,Chennai,Bengaluru,6155,Ocean,TCI,5410,28882.6,72.689,51339942.1,Stormy,Low,12,21.29,9.29,Delayed
+SH2079,Hyderabad,Mumbai,13821,Ocean,CONCOR,3039,23339.09,100.096,32272061.0,Foggy,High,27,28.44,1.44,Delayed
+SH2080,Hyderabad,Kochi,5808,Air,TCI,2228,8628.06,18.264,79396461.02,Sunny,Moderate,4,4.29,0.29,On Time
+SH2081,Delhi,Mumbai,10147,Air,CONCOR,5883,39692.17,89.94,348543583.25,Foggy,High,8,13.25,5.25,Delayed
+SH2082,Delhi,Mumbai,953,Road,CONCOR,3237,31845.16,146.163,116854334.33,Stormy,High,2,7.0,5.0,Delayed
+SH2083,Chennai,Hyderabad,7307,Ocean,SCI,6175,63238.42,186.531,82715381.48,Foggy,Moderate,14,16.75,2.75,Delayed
+SH2084,Hyderabad,Chennai,9717,Ocean,CONCOR,9347,26263.1,122.095,30832808.03,Sunny,Low,19,19.41,0.41,On Time
+SH2085,Kolkata,Mumbai,3904,Rail,TCI,2184,14737.21,29.981,38940999.21,Sunny,High,9,11.74,2.74,Delayed
+SH2086,Mumbai,Kolkata,6245,Air,SCI,6766,35077.32,70.211,422840999.79,Sunny,Moderate,5,6.03,1.03,Delayed
+SH2087,Ahmedabad,Hyderabad,9015,Air,Blue Dart,2571,8177.28,19.442,70432895.97,Sunny,Moderate,7,6.37,-0.63,On Time
+SH2088,Kochi,Delhi,643,Road,Gati,1301,4717.72,9.575,17735397.05,Rainy,Low,1,2.14,1.14,Delayed
+SH2089,Hyderabad,Ahmedabad,6172,Ocean,CONCOR,6324,10363.29,24.952,15140915.53,Sunny,Low,12,12.04,0.04,On Time
+SH2090,Chennai,Hyderabad,1412,Road,Gati,7134,8040.09,30.294,34315191.76,Sunny,Low,4,4.41,0.41,On Time
+SH2091,Kochi,Hyderabad,2270,Rail,CONCOR,2916,33970.3,161.17,81198271.24,Rainy,Low,5,5.8,0.8,On Time
+SH2092,Kochi,Mumbai,11309,Ocean,TCI,8136,23343.81,61.562,23261017.12,Sunny,Moderate,22,25.63,3.63,Delayed
+SH2093,Ahmedabad,Chennai,7325,Ocean,Gati,3193,24122.35,81.997,36405247.66,Foggy,High,14,13.99,-0.01,On Time
+SH2094,Bengaluru,Ahmedabad,5157,Ocean,CONCOR,7699,87459.26,240.43,136551367.67,Stormy,Low,10,17.05,7.05,Delayed
+SH2095,Kolkata,Ahmedabad,8231,Air,CONCOR,875,5914.03,13.706,69543448.83,Foggy,Low,6,8.6,2.6,Delayed
+SH2096,Ahmedabad,Kolkata,708,Road,Blue Dart,431,1647.02,5.766,7752897.08,Rainy,High,2,4.62,2.62,Delayed
+SH2097,Bengaluru,Hyderabad,5333,Ocean,Blue Dart,1844,9284.46,18.746,12274907.65,Sunny,Low,10,9.8,-0.2,On Time
+SH2098,Bengaluru,Kochi,9927,Air,TCI,9792,62118.58,229.371,577784273.57,Sunny,Moderate,8,8.41,0.41,On Time
+SH2099,Ahmedabad,Kolkata,2493,Rail,CONCOR,6760,73684.51,409.538,175301192.76,Stormy,Moderate,6,8.6,2.6,Delayed
+SH2100,Chennai,Hyderabad,11709,Air,Gati,9024,41910.6,139.975,623354143.64,Stormy,High,9,13.66,4.66,Delayed
+SH2101,Kolkata,Mumbai,9253,Ocean,SCI,6035,13128.23,32.474,14890903.19,Sunny,Moderate,18,18.27,0.27,On Time
+SH2102,Kolkata,Mumbai,1256,Rail,SCI,3076,1890.71,7.043,5100406.86,Sunny,Moderate,3,4.13,1.13,Delayed
+SH2103,Ahmedabad,Chennai,5238,Ocean,CONCOR,3648,5802.33,21.379,5748473.1,Sunny,Moderate,10,9.9,-0.1,On Time
+SH2104,Kochi,Mumbai,830,Rail,CONCOR,148,110.49,0.27,406370.99,Stormy,Low,3,5.04,2.04,Delayed
+SH2105,Delhi,Chennai,10729,Ocean,Gati,6063,62577.31,148.979,63473353.85,Rainy,Low,21,21.57,0.57,On Time
+SH2106,Kochi,Hyderabad,13970,Ocean,Blue Dart,1031,5787.2,12.038,9560457.86,Rainy,Low,27,28.39,1.39,Delayed
+SH2107,Delhi,Bengaluru,13368,Ocean,Blue Dart,3822,12223.35,50.545,18963241.04,Sunny,Moderate,26,29.21,3.21,Delayed
+SH2108,Kolkata,Bengaluru,6389,Air,Gati,9897,54277.6,279.579,600368443.0,Rainy,Moderate,5,5.78,0.78,On Time
+SH2109,Delhi,Chennai,12290,Ocean,Gati,7065,81604.64,381.431,99675660.91,Rainy,High,24,25.31,1.31,Delayed
+SH2110,Kochi,Hyderabad,717,Road,SCI,2556,12574.12,74.241,65313228.28,Foggy,High,2,5.26,3.26,Delayed
+SH2111,Hyderabad,Kochi,6906,Ocean,CONCOR,357,598.91,3.055,915152.46,Sunny,Moderate,13,12.62,-0.38,On Time
+SH2112,Delhi,Chennai,11596,Ocean,TCI,8035,38422.45,146.989,56932537.49,Sunny,High,23,23.99,0.99,On Time
+SH2113,Kolkata,Mumbai,6335,Air,Gati,8218,89102.87,182.038,1108544123.56,Stormy,Low,5,7.7,2.7,Delayed
+SH2114,Hyderabad,Kolkata,14682,Ocean,SCI,4589,12066.31,32.663,13345228.01,Sunny,Low,29,29.7,0.7,On Time
+SH2115,Delhi,Ahmedabad,1835,Rail,TCI,437,3670.4,11.811,10973133.79,Rainy,Moderate,4,5.63,1.63,Delayed
+SH2116,Kolkata,Bengaluru,1987,Rail,SCI,4242,8990.23,19.085,25208751.18,Sunny,High,4,7.64,3.64,Delayed
+SH2117,Kolkata,Chennai,1596,Road,Gati,9918,21247.47,95.82,103358854.56,Rainy,Low,4,5.27,1.27,Delayed
+SH2118,Kochi,Hyderabad,13325,Ocean,Blue Dart,1886,8209.88,19.432,13780693.01,Sunny,Low,26,25.79,-0.21,On Time
+SH2119,Kochi,Ahmedabad,5357,Ocean,Gati,3531,9415.55,22.176,13754019.63,Stormy,Low,10,13.93,3.93,Delayed
+SH2120,Ahmedabad,Kolkata,7999,Air,CONCOR,1620,4210.56,15.235,55874530.87,Rainy,Moderate,6,7.06,1.06,Delayed
+SH2121,Hyderabad,Kolkata,9272,Ocean,Gati,9033,56828.32,262.358,96386275.57,Rainy,Low,18,26.54,8.54,Delayed
+SH2122,Hyderabad,Kochi,12000,Ocean,TCI,7695,50854.61,130.741,58957980.83,Sunny,High,24,24.21,0.21,On Time
+SH2123,Mumbai,Hyderabad,11371,Ocean,Gati,8217,39147.83,98.328,45013303.4,Rainy,Low,22,21.82,-0.18,On Time
+SH2124,Bengaluru,Mumbai,8378,Ocean,TCI,6311,26412.63,120.299,44317611.66,Sunny,Low,16,15.87,-0.13,On Time
+SH2125,Kochi,Kolkata,1251,Road,TCI,129,425.54,2.18,2264175.19,Rainy,High,3,6.31,3.31,Delayed
+SH2126,Kolkata,Chennai,3739,Air,Blue Dart,8283,97885.23,454.298,1375642478.19,Sunny,Low,3,3.09,0.09,On Time
+SH2127,Kolkata,Bengaluru,5066,Air,CONCOR,947,4252.81,12.568,58174263.81,Sunny,High,4,4.36,0.36,On Time
+SH2128,Kochi,Chennai,1891,Road,TCI,2985,15118.18,42.652,75633923.24,Sunny,Moderate,5,7.02,2.02,Delayed
+SH2129,Ahmedabad,Kolkata,10799,Ocean,TCI,8876,64911.05,351.096,116576624.54,Sunny,Moderate,21,21.03,0.03,On Time
+SH2130,Hyderabad,Mumbai,1301,Road,Gati,9779,7294.86,15.183,25469540.8,Sunny,Low,3,2.88,-0.12,On Time
+SH2131,Hyderabad,Ahmedabad,880,Road,TCI,7223,49713.05,211.357,158028451.0,Foggy,Low,2,2.46,0.46,On Time
+SH2132,Mumbai,Kochi,10846,Ocean,Blue Dart,7360,78592.82,222.759,91745571.7,Sunny,High,21,20.02,-0.98,On Time
+SH2133,Ahmedabad,Delhi,6683,Air,Gati,1903,11833.47,72.088,168621645.43,Foggy,Low,5,6.05,1.05,Delayed
+SH2134,Kochi,Ahmedabad,1308,Rail,Gati,2972,22432.17,57.386,64992477.0,Sunny,Moderate,3,4.36,1.36,Delayed
+SH2135,Delhi,Hyderabad,2817,Rail,Blue Dart,521,2953.57,12.591,5914472.81,Rainy,Moderate,7,9.45,2.45,Delayed
+SH2136,Bengaluru,Mumbai,6330,Ocean,CONCOR,9784,32985.11,90.839,50722178.88,Sunny,High,12,12.48,0.48,On Time
+SH2137,Kochi,Hyderabad,11582,Air,Blue Dart,2868,31977.38,74.475,393594208.27,Sunny,Moderate,9,12.26,3.26,Delayed
+SH2138,Delhi,Chennai,2625,Rail,CONCOR,344,2198.6,5.157,5087267.42,Rainy,High,6,9.29,3.29,Delayed
+SH2139,Hyderabad,Ahmedabad,3105,Air,Gati,5868,36400.74,84.025,378012044.15,Sunny,Moderate,2,5.76,3.76,Delayed
+SH2140,Chennai,Kolkata,10718,Ocean,Gati,8704,29067.35,59.08,47354439.16,Sunny,Low,21,21.01,0.01,On Time
+SH2141,Hyderabad,Kolkata,345,Road,CONCOR,1425,8325.12,20.215,30217085.3,Sunny,High,1,3.99,2.99,Delayed
+SH2142,Ahmedabad,Hyderabad,1861,Road,Blue Dart,137,1526.45,4.419,5656315.57,Sunny,Low,5,4.17,-0.83,On Time
+SH2143,Ahmedabad,Bengaluru,5474,Air,Gati,8008,11451.46,30.144,144020762.99,Sunny,Low,4,3.99,-0.01,On Time
+SH2144,Kochi,Hyderabad,906,Rail,Gati,8339,30723.96,129.574,74058628.28,Sunny,Moderate,3,3.33,0.33,On Time
+SH2145,Ahmedabad,Kochi,5134,Air,SCI,4371,51332.24,120.298,586767547.15,Sunny,Moderate,4,4.83,0.83,On Time
+SH2146,Ahmedabad,Hyderabad,12195,Ocean,Gati,8987,31027.48,132.544,36645985.84,Sunny,Low,24,23.75,-0.25,On Time
+SH2147,Delhi,Kolkata,1838,Road,Blue Dart,9224,87866.14,184.856,443949576.09,Sunny,High,5,7.17,2.17,Delayed
+SH2148,Mumbai,Kolkata,7507,Air,SCI,4771,16788.49,40.852,249202801.86,Rainy,High,6,10.54,4.54,Delayed
+SH2149,Bengaluru,Hyderabad,7749,Ocean,Gati,8109,79194.8,516.82,96816003.03,Sunny,Moderate,15,14.97,-0.03,On Time
+SH2150,Kolkata,Hyderabad,12428,Ocean,Gati,4960,50533.2,176.835,75613007.12,Foggy,Low,24,24.54,0.54,On Time
+SH2151,Kolkata,Ahmedabad,10710,Air,Blue Dart,8968,75397.71,151.548,811997736.12,Rainy,High,8,8.86,0.86,On Time
+SH2152,Mumbai,Chennai,10921,Air,CONCOR,1144,2295.63,5.817,25696520.1,Rainy,Low,9,10.18,1.18,Delayed
+SH2153,Mumbai,Chennai,11139,Ocean,CONCOR,6980,28348.06,111.61,34496020.62,Stormy,Moderate,22,26.68,4.68,Delayed
+SH2154,Delhi,Chennai,2522,Rail,SCI,6279,44238.76,133.553,139144378.15,Rainy,Low,6,7.18,1.18,Delayed
+SH2155,Kochi,Bengaluru,12709,Ocean,TCI,1488,2515.05,10.535,4355921.08,Rainy,Low,25,26.32,1.32,Delayed
+SH2156,Delhi,Bengaluru,546,Road,Blue Dart,9217,99517.27,239.087,315303474.82,Sunny,Low,1,1.0,0.0,On Time
+SH2157,Bengaluru,Kolkata,14455,Ocean,SCI,2477,14083.87,42.32,19628923.01,Rainy,Low,28,29.63,1.63,Delayed
+SH2158,Bengaluru,Ahmedabad,7005,Air,TCI,6594,59146.09,124.816,658168229.35,Sunny,Low,5,5.49,0.49,On Time
+SH2159,Kochi,Hyderabad,11484,Air,TCI,887,688.71,1.824,6524366.82,Rainy,Low,9,10.21,1.21,Delayed
+SH2160,Kochi,Delhi,6040,Ocean,Gati,6782,15147.07,61.177,15730743.63,Sunny,Low,12,12.03,0.03,On Time
+SH2161,Ahmedabad,Chennai,1458,Road,CONCOR,3788,44183.6,103.843,247521770.08,Rainy,Low,4,4.71,0.71,On Time
+SH2162,Bengaluru,Delhi,13491,Ocean,Blue Dart,7307,6593.04,15.727,10331899.85,Foggy,High,26,27.45,1.45,Delayed
+SH2163,Delhi,Ahmedabad,432,Road,CONCOR,971,4894.78,13.487,15403513.43,Stormy,Low,1,2.29,1.29,Delayed
+SH2164,Bengaluru,Ahmedabad,1184,Road,CONCOR,440,1656.26,8.637,5487974.11,Sunny,Moderate,3,4.02,1.02,Delayed
+SH2165,Kochi,Chennai,1825,Road,Blue Dart,2361,21554.68,122.741,70656526.69,Rainy,Moderate,5,6.74,1.74,Delayed
+SH2166,Hyderabad,Ahmedabad,14104,Ocean,TCI,5652,66583.69,139.861,105136119.16,Rainy,Low,28,29.29,1.29,Delayed
+SH2167,Delhi,Kochi,2437,Rail,SCI,8430,61612.67,181.726,176479369.63,Rainy,Low,6,7.61,1.61,Delayed
+SH2168,Kolkata,Delhi,6500,Ocean,Blue Dart,8411,22658.42,86.37,29733539.83,Rainy,High,13,19.41,6.41,Delayed
+SH2169,Hyderabad,Kolkata,715,Road,SCI,7767,21006.17,44.795,64937137.75,Rainy,Low,2,2.72,0.72,On Time
+SH2170,Mumbai,Ahmedabad,7598,Ocean,SCI,2442,12623.05,25.52,20287905.67,Foggy,Moderate,15,17.33,2.33,Delayed
+SH2171,Hyderabad,Bengaluru,5177,Air,SCI,1545,3368.17,9.07,40925513.13,Sunny,Low,4,4.29,0.29,On Time
+SH2172,Kochi,Delhi,922,Road,Gati,4829,27678.64,67.227,104875949.8,Sunny,Moderate,2,2.39,0.39,On Time
+SH2173,Kochi,Chennai,5802,Ocean,TCI,9662,113122.75,289.24,193646641.17,Rainy,Moderate,11,11.27,0.27,On Time
+SH2174,Chennai,Hyderabad,10897,Ocean,CONCOR,8635,85445.99,452.873,141561381.0,Rainy,Low,21,21.68,0.68,On Time
+SH2175,Bengaluru,Kolkata,1256,Road,CONCOR,6608,31514.33,83.792,125667189.34,Rainy,Moderate,3,4.01,1.01,Delayed
+SH2176,Bengaluru,Hyderabad,5744,Ocean,Blue Dart,2303,12633.67,40.297,19608120.15,Sunny,Low,11,16.17,5.17,Delayed
+SH2177,Delhi,Kochi,14826,Ocean,CONCOR,9190,107416.14,343.288,186720054.87,Sunny,Low,29,36.48,7.48,Delayed
+SH2178,Delhi,Ahmedabad,1494,Road,CONCOR,6547,68078.18,438.097,226376791.63,Sunny,Moderate,4,2.77,-1.23,On Time
+SH2179,Chennai,Delhi,887,Road,SCI,6824,67403.64,142.977,344354232.42,Foggy,Low,2,3.09,1.09,Delayed
+SH2180,Mumbai,Kochi,1486,Road,Blue Dart,9320,14758.75,56.696,79224964.75,Sunny,Moderate,4,4.49,0.49,On Time
+SH2181,Bengaluru,Chennai,3418,Rail,Blue Dart,2379,13800.55,34.68,29767719.17,Rainy,Moderate,8,9.05,1.05,Delayed
+SH2182,Kochi,Ahmedabad,6837,Air,Gati,3967,31304.58,100.883,439915228.47,Foggy,Low,5,6.55,1.55,Delayed
+SH2183,Hyderabad,Ahmedabad,5451,Air,Blue Dart,6012,36781.18,92.993,548215794.28,Sunny,Moderate,4,3.51,-0.49,On Time
+SH2184,Mumbai,Chennai,8089,Ocean,Blue Dart,2522,21701.94,82.72,31327952.07,Rainy,Low,16,15.99,-0.01,On Time
+SH2185,Chennai,Kochi,3390,Air,TCI,704,8023.82,17.489,77916707.24,Sunny,Moderate,2,2.53,0.53,On Time
+SH2186,Hyderabad,Ahmedabad,5963,Ocean,Gati,5227,31465.52,71.593,51804423.86,Foggy,Low,11,12.96,1.96,Delayed
+SH2187,Ahmedabad,Kolkata,4303,Ocean,CONCOR,6536,15765.85,35.65,19884574.13,Sunny,Low,10,9.8,-0.2,On Time
+SH2188,Bengaluru,Hyderabad,200,Road,Blue Dart,9663,25618.1,79.768,132253362.05,Rainy,High,1,3.92,2.92,Delayed
+SH2189,Kochi,Kolkata,4982,Air,CONCOR,7880,5085.67,22.499,43004246.97,Stormy,Moderate,4,13.19,9.19,Delayed
+SH2190,Delhi,Bengaluru,3568,Air,Gati,8001,43931.27,135.434,626012426.64,Stormy,Moderate,2,7.77,5.77,Delayed
+SH2191,Delhi,Kochi,3830,Rail,CONCOR,5615,10977.66,65.697,38821369.0,Sunny,Low,9,9.84,0.84,On Time
+SH2192,Hyderabad,Bengaluru,2834,Rail,Blue Dart,1249,12772.98,48.477,38806441.74,Rainy,Moderate,7,8.54,1.54,Delayed
+SH2193,Hyderabad,Ahmedabad,12307,Ocean,Gati,1792,7584.92,35.442,8193669.97,Foggy,High,24,24.73,0.73,On Time
+SH2194,Delhi,Hyderabad,3995,Air,Gati,1927,3003.82,17.724,40872657.76,Sunny,Moderate,3,3.29,0.29,On Time
+SH2195,Kochi,Chennai,1270,Road,Blue Dart,8356,99239.59,236.645,555654417.7,Stormy,High,3,8.21,5.21,Delayed
+SH2196,Ahmedabad,Bengaluru,231,Road,SCI,6259,59632.56,192.921,259390479.77,Sunny,Moderate,1,1.94,0.94,On Time
+SH2197,Kochi,Delhi,400,Road,Blue Dart,3335,31410.6,72.527,143176645.94,Sunny,Moderate,1,1.0,0.0,On Time
+SH2198,Kolkata,Bengaluru,494,Road,TCI,7406,6952.5,23.141,22302104.52,Stormy,Moderate,1,3.3,2.3,Delayed
+SH2199,Kochi,Ahmedabad,12075,Ocean,Blue Dart,8741,65675.1,215.217,66247712.31,Rainy,Low,24,25.25,1.25,Delayed

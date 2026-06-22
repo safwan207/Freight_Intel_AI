@@ -1,0 +1,8 @@
+{
+    "train_r2": 0.9362,
+    "test_r2": 0.3115,
+    "mae_days": 0.96,
+    "rmse_days": 1.42,
+    "total_records": 1200,
+    "on_time_rate": 46.5
+}

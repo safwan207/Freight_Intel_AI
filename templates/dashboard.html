@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freight Logistics Analytics | Supply Chain Intelligence</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Three.js Canvas Background Container -->
+    <div id="three-canvas-container"></div>
+    <div class="bg-overlay-grid"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass py-3">
+        <div class="container">
+            <a class="navbar-brand" href="/">FREIGHT INTEL AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Predictor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/dashboard">Analytics Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container my-5 anim-fade-up">
+        
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
+            <div>
+                <h1 class="section-title">Logistics Analytics Dashboard</h1>
+                <p class="section-subtitle mb-0">Visual analysis of historical freight data and machine learning feature weightings.</p>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <button id="retrain-btn" class="btn btn-neon-secondary">
+                    Retrain ML Model
+                </button>
+            </div>
+        </div>
+
+        <!-- Retrain Progress Indicator -->
+        <div class="glass-card mb-4 text-center py-3" id="retrain-progress" style="display: none; border-color: var(--secondary);">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="neon-spinner" style="width: 30px; height: 30px; border-width: 2px;"></div>
+                <span class="ms-3 text-white fw-bold">Re-training XGBoost pipelines & regenerating charts...</span>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Avg Delay (MAE)</div>
+                <div class="metric-val text-white mt-1" id="val-mae">{{ metrics.mae_days }} Days</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Model Accuracy (R²)</div>
+                <div class="metric-val text-white mt-1" id="val-r2">{{ "%.2f"|format(metrics.test_r2 * 100) }}%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Dataset Records</div>
+                <div class="metric-val text-white mt-1" id="val-total">{{ metrics.total_records }}</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">On-Time Shipments</div>
+                <div class="metric-val text-white mt-1" id="val-ontime">{{ metrics.on_time_rate }}%</div>
+            </div>
+        </div>
+
+        <!-- Raw History Data Table -->
+        <div class="glass-card mb-5 anim-fade-up">
+            <h5 class="text-white fw-bold mb-3">Recent Shipment Simulations (Raw Data)</h5>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover table-borderless text-white mb-0" id="history-table" style="background: transparent;">
+                    <thead style="border-bottom: 1px solid var(--secondary);">
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Origin</th>
+                            <th>Destination</th>
+                            <th>Mode</th>
+                            <th>Dist (km)</th>
+                            <th>Value (₹)</th>
+                            <th>Delay</th>
+                            <th>Penalty (₹)</th>
+                            <th>Risk</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-body">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-muted small mt-3 mb-0" id="history-status">Loading history...</p>
+        </div>
+
+        <!-- Analytical Charts Grid -->
+        <div class="row g-4">
+            <!-- Chart 1: Delay by Mode -->
+            <div class="col-lg-6">
+                <div class="chart-wrapper">
+                    <h5 class="text-white fw-bold mb-3">Delay by Transport Mode</h5>
+                    <img src="{{ url_for('static', filename='img/charts/delay_by_mode.png') }}" alt="Delay by Mode" class="chart-img img-fluid">
+                </div>
+            </div>
+
+            <!-- Chart 2: Delay by Carrier -->
+            <div class="col-lg-6">
+                <div class="chart-wrapper">
+                    <h5 class="text-white fw-bold mb-3">Carrier Delay Distribution</h5>
+                    <img src="{{ url_for('static', filename='img/charts/delay_by_carrier.png') }}" alt="Delay by Carrier" class="chart-img img-fluid">
+                </div>
+            </div>
+
+            <!-- Chart 3: Weather and Traffic Impact -->
+            <div class="col-lg-6">
+                <div class="chart-wrapper">
+                    <h5 class="text-white fw-bold mb-3">External Conditions Severity</h5>
+                    <img src="{{ url_for('static', filename='img/charts/weather_traffic_impact.png') }}" alt="Weather and Traffic Impact" class="chart-img img-fluid">
+                </div>
+            </div>
+
+            <!-- Chart 4: Distance vs Delay -->
+            <div class="col-lg-6">
+                <div class="chart-wrapper">
+                    <h5 class="text-white fw-bold mb-3">Route Distance vs Delay correlation</h5>
+                    <img src="{{ url_for('static', filename='img/charts/distance_vs_delay.png') }}" alt="Distance vs Delay" class="chart-img img-fluid">
+                </div>
+            </div>
+
+            <!-- Chart 5: Feature Importance -->
+            <div class="col-12">
+                <div class="chart-wrapper">
+                    <h5 class="text-white fw-bold mb-3">XGBoost Feature Importance Weights</h5>
+                    <img src="{{ url_for('static', filename='img/charts/feature_importance.png') }}" alt="Feature Importance" class="chart-img img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">Freight Logistics Predictor &copy; 2026. Built with Python, Flask, XGBoost, Bootstrap, GSAP & Three.js.</p>
+        </div>
+    </footer>
+
+    <!-- CDN Libraries -->
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Custom Logic Scripts -->
+    <script src="{{ url_for('static', filename='js/three_bg.js') }}"></script>
+    <script>
+        // GSAP transition on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof gsap !== 'undefined') {
+                gsap.fromTo('.anim-fade-up', { y: 35, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' });
+            }
+
+            // Fetch History Data
+            async function loadHistory() {
+                try {
+                    const res = await fetch('/api/history');
+                    const data = await res.json();
+                    const tbody = document.getElementById('history-body');
+                    const status = document.getElementById('history-status');
+                    if(tbody) tbody.innerHTML = '';
+                    
+                    if (data.success && data.history.length > 0 && tbody) {
+                        data.history.forEach(row => {
+                            const tr = document.createElement('tr');
+                            tr.innerHTML = `
+                                <td class="text-secondary" style="font-size: 0.85rem;">${row.Timestamp}</td>
+                                <td>${row.Origin}</td>
+                                <td>${row.Destination}</td>
+                                <td>${row.Mode}</td>
+                                <td>${row.Distance_km}</td>
+                                <td>₹${Number(row.Shipment_Value_INR).toLocaleString('en-IN')}</td>
+                                <td class="${row.Predicted_Delay_Days > 0 ? 'text-danger' : 'text-success'} fw-bold">${row.Predicted_Delay_Days > 0 ? '+' : ''}${row.Predicted_Delay_Days}</td>
+                                <td class="text-danger">₹${Number(row.Financial_Impact_INR).toLocaleString('en-IN')}</td>
+                                <td><span class="badge ${row.Risk_Level === 'Low Risk' ? 'bg-success' : (row.Risk_Level === 'High Risk' ? 'bg-danger' : 'bg-warning')}">${row.Risk_Level}</span></td>
+                            `;
+                            tbody.appendChild(tr);
+                        });
+                        status.innerText = `Showing last ${data.history.length} records from prediction_history.csv`;
+                    } else if (status) {
+                        status.innerText = 'No history records found yet. Run a prediction to start logging data.';
+                    }
+                } catch (e) {
+                    if (document.getElementById('history-status')) {
+                        document.getElementById('history-status').innerText = 'Failed to load history data.';
+                    }
+                }
+            }
+            loadHistory();
+
+            // Retrain button handler
+            const retrainBtn = document.getElementById('retrain-btn');
+            const progressIndicator = document.getElementById('retrain-progress');
+
+            if (retrainBtn) {
+                retrainBtn.addEventListener('click', async () => {
+                    retrainBtn.disabled = true;
+                    progressIndicator.style.display = 'block';
+
+                    try {
+                        const response = await fetch('/api/retrain', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        });
+
+                        const result = await response.json();
+
+                        if (result.success) {
+                            // Update KPIs on UI
+                            const m = result.metrics;
+                            document.getElementById('val-mae').innerText = m.mae_days + ' Days';
+                            document.getElementById('val-r2').innerText = (m.test_r2 * 100).toFixed(2) + '%';
+                            document.getElementById('val-total').innerText = m.total_records;
+                            document.getElementById('val-ontime').innerText = m.on_time_rate + '%';
+                            
+                            // Force reload images by adding query param cache-buster
+                            const charts = document.querySelectorAll('.chart-img');
+                            charts.forEach(img => {
+                                const baseSrc = img.src.split('?')[0];
+                                img.src = baseSrc + '?t=' + new Date().getTime();
+                            });
+
+                            alert('Model trained successfully! Visualizations updated.');
+                        } else {
+                            alert('Retraining failed: ' + result.error);
+                        }
+                    } catch (err) {
+                        console.error(err);
+                        alert('Network failure triggering retrain sequence.');
+                    } finally {
+                        retrainBtn.disabled = false;
+                        progressIndicator.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

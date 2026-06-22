@@ -1,0 +1,3 @@
+Timestamp,Origin,Destination,Mode,Distance_km,Carrier,Shipment_Value_INR,Predicted_Delay_Days,Financial_Impact_INR,Risk_Level
+2026-06-22 15:09:41,Hyderabad,Mumbai,Road,1682,Blue Dart,500000,1.31,1307.33,Medium Risk
+2026-06-22 15:14:56,Mumbai,Delhi,Ocean,2306,Blue Dart,500000,1.0,997.31,Medium Risk
