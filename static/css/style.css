@@ -20,6 +20,7 @@ html, body {
     color: #1e1b4b !important;
     min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* Three.js Canvas Container & Rich Live Gradient Background */
@@ -31,6 +32,7 @@ html, body {
     height: 100vh;
     z-index: -2;
     background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #f3e8ff 100%) !important;
+    pointer-events: none;
 }
 
 /* Background overlay grid pattern */
@@ -42,9 +44,9 @@ html, body {
     height: 100vh;
     z-index: -1;
     background-image: 
-        linear-gradient(rgba(79, 70, 229, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(79, 70, 229, 0.05) 1px, transparent 1px) !important;
-    background-size: 40px 40px;
+        linear-gradient(rgba(79, 70, 229, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 70, 229, 0.04) 1px, transparent 1px) !important;
+    background-size: 32px 32px;
     background-position: center center;
     pointer-events: none;
 }
@@ -53,20 +55,21 @@ html, body {
 .navbar-glass {
     background: rgba(255, 255, 255, 0.88) !important;
     backdrop-filter: blur(12px) !important;
-    border-bottom: 1px solid rgba(79, 70, 229, 0.2) !important;
-    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.08) !important;
+    border-bottom: 1px solid rgba(79, 70, 229, 0.18) !important;
+    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.06) !important;
 }
 
 .navbar-brand {
     font-weight: 800 !important;
-    font-size: 1.35rem !important;
-    letter-spacing: 1px !important;
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem) !important;
+    letter-spacing: 1.5px !important;
     color: #4f46e5 !important;
 }
 
 .nav-link {
     color: #475569 !important;
     font-weight: 600 !important;
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem) !important;
     transition: all 0.3s ease !important;
 }
 
@@ -78,18 +81,20 @@ html, body {
 .glass-card {
     background: rgba(255, 255, 255, 0.88) !important;
     backdrop-filter: blur(16px) !important;
-    border: 1px solid rgba(79, 70, 229, 0.2) !important;
+    border: 1px solid rgba(79, 70, 229, 0.18) !important;
     border-radius: 16px !important;
-    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.08) !important;
+    padding: clamp(1rem, 3vw, 1.75rem) !important;
 }
 
 /* Form Controls */
 .form-label {
     color: #4f46e5 !important;
-    font-size: 0.82rem !important;
+    font-size: clamp(0.72rem, 1.2vw, 0.82rem) !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
+    margin-bottom: 0.35rem !important;
 }
 
 .form-select-glass,
@@ -98,14 +103,15 @@ html, body {
     border: 1px solid rgba(79, 70, 229, 0.25) !important;
     color: #1e1b4b !important;
     font-weight: 600 !important;
-    font-size: 0.92rem !important;
+    font-size: clamp(0.85rem, 1.4vw, 0.92rem) !important;
     border-radius: 10px !important;
+    padding: 0.5rem 0.75rem !important;
 }
 
 .form-select-glass:focus,
 .form-control-glass:focus {
     border-color: #4f46e5 !important;
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25) !important;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2) !important;
 }
 
 /* Buttons */
@@ -113,14 +119,16 @@ html, body {
     background: linear-gradient(135deg, #4f46e5 0%, #0284c7 100%) !important;
     color: #ffffff !important;
     font-weight: 700 !important;
+    font-size: clamp(0.85rem, 1.4vw, 0.95rem) !important;
     border: none !important;
     border-radius: 10px !important;
-    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35) !important;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3) !important;
+    padding: 0.65rem 1.25rem !important;
 }
 
 .btn-neon-primary:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5) !important;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45) !important;
 }
 
 .btn-neon-secondary {
@@ -128,7 +136,9 @@ html, body {
     color: #4f46e5 !important;
     border: 1px solid #4f46e5 !important;
     font-weight: 700 !important;
+    font-size: clamp(0.8rem, 1.3vw, 0.88rem) !important;
     border-radius: 10px !important;
+    padding: 0.5rem 1rem !important;
 }
 
 .btn-neon-secondary:hover {
@@ -139,14 +149,15 @@ html, body {
 /* Result Box */
 .prediction-box {
     background: #ffffff !important;
-    border: 1px solid rgba(79, 70, 229, 0.25) !important;
+    border: 1px solid rgba(79, 70, 229, 0.22) !important;
     border-radius: 14px !important;
+    padding: clamp(1rem, 2.5vw, 1.5rem) !important;
 }
 
 .status-badge {
-    padding: 0.4rem 0.9rem !important;
+    padding: 0.35rem 0.8rem !important;
     border-radius: 30px !important;
-    font-size: 0.78rem !important;
+    font-size: 0.75rem !important;
     font-weight: 800 !important;
     text-transform: uppercase !important;
 }
@@ -157,13 +168,14 @@ html, body {
 
 .result-card {
     background: rgba(238, 242, 255, 0.7) !important;
-    border: 1px solid rgba(79, 70, 229, 0.2) !important;
+    border: 1px solid rgba(79, 70, 229, 0.18) !important;
     border-radius: 10px !important;
+    padding: 0.75rem 0.5rem !important;
 }
 
 .metric-label {
     color: #4f46e5 !important;
-    font-size: 0.78rem !important;
+    font-size: clamp(0.7rem, 1.1vw, 0.78rem) !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
 }
@@ -171,33 +183,87 @@ html, body {
 .result-value {
     color: #1e1b4b !important;
     font-weight: 800 !important;
+    font-size: clamp(1.2rem, 2vw, 1.6rem) !important;
 }
 
-/* Dashboard Metrics */
+/* Dashboard Responsive Metrics Grid */
+.metrics-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    gap: 1rem !important;
+}
+
 .metric-card {
     background: rgba(255, 255, 255, 0.88) !important;
-    border: 1px solid rgba(79, 70, 229, 0.2) !important;
+    border: 1px solid rgba(79, 70, 229, 0.18) !important;
     border-radius: 12px !important;
-    padding: 1.2rem !important;
+    padding: 1rem !important;
     text-align: center !important;
 }
 
 .metric-val {
-    font-size: 1.7rem !important;
+    font-size: clamp(1.3rem, 2.2vw, 1.7rem) !important;
     font-weight: 800 !important;
     color: #1e1b4b !important;
 }
 
-.chart-wrapper {
-    background: rgba(255, 255, 255, 0.88) !important;
-    border: 1px solid rgba(79, 70, 229, 0.2) !important;
-    border-radius: 14px !important;
-    padding: 1.2rem !important;
+/* Chart Responsive Containers */
+.chart-card-wrapper {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(79, 70, 229, 0.18) !important;
+    border-radius: 16px !important;
+    padding: clamp(1rem, 2vw, 1.25rem) !important;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.06) !important;
+    height: 100%;
+}
+
+.chart-img-container {
+    width: 100%;
+    height: clamp(240px, 35vh, 320px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.chart-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Table Responsive Scrolling */
+.table-responsive {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.table th, .table td {
+    white-space: nowrap !important;
+    font-size: clamp(0.78rem, 1.2vw, 0.88rem) !important;
 }
 
 footer {
     background: rgba(255, 255, 255, 0.88) !important;
-    border-top: 1px solid rgba(79, 70, 229, 0.18) !important;
-    padding: 1.2rem 0 !important;
+    border-top: 1px solid rgba(79, 70, 229, 0.15) !important;
+    padding: 1rem 0 !important;
     color: #475569 !important;
+    font-size: clamp(0.75rem, 1.2vw, 0.85rem) !important;
+}
+
+/* Mobile & Tablet Specific Responsive Enhancements */
+@media (max-width: 767.98px) {
+    main {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    .glass-card {
+        border-radius: 14px !important;
+    }
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
 }
