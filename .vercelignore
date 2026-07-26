@@ -1,7 +1,10 @@
+requirements.txt
 venv/
-.git/
 notebook/
+models/
+data/
+train_model.py
 generate_pdf.py
-docs/
-README.md
+app.py
+.git/
 .gitignore
