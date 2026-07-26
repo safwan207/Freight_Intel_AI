@@ -1,23 +1,36 @@
 /* Google Fonts - Outfit */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
-/* Shopify Editions Winter '24 FOUNDATIONS - 5-Color Design Tokens */
 :root {
-    --periwinkle-deep: #3D52A0;      /* Color 1: Deep Periwinkle (Titles, CTA, Metrics) */
-    --periwinkle-soft: #7091E6;      /* Color 2: Soft Cornflower Blue (Secondary CTA, Arcs) */
-    --periwinkle-steel: #8697C4;     /* Color 3: Steel Periwinkle (Subtle borders, Muted text) */
-    --lavender-ice: #ADBBDA;         /* Color 4: Ice Lavender (Card borders, Inputs) */
-    --lavender-bg: #EDE8F5;          /* Color 5: Soft Lavender Off-White (Canvas BG) */
+    --bg-darker: #030712;
+    --bg-dark: #090d16;
+    --bg-card: rgba(15, 23, 42, 0.85);
+    --bg-input: rgba(30, 41, 59, 0.85);
+    --border-glass: rgba(255, 255, 255, 0.18);
     
-    --primary: #3D52A0 !important;
-    --secondary: #7091E6 !important;
+    --primary: #06b6d4;      /* Cyber Teal */
+    --primary-glow: rgba(6, 182, 212, 0.35);
+    --secondary: #8b5cf6;    /* Neon Purple */
+    --secondary-glow: rgba(139, 92, 246, 0.35);
     
-    --bg-card: rgba(255, 255, 255, 0.9) !important;
-    --bg-input: #ffffff !important;
-    --border-glass: #ADBBDA !important;
+    --text-main: #f8fafc;
+    --text-muted: #e2e8f0;   /* High-contrast Slate 200 */
+    --text-bright: #ffffff;
     
-    --text-main: #1B254B !important;
-    --text-muted: #576594 !important;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+}
+
+/* Global High Contrast Text Overrides for Dark Background */
+.text-muted,
+p.text-muted,
+span.text-muted,
+div.text-muted,
+small.text-muted,
+.small.text-muted,
+p {
+    color: #e2e8f0 !important;
 }
 
 * {
@@ -28,8 +41,8 @@
 
 html, body {
     font-family: 'Outfit', sans-serif !important;
-    background-color: #EDE8F5 !important;
-    color: #1B254B !important;
+    background-color: #030712 !important;
+    color: #f8fafc !important;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -42,7 +55,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     z-index: -2;
-    background: linear-gradient(135deg, #F4F0FB 0%, #EDE8F5 50%, #E3DCF2 100%) !important;
+    background: radial-gradient(circle at center, #0f172a 0%, #030712 100%) !important;
 }
 
 /* Background overlay grid pattern */
@@ -54,8 +67,8 @@ html, body {
     height: 100vh;
     z-index: -1;
     background-image: 
-        linear-gradient(rgba(61, 82, 160, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(61, 82, 160, 0.05) 1px, transparent 1px) !important;
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px) !important;
     background-size: 40px 40px;
     background-position: center center;
     pointer-events: none;
@@ -63,41 +76,40 @@ html, body {
 
 /* Navbar */
 .navbar-glass {
-    background: rgba(255, 255, 255, 0.92) !important;
+    background: rgba(11, 15, 25, 0.8) !important;
     backdrop-filter: blur(12px) !important;
-    border-bottom: 1px solid #ADBBDA !important;
-    box-shadow: 0 4px 20px rgba(61, 82, 160, 0.08) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
 }
 
 .navbar-brand {
     font-weight: 800 !important;
     font-size: 1.35rem !important;
     letter-spacing: 1px !important;
-    color: #3D52A0 !important;
+    color: #ffffff !important;
 }
 
 .nav-link {
-    color: #576594 !important;
+    color: #cbd5e1 !important;
     font-weight: 600 !important;
     transition: all 0.3s ease !important;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #3D52A0 !important;
+    color: #22d3ee !important;
 }
 
 /* Glassmorphism Cards */
 .glass-card {
-    background: rgba(255, 255, 255, 0.92) !important;
+    background: rgba(15, 23, 42, 0.85) !important;
     backdrop-filter: blur(16px) !important;
-    border: 1px solid #ADBBDA !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
     border-radius: 16px !important;
-    box-shadow: 0 10px 30px rgba(61, 82, 160, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Form Controls */
 .form-label {
-    color: #3D52A0 !important;
+    color: #22d3ee !important; /* High contrast neon cyan */
     font-size: 0.82rem !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -106,9 +118,9 @@ html, body {
 
 .form-select-glass,
 .form-control-glass {
-    background-color: #ffffff !important;
-    border: 1px solid #ADBBDA !important;
-    color: #1B254B !important;
+    background-color: rgba(30, 41, 59, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
     font-weight: 600 !important;
     font-size: 0.92rem !important;
     border-radius: 10px !important;
@@ -116,36 +128,36 @@ html, body {
 
 .form-select-glass:focus,
 .form-control-glass:focus {
-    border-color: #7091E6 !important;
-    box-shadow: 0 0 0 3px rgba(112, 145, 230, 0.25) !important;
+    border-color: #06b6d4 !important;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.3) !important;
 }
 
 /* Buttons */
 .btn-neon-primary {
-    background: linear-gradient(135deg, #3D52A0 0%, #7091E6 100%) !important;
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%) !important;
     color: #ffffff !important;
     font-weight: 700 !important;
     border: none !important;
     border-radius: 10px !important;
-    box-shadow: 0 4px 15px rgba(61, 82, 160, 0.3) !important;
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4) !important;
 }
 
 .btn-neon-secondary {
-    background: rgba(112, 145, 230, 0.15) !important;
-    color: #3D52A0 !important;
-    border: 1px solid #7091E6 !important;
+    background: rgba(139, 92, 246, 0.25) !important;
+    color: #ffffff !important;
+    border: 1px solid #8b5cf6 !important;
     font-weight: 700 !important;
     border-radius: 10px !important;
 }
 
 .btn-neon-secondary:hover {
-    background: #7091E6 !important;
+    background: #8b5cf6 !important;
     color: #ffffff !important;
 }
 
 /* Result Box */
 .prediction-box {
-    background: #ffffff !important;
+    background: rgba(15, 23, 42, 0.95) !important;
     border-radius: 14px !important;
 }
 
@@ -157,32 +169,32 @@ html, body {
     text-transform: uppercase !important;
 }
 
-.badge-success { background: rgba(5, 150, 105, 0.15) !important; color: #059669 !important; border: 1px solid #059669 !important; }
-.badge-warning { background: rgba(217, 119, 6, 0.15) !important; color: #d97706 !important; border: 1px solid #d97706 !important; }
-.badge-danger  { background: rgba(220, 38, 38, 0.15) !important; color: #dc2626 !important; border: 1px solid #dc2626 !important; }
+.badge-success { background: rgba(16, 185, 129, 0.2) !important; color: #34d399 !important; border: 1px solid #10b981 !important; }
+.badge-warning { background: rgba(245, 158, 11, 0.2) !important; color: #fbbf24 !important; border: 1px solid #f59e0b !important; }
+.badge-danger  { background: rgba(239, 68, 68, 0.2) !important; color: #f87171 !important; border: 1px solid #ef4444 !important; }
 
 .result-card {
-    background: rgba(237, 232, 245, 0.6) !important;
-    border: 1px solid #ADBBDA !important;
+    background: rgba(30, 41, 59, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
     border-radius: 10px !important;
 }
 
 .metric-label {
-    color: #576594 !important;
+    color: #94a3b8 !important;
     font-size: 0.78rem !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
 }
 
 .result-value {
-    color: #3D52A0 !important;
+    color: #ffffff !important;
     font-weight: 800 !important;
 }
 
 /* Dashboard Metrics */
 .metric-card {
-    background: rgba(255, 255, 255, 0.92) !important;
-    border: 1px solid #ADBBDA !important;
+    background: rgba(15, 23, 42, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
     border-radius: 12px !important;
     padding: 1.2rem !important;
     text-align: center !important;
@@ -191,19 +203,19 @@ html, body {
 .metric-val {
     font-size: 1.7rem !important;
     font-weight: 800 !important;
-    color: #3D52A0 !important;
+    color: #ffffff !important;
 }
 
 .chart-wrapper {
-    background: rgba(255, 255, 255, 0.92) !important;
-    border: 1px solid #ADBBDA !important;
+    background: rgba(15, 23, 42, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
     border-radius: 14px !important;
     padding: 1.2rem !important;
 }
 
 footer {
-    background: rgba(255, 255, 255, 0.9) !important;
-    border-top: 1px solid #ADBBDA !important;
+    background: rgba(11, 15, 25, 0.9) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
     padding: 1.2rem 0 !important;
-    color: #576594 !important;
+    color: #94a3b8 !important;
 }
