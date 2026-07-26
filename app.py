@@ -10,9 +10,11 @@ import joblib
 
 app = Flask(__name__)
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Paths
-MODEL_PATH = "models/model_pipeline.pkl"
-METRICS_PATH = "models/metrics.json"
+MODEL_PATH = os.path.join(BASE_DIR, "models", "model_pipeline.pkl")
+METRICS_PATH = os.path.join(BASE_DIR, "models", "metrics.json")
 
 # Global model container
 model_pipeline = None
@@ -208,7 +210,7 @@ def get_history():
     import csv
     import os
     history = []
-    csv_file = 'data/prediction_history.csv'
+    csv_file = os.path.join(BASE_DIR, 'data', 'prediction_history.csv')
     if os.path.exists(csv_file):
         with open(csv_file, mode='r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
