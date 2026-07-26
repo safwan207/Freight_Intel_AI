@@ -25,17 +25,19 @@ from xgboost import XGBRegressor
 import joblib
 
 
-# Set visual style for plots
-sns.set_theme(style="darkgrid")
+# Set visual style for plots matching Light Periwinkle Theme
+sns.set_theme(style="whitegrid")
 plt.rcParams.update({
-    'figure.facecolor': '#111827', # Dark background (Tailwind Gray 900)
-    'axes.facecolor': '#1f2937',   # Gray 800
-    'text.color': '#f9fafb',       # Gray 50
-    'axes.labelcolor': '#d1d5db',  # Gray 300
-    'xtick.color': '#9ca3af',      # Gray 400
-    'ytick.color': '#9ca3af',
-    'grid.color': '#374151',       # Gray 700
+    'font.family': 'sans-serif',
+    'figure.facecolor': '#ffffff', 
+    'axes.facecolor': '#f8fafc',   
+    'text.color': '#1e1b4b',       # Deep Navy
+    'axes.labelcolor': '#1e1b4b',  
+    'xtick.color': '#475569',      
+    'ytick.color': '#475569',
+    'grid.color': '#e2e8f0',       
 })
+
 
 def generate_synthetic_data(filepath, num_records=1200):
     """Generates a realistic freight inventory dataset for training."""
@@ -159,7 +161,7 @@ def generate_analytics_charts(df, output_dir):
     plt.xlabel('Shipment Mode', fontsize=12)
     plt.ylabel('Average Delay (Days)', fontsize=12)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'delay_by_mode.png'), dpi=150, facecolor='#111827')
+    plt.savefig(os.path.join(output_dir, 'delay_by_mode.png'), dpi=150, facecolor='#ffffff')
     plt.close()
     
     # 2. Delay Distribution by Carrier
@@ -170,7 +172,7 @@ def generate_analytics_charts(df, output_dir):
     plt.xlabel('Carrier', fontsize=12)
     plt.ylabel('Delay (Days)', fontsize=12)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'delay_by_carrier.png'), dpi=150, facecolor='#111827')
+    plt.savefig(os.path.join(output_dir, 'delay_by_carrier.png'), dpi=150, facecolor='#ffffff')
     plt.close()
 
     # 3. Weather Conditions vs. Delay Days
@@ -181,7 +183,7 @@ def generate_analytics_charts(df, output_dir):
     plt.ylabel('Average Delay (Days)', fontsize=12)
     plt.legend(title='Traffic Level', loc='upper right')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'weather_traffic_impact.png'), dpi=150, facecolor='#111827')
+    plt.savefig(os.path.join(output_dir, 'weather_traffic_impact.png'), dpi=150, facecolor='#ffffff')
     plt.close()
 
     # 4. Shipment Volume / Value Distribution
@@ -191,7 +193,7 @@ def generate_analytics_charts(df, output_dir):
     plt.xlabel('Distance (km)', fontsize=12)
     plt.ylabel('Delay (Days)', fontsize=12)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'distance_vs_delay.png'), dpi=150, facecolor='#111827')
+    plt.savefig(os.path.join(output_dir, 'distance_vs_delay.png'), dpi=150, facecolor='#ffffff')
     plt.close()
     print("All dashboard charts generated successfully.")
 
@@ -284,7 +286,7 @@ def train_model(data_path, model_dir):
         plt.xlabel('Importance Value', fontsize=12)
         plt.ylabel('Feature', fontsize=12)
         plt.tight_layout()
-        plt.savefig(os.path.join(charts_dir, 'feature_importance.png'), dpi=150, facecolor='#111827')
+        plt.savefig(os.path.join(charts_dir, 'feature_importance.png'), dpi=150, facecolor='#ffffff')
         plt.close()
         print("Feature importance chart generated successfully.")
     except Exception as e:
