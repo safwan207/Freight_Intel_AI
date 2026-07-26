@@ -1,9 +1,0 @@
-{
-  "name": "freight-intel-ai",
-  "version": "1.0.0",
-  "description": "Interactive 3D Freight Logistics Intelligence & Risk Predictor Web App",
-  "main": "index.html",
-  "scripts": {
-    "build": "echo 'Static build complete'"
-  }
-}
