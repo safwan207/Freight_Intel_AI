@@ -1,16 +1,29 @@
 import os
+
+# pyrefly: ignore [missing-import]
 import numpy as np
+# pyrefly: ignore [missing-import]
 import pandas as pd
+# pyrefly: ignore [missing-import]
 import matplotlib
 matplotlib.use('Agg')  # Non-interactive backend for generating plots in scripts
+# pyrefly: ignore [missing-import]
 import matplotlib.pyplot as plt
+# pyrefly: ignore [missing-import]
 import seaborn as sns
+# pyrefly: ignore [missing-import]
 from sklearn.model_selection import train_test_split
+# pyrefly: ignore [missing-import]
 from sklearn.compose import ColumnTransformer
+# pyrefly: ignore [missing-import]
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+# pyrefly: ignore [missing-import]
 from sklearn.pipeline import Pipeline
+# pyrefly: ignore [missing-import]
 from xgboost import XGBRegressor
+# pyrefly: ignore [missing-import]
 import joblib
+
 
 # Set visual style for plots
 sns.set_theme(style="darkgrid")
