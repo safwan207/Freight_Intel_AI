@@ -1,34 +1,19 @@
 /* Google Fonts - Outfit */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
-/* Color Scheme 27: Gorgeous Contrast (Immersive Garden) */
+/* Light Live Background Theme System */
 :root {
-    --lime-vibrant: #86C232;       /* Color 1: Electric Lime Green (Badges, Labels, Focus) */
-    --lime-deep: #61892F;          /* Color 2: Forest Olive Green (Secondary Accents, Borders) */
-    --charcoal-dark: #222629;      /* Color 3: Ultra Dark Charcoal (Canvas BG) */
-    --charcoal-card: #323639;      /* Color 4: Medium Charcoal (Glass Cards) */
-    --slate-muted: #6B6E70;        /* Color 5: Muted Slate Metallic */
+    --lime-vibrant: #4D8B00;       /* Electric Lime Green (Badges, Labels) */
+    --lime-accent: #86C232;        /* Vibrant Lime Accent */
+    --forest-deep: #61892F;        /* Forest Green (Gradients, Accents) */
+    --bg-light-canvas: #F4F7F0;    /* Light Soft Sage Off-White Canvas */
     
     --primary: var(--lime-vibrant);
-    --secondary: var(--lime-deep);
+    --secondary: var(--forest-deep);
     
-    --text-main: #ffffff !important;
-    --text-bright: #ffffff !important;
-    --text-muted: #e2e8f0 !important;
-}
-
-/* Global High Contrast Text Overrides - 100% Ultra Visible Text */
-p, span, div, small, label, h1, h2, h3, h4, h5, h6, td, th {
-    color: #ffffff !important;
-}
-
-.text-muted,
-p.text-muted,
-span.text-muted,
-div.text-muted,
-small.text-muted,
-.small.text-muted {
-    color: #e2e8f0 !important;
+    --text-main: #1B254B !important;      /* Deep Dark Navy Charcoal */
+    --text-muted: #475569 !important;     /* Readable Dark Slate */
+    --text-bright: #1B254B !important;
 }
 
 * {
@@ -39,8 +24,8 @@ small.text-muted,
 
 html, body {
     font-family: 'Outfit', sans-serif !important;
-    background-color: #222629 !important;
-    color: #ffffff !important;
+    background-color: #F4F7F0 !important;
+    color: #1B254B !important;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -53,7 +38,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     z-index: -2;
-    background: radial-gradient(circle at center, #2e3236 0%, #222629 100%) !important;
+    background: linear-gradient(135deg, #FAFDF7 0%, #F4F7F0 50%, #E6EFE0 100%) !important;
 }
 
 /* Background overlay grid pattern */
@@ -65,8 +50,8 @@ html, body {
     height: 100vh;
     z-index: -1;
     background-image: 
-        linear-gradient(rgba(134, 194, 50, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(134, 194, 50, 0.04) 1px, transparent 1px) !important;
+        linear-gradient(rgba(77, 139, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(77, 139, 0, 0.05) 1px, transparent 1px) !important;
     background-size: 40px 40px;
     background-position: center center;
     pointer-events: none;
@@ -74,40 +59,41 @@ html, body {
 
 /* Navbar */
 .navbar-glass {
-    background: rgba(34, 38, 41, 0.92) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
     backdrop-filter: blur(12px) !important;
-    border-bottom: 1px solid rgba(134, 194, 50, 0.25) !important;
+    border-bottom: 1px solid rgba(77, 139, 0, 0.25) !important;
+    box-shadow: 0 4px 20px rgba(97, 137, 47, 0.08) !important;
 }
 
 .navbar-brand {
     font-weight: 800 !important;
     font-size: 1.35rem !important;
     letter-spacing: 1px !important;
-    color: #ffffff !important;
+    color: #1B254B !important;
 }
 
 .nav-link {
-    color: #e2e8f0 !important;
+    color: #475569 !important;
     font-weight: 600 !important;
     transition: all 0.3s ease !important;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #86C232 !important;
+    color: #4D8B00 !important;
 }
 
 /* Glassmorphism Cards */
 .glass-card {
-    background: rgba(50, 54, 57, 0.88) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
     backdrop-filter: blur(16px) !important;
-    border: 1px solid rgba(134, 194, 50, 0.25) !important;
+    border: 1px solid rgba(77, 139, 0, 0.25) !important;
     border-radius: 16px !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 10px 30px rgba(97, 137, 47, 0.1) !important;
 }
 
 /* Form Controls */
 .form-label {
-    color: #86C232 !important; /* Electric Lime Green Label */
+    color: #4D8B00 !important; /* Vibrant Lime Green Label */
     font-size: 0.82rem !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -116,9 +102,9 @@ html, body {
 
 .form-select-glass,
 .form-control-glass {
-    background-color: rgba(34, 38, 41, 0.9) !important;
-    border: 1px solid rgba(134, 194, 50, 0.35) !important;
-    color: #ffffff !important;
+    background-color: #ffffff !important;
+    border: 1px solid rgba(77, 139, 0, 0.35) !important;
+    color: #1B254B !important;
     font-weight: 600 !important;
     font-size: 0.92rem !important;
     border-radius: 10px !important;
@@ -126,42 +112,42 @@ html, body {
 
 .form-select-glass:focus,
 .form-control-glass:focus {
-    border-color: #86C232 !important;
-    box-shadow: 0 0 0 3px rgba(134, 194, 50, 0.3) !important;
+    border-color: #4D8B00 !important;
+    box-shadow: 0 0 0 3px rgba(77, 139, 0, 0.25) !important;
 }
 
 /* Buttons */
 .btn-neon-primary {
-    background: linear-gradient(135deg, #86C232 0%, #61892F 100%) !important;
+    background: linear-gradient(135deg, #61892F 0%, #4D8B00 100%) !important;
     color: #ffffff !important;
     font-weight: 700 !important;
     border: none !important;
     border-radius: 10px !important;
-    box-shadow: 0 4px 15px rgba(134, 194, 50, 0.4) !important;
+    box-shadow: 0 4px 15px rgba(77, 139, 0, 0.35) !important;
 }
 
 .btn-neon-primary:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(134, 194, 50, 0.55) !important;
+    box-shadow: 0 6px 20px rgba(77, 139, 0, 0.5) !important;
 }
 
 .btn-neon-secondary {
-    background: rgba(134, 194, 50, 0.15) !important;
-    color: #ffffff !important;
-    border: 1px solid #86C232 !important;
+    background: rgba(77, 139, 0, 0.12) !important;
+    color: #4D8B00 !important;
+    border: 1px solid #4D8B00 !important;
     font-weight: 700 !important;
     border-radius: 10px !important;
 }
 
 .btn-neon-secondary:hover {
-    background: #86C232 !important;
-    color: #222629 !important;
+    background: #4D8B00 !important;
+    color: #ffffff !important;
 }
 
 /* Result Box */
 .prediction-box {
-    background: rgba(34, 38, 41, 0.95) !important;
-    border: 1px solid rgba(134, 194, 50, 0.3) !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(77, 139, 0, 0.3) !important;
     border-radius: 14px !important;
 }
 
@@ -173,32 +159,32 @@ html, body {
     text-transform: uppercase !important;
 }
 
-.badge-success { background: rgba(134, 194, 50, 0.2) !important; color: #86C232 !important; border: 1px solid #86C232 !important; }
-.badge-warning { background: rgba(245, 158, 11, 0.2) !important; color: #fbbf24 !important; border: 1px solid #f59e0b !important; }
-.badge-danger  { background: rgba(239, 68, 68, 0.2) !important; color: #f87171 !important; border: 1px solid #ef4444 !important; }
+.badge-success { background: rgba(77, 139, 0, 0.15) !important; color: #4D8B00 !important; border: 1px solid #4D8B00 !important; }
+.badge-warning { background: rgba(217, 119, 6, 0.15) !important; color: #d97706 !important; border: 1px solid #d97706 !important; }
+.badge-danger  { background: rgba(220, 38, 38, 0.15) !important; color: #dc2626 !important; border: 1px solid #dc2626 !important; }
 
 .result-card {
-    background: rgba(50, 54, 57, 0.8) !important;
-    border: 1px solid rgba(134, 194, 50, 0.25) !important;
+    background: rgba(244, 247, 240, 0.8) !important;
+    border: 1px solid rgba(77, 139, 0, 0.25) !important;
     border-radius: 10px !important;
 }
 
 .metric-label {
-    color: #86C232 !important;
+    color: #4D8B00 !important;
     font-size: 0.78rem !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
 }
 
 .result-value {
-    color: #ffffff !important;
+    color: #1B254B !important;
     font-weight: 800 !important;
 }
 
 /* Dashboard Metrics */
 .metric-card {
-    background: rgba(50, 54, 57, 0.88) !important;
-    border: 1px solid rgba(134, 194, 50, 0.25) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: 1px solid rgba(77, 139, 0, 0.25) !important;
     border-radius: 12px !important;
     padding: 1.2rem !important;
     text-align: center !important;
@@ -207,19 +193,19 @@ html, body {
 .metric-val {
     font-size: 1.7rem !important;
     font-weight: 800 !important;
-    color: #ffffff !important;
+    color: #1B254B !important;
 }
 
 .chart-wrapper {
-    background: rgba(50, 54, 57, 0.88) !important;
-    border: 1px solid rgba(134, 194, 50, 0.25) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: 1px solid rgba(77, 139, 0, 0.25) !important;
     border-radius: 14px !important;
     padding: 1.2rem !important;
 }
 
 footer {
-    background: rgba(34, 38, 41, 0.95) !important;
-    border-top: 1px solid rgba(134, 194, 50, 0.2) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-top: 1px solid rgba(77, 139, 0, 0.2) !important;
     padding: 1.2rem 0 !important;
-    color: #e2e8f0 !important;
+    color: #475569 !important;
 }

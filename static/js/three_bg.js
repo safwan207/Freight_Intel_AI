@@ -1,14 +1,13 @@
-// Three.js 3D Background - Gorgeous Contrast (Electric Lime & Dark Charcoal)
+// Three.js 3D Background - Light Sage Canvas & Forest Lime Particles
 let scene, camera, renderer, globe, stars, routes = [];
 let controls;
 let isInteracting = false;
 const container = document.getElementById('three-canvas-container');
 
-// Theme 27 Palette
 const CONFIG = {
-    globeColor: 0x86C232,     // Electric Lime Green
-    routeColor: 0x61892F,     // Forest Olive Green
-    starColor: 0x86C232,      // Lime Star Particles
+    globeColor: 0x4D8B00,     // Lime Green
+    routeColor: 0x61892F,     // Forest Green
+    starColor: 0x86C232,      // Light Sage Stars
     globeRadius: 3.5
 };
 
@@ -17,7 +16,7 @@ function initThree() {
 
     // 1. Create Scene
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x222629, 0.04);
+    scene.fog = new THREE.FogExp2(0xF4F7F0, 0.04);
 
     // 2. Create Camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
@@ -27,7 +26,7 @@ function initThree() {
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x222629, 1);
+    renderer.setClearColor(0xF4F7F0, 1);
     container.appendChild(renderer.domElement);
 
     // 4. Create Globe & Routes
@@ -104,7 +103,7 @@ function createStars() {
         color: CONFIG.starColor,
         size: 0.04,
         transparent: true,
-        opacity: 0.4
+        opacity: 0.5
     });
 
     stars = new THREE.Points(starsGeom, starsMat);
