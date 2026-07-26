@@ -1,0 +1,7 @@
+venv/
+.git/
+notebook/
+generate_pdf.py
+docs/
+README.md
+.gitignore
