@@ -2,3 +2,4 @@ Timestamp,Origin,Destination,Mode,Distance_km,Carrier,Shipment_Value_INR,Predict
 2026-06-22 15:09:41,Hyderabad,Mumbai,Road,1682,Blue Dart,500000,1.31,1307.33,Medium Risk
 2026-06-22 15:14:56,Mumbai,Delhi,Ocean,2306,Blue Dart,500000,1.0,997.31,Medium Risk
 2026-07-26 23:45:23,Mumbai,Delhi,Ocean,2306,Blue Dart,500000,1.0,997.31,Medium Risk
+2026-07-27 00:46:27,Chennai,Bengaluru,Rail,334,Gati,10000,-0.01,0.0,Low Risk
