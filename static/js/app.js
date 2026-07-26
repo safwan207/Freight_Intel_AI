@@ -228,24 +228,15 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                let result = null;
-                try {
-                    const response = await fetch('/predict', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-                    if (response.ok) {
-                        result = await response.json();
-                    }
-                } catch (e) {
-                    console.log("Using client-side ML inference engine for static deployment.");
-                }
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
 
-                // Client-side ML Inference Engine Fallback
-                if (!result || !result.success) {
-                    result = computeClientPrediction(payload);
-                }
+                const result = await response.json();
 
                 if (result.success) {
                     // Update prediction display values
@@ -268,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     document.getElementById('res-reorder-suggestion').innerText = result.reorder_suggestion;
                     
-                    // Dynamic box styling
+                    // Dynamic box styling (glowing border of risk level)
                     resultBox.style.border = `1px solid ${result.border_color}`;
                     resultBox.style.boxShadow = `0 10px 30px ${result.bg_color}`;
                     
@@ -277,167 +268,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     resultBox.style.display = 'block';
                     
                     // GSAP Animate Result Entrance
-                    if (typeof gsap !== 'undefined') {
-                        gsap.fromTo(resultBox, 
-                            { opacity: 0, scale: 0.95, y: 20 }, 
-                            { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: 'back.out(1.4)' }
-                        );
-                    }
+                    gsap.fromTo(resultBox, 
+                        { opacity: 0, scale: 0.95, y: 20 }, 
+                        { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: 'back.out(1.4)' }
+                    );
+
+                    // Animate number count-up effect
+                    animateCountUp('res-delay-num', result.predicted_delay_days);
                     
                     // Display financial impact
                     if (document.getElementById('res-penalty')) {
                         document.getElementById('res-penalty').innerText = '₹' + result.financial_impact_inr.toLocaleString('en-IN');
                     }
 
-                    // Store query in local history
-                    savePredictionHistory(payload, result);
-
                 } else {
-                    alert('Error: ' + (result ? result.error : 'Failed to calculate prediction.'));
+                    alert('Error: ' + result.error);
                     spinner.style.display = 'none';
                 }
             } catch (err) {
                 console.error(err);
-                alert('Calculation complete.');
+                alert('Network error connecting to Flask prediction service.');
                 spinner.style.display = 'none';
             } finally {
                 submitBtn.disabled = false;
             }
         });
     }
-
-    // Dashboard Retrain & History Table Handlers
-    initDashboardHandlers();
-});
-
-// Client-side ML Inference Calculation Engine
-function computeClientPrediction(payload) {
-    let modeSpeed = 50;
-    if (payload.Shipment_Mode === "Air") modeSpeed = 600;
-    else if (payload.Shipment_Mode === "Ocean") modeSpeed = 22;
-    else if (payload.Shipment_Mode === "Rail") modeSpeed = 45;
-
-    let baseDuration = Math.max(1, Math.round((payload.Distance_km / (modeSpeed * 24)) * 10) / 10);
-    if (payload.Shipment_Mode === "Ocean") baseDuration = Math.max(5, Math.round((payload.Distance_km / 400) * 10) / 10);
-    else if (payload.Shipment_Mode === "Air") baseDuration = Math.max(1, Math.round((payload.Distance_km / 2500) * 10) / 10);
-    else if (payload.Shipment_Mode === "Road") baseDuration = Math.max(1, Math.round((payload.Distance_km / 500) * 10) / 10);
-    else if (payload.Shipment_Mode === "Rail") baseDuration = Math.max(1, Math.round((payload.Distance_km / 650) * 10) / 10);
-
-    let weatherDelay = 0;
-    if (payload.Weather_Conditions === "Rainy") weatherDelay = 1.2;
-    else if (payload.Weather_Conditions === "Stormy") weatherDelay = 3.5;
-    else if (payload.Weather_Conditions === "Foggy") weatherDelay = 1.8;
-
-    let trafficDelay = 0;
-    if (payload.Traffic_Conditions === "Moderate") trafficDelay = 0.8;
-    else if (payload.Traffic_Conditions === "High") trafficDelay = 2.4;
-
-    const actualDuration = Math.round((baseDuration + weatherDelay + trafficDelay) * 10) / 10;
-    const predictedDelay = Math.round((actualDuration - payload.Planned_Duration_Days) * 10) / 10;
-    const penalty = predictedDelay > 0 ? Math.round(predictedDelay * (payload.Shipment_Value_INR * 0.02)) : 0;
-
-    let riskLevel = "LOW RISK";
-    let riskIndicator = "success";
-    let borderColor = "#10b981";
-    let bgColor = "rgba(16, 185, 129, 0.15)";
-    let reorderSuggestion = "Optimal logistics parameters. No immediate stock cushion needed.";
-
-    if (predictedDelay > 2.0) {
-        riskLevel = "HIGH RISK";
-        riskIndicator = "danger";
-        borderColor = "#ef4444";
-        bgColor = "rgba(239, 68, 68, 0.15)";
-        reorderSuggestion = `High stockout risk! Dispatch supplementary safety stock of ${Math.round(payload.Quantity * 0.25)} units via Air Freight immediately.`;
-    } else if (predictedDelay > 0) {
-        riskLevel = "MODERATE RISK";
-        riskIndicator = "warning";
-        borderColor = "#f59e0b";
-        bgColor = "rgba(245, 158, 11, 0.15)";
-        reorderSuggestion = `Potential minor delay. Maintain an order buffer of ${Math.round(payload.Quantity * 0.1)} units.`;
-    }
-
-    return {
-        success: true,
-        predicted_delay_days: predictedDelay,
-        predicted_actual_duration: actualDuration,
-        risk_level: riskLevel,
-        risk_indicator: riskIndicator,
-        border_color: borderColor,
-        bg_color: bgColor,
-        reorder_suggestion: reorderSuggestion,
-        financial_impact_inr: penalty
-    };
-}
-
-function savePredictionHistory(payload, result) {
-    let history = JSON.parse(localStorage.getItem('prediction_history') || '[]');
-    const record = {
-        Timestamp: new Date().toISOString().replace('T', ' ').substring(0, 19),
-        Origin: payload.Origin,
-        Destination: payload.Destination,
-        Shipment_Mode: payload.Shipment_Mode,
-        Distance_km: payload.Distance_km,
-        Shipment_Value_INR: payload.Shipment_Value_INR,
-        Predicted_Delay_Days: result.predicted_delay_days,
-        Financial_Penalty_INR: result.financial_impact_inr,
-        Risk_Level: result.risk_level
-    };
-    history.unshift(record);
-    if (history.length > 20) history = history.slice(0, 20);
-    localStorage.setItem('prediction_history', JSON.stringify(history));
-}
-
-function initDashboardHandlers() {
-    const historyTableBody = document.getElementById('history-body');
-    const historyStatus = document.getElementById('history-status');
-    const retrainBtn = document.getElementById('retrain-btn');
-    const retrainProgress = document.getElementById('retrain-progress');
-
-    if (historyTableBody) {
-        let history = JSON.parse(localStorage.getItem('prediction_history') || '[]');
-        if (history.length === 0) {
-            // Seed initial simulation records
-            history = [
-                { Timestamp: "2026-07-26 18:30:15", Origin: "Mumbai", Destination: "Delhi", Shipment_Mode: "Ocean", Distance_km: 2306, Shipment_Value_INR: 500000, Predicted_Delay_Days: 2.1, Financial_Penalty_INR: 21000, Risk_Level: "MODERATE RISK" },
-                { Timestamp: "2026-07-26 17:14:02", Origin: "Chennai", Destination: "Bengaluru", Shipment_Mode: "Road", Distance_km: 363, Shipment_Value_INR: 250000, Predicted_Delay_Days: 0.0, Financial_Penalty_INR: 0, Risk_Level: "LOW RISK" },
-                { Timestamp: "2026-07-26 15:42:50", Origin: "Kolkata", Destination: "Mumbai", Shipment_Mode: "Rail", Distance_km: 1903, Shipment_Value_INR: 1200000, Predicted_Delay_Days: 3.4, Financial_Penalty_INR: 81600, Risk_Level: "HIGH RISK" }
-            ];
-        }
-
-        historyTableBody.innerHTML = '';
-        history.forEach(item => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td>${item.Timestamp}</td>
-                <td>${item.Origin}</td>
-                <td>${item.Destination}</td>
-                <td>${item.Shipment_Mode}</td>
-                <td>${item.Distance_km}</td>
-                <td>₹${Number(item.Shipment_Value_INR).toLocaleString('en-IN')}</td>
-                <td>${item.Predicted_Delay_Days > 0 ? '+' : ''}${item.Predicted_Delay_Days} days</td>
-                <td>₹${Number(item.Financial_Penalty_INR).toLocaleString('en-IN')}</td>
-                <td><span class="badge ${item.Risk_Level.includes('HIGH') ? 'bg-danger' : item.Risk_Level.includes('MODERATE') ? 'bg-warning text-dark' : 'bg-success'}">${item.Risk_Level}</span></td>
-            `;
-            historyTableBody.appendChild(tr);
-        });
-
-        if (historyStatus) historyStatus.style.display = 'none';
-    }
-
-    if (retrainBtn) {
-        retrainBtn.addEventListener('click', () => {
-            retrainBtn.disabled = true;
-            if (retrainProgress) retrainProgress.style.display = 'block';
-
-            setTimeout(() => {
-                retrainBtn.disabled = false;
-                if (retrainProgress) retrainProgress.style.display = 'none';
-                alert('XGBoost pipelines retrained successfully on latest historical logs!');
-            }, 1800);
-        });
-    }
-}
-
 
     // PDF Generation Logic
     const downloadPdfBtn = document.getElementById('download-pdf-btn');
