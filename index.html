@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freight Logistics Predictor | ML Inventory Intelligence</title>
+    <title>Freight Logistics Intelligence & Risk Predictor</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -17,9 +17,20 @@
         .text-muted, p.text-muted, span.text-muted, div.text-muted {
             color: #475569 !important;
         }
+        .nav-tab-btn {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .nav-tab-btn.active {
+            color: #4f46e5 !important;
+            background: rgba(79, 70, 229, 0.12) !important;
+            font-weight: 700 !important;
+        }
     </style>
     <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="static/css/style.css?v=13.0">
+    <link rel="stylesheet" href="static/css/style.css?v=14.0">
 </head>
 <body>
 
@@ -27,270 +38,379 @@
     <div id="three-canvas-container"></div>
     <div class="bg-overlay-grid"></div>
 
-    <!-- Navigation Header -->
+    <!-- Single Page Navigation Header -->
     <nav class="navbar navbar-expand-lg navbar-glass py-3">
         <div class="container d-flex flex-column align-items-center text-center">
-            <a class="navbar-brand fw-bold mb-2 mb-md-0" href="/" style="color: #4f46e5 !important; font-size: 1.6rem !important; letter-spacing: 2px !important; text-align: center;">FREIGHT INTEL AI</a>
-            <div class="d-flex align-items-center gap-3">
-                <a class="nav-link active fw-bold px-3 py-1 rounded-pill" href="/" style="color: #4f46e5 !important; background: rgba(79, 70, 229, 0.12);">Predictor</a>
-                <a class="nav-link fw-semibold px-3 py-1 rounded-pill" href="/dashboard" style="color: #475569 !important;">Analytics Dashboard</a>
+            <a class="navbar-brand fw-bold mb-2 mb-md-0" href="#" id="brand-home" style="color: #4f46e5 !important; font-size: 1.6rem !important; letter-spacing: 2px !important; text-align: center;">FREIGHT INTEL AI</a>
+            <div class="d-flex align-items-center gap-2">
+                <button type="button" class="nav-link nav-tab-btn active px-3 py-1 rounded-pill" data-tab="predictor">Predictor</button>
+                <button type="button" class="nav-link nav-tab-btn px-3 py-1 rounded-pill" data-tab="dashboard">Analytics Dashboard</button>
             </div>
         </div>
     </nav>
 
     <!-- Main Content Area -->
-    <main class="container-fluid px-lg-5 my-4 anim-fade-up" style="position: relative; z-index: 2; pointer-events: none;">
-        <div class="row">
-            
-            <!-- Left Panel (Controls & Form) -->
-            <div class="col-lg-5 col-xl-5 mb-4" style="pointer-events: auto;">
+    <main class="container-fluid px-lg-5 my-4 anim-fade-up" style="position: relative; z-index: 2;">
+        
+        <!-- ================= VIEW 1: PREDICTOR & 3D GLOBE ================= -->
+        <section id="view-predictor" class="tab-view active">
+            <div class="row">
                 
-                <!-- Compact Hero Branding Card -->
-                <div class="glass-card mb-4 p-4">
-                    <h1 class="display-6 fw-bold mb-2" style="letter-spacing: 0.8px; color: #1e1b4b !important;">Freight Intel AI</h1>
-                    <p class="small mb-3" style="color: #4f46e5 !important; font-weight: 600;">Interactive 3D Logistics Intelligence & ML Risk Predictor</p>
-                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-                        <span class="small" style="color: #475569 !important;">Developer: <strong style="color: #1e1b4b !important;">Ahmed Safwan C</strong></span>
-                        <a href="https://github.com/safwan207/Freight_Intel_AI" target="_blank" class="btn btn-sm rounded-pill px-3 py-1.5 d-flex align-items-center gap-2" style="background: rgba(79, 70, 229, 0.1); border: 1px solid #4f46e5; font-size: 0.75rem; text-decoration: none; color: #4f46e5; font-weight: 600;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                            GitHub Repository
-                        </a>
+                <!-- Left Panel (Controls & Form) -->
+                <div class="col-lg-5 col-xl-5 mb-4" style="pointer-events: auto;">
+                    
+                    <!-- Compact Hero Branding Card -->
+                    <div class="glass-card mb-4 p-4">
+                        <h1 class="display-6 fw-bold mb-2" style="letter-spacing: 0.8px; color: #1e1b4b !important;">Freight Intel AI</h1>
+                        <p class="small mb-3" style="color: #4f46e5 !important; font-weight: 600;">Interactive 3D Logistics Intelligence & ML Risk Predictor</p>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <span class="small" style="color: #475569 !important;">Developer: <strong style="color: #1e1b4b !important;">Ahmed Safwan C</strong></span>
+                            <a href="https://github.com/safwan207/Freight_Intel_AI" target="_blank" class="btn btn-sm rounded-pill px-3 py-1.5 d-flex align-items-center gap-2" style="background: rgba(79, 70, 229, 0.1); border: 1px solid #4f46e5; font-size: 0.75rem; text-decoration: none; color: #4f46e5; font-weight: 600;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Info & Diagnostics -->
+                    <div class="glass-card mb-4 p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge mb-0 px-2.5 py-1 text-uppercase fw-bold" style="border: 1px solid #4f46e5; background: rgba(79, 70, 229, 0.12); color: #4f46e5; font-size: 0.72rem; letter-spacing: 0.6px;">
+                                Active ML Pipeline
+                            </span>
+                            <button type="button" class="btn btn-neon-secondary btn-xs py-1 px-3" data-tab="dashboard" style="font-size: 0.75rem;">Global Dashboard →</button>
+                        </div>
+                        <p class="mb-3" style="font-size: 0.88rem; line-height: 1.45; color: #475569 !important;">
+                            Predict delays and ordering stockouts using Gradient Boosted Decision Trees (XGBoost).
+                        </p>
+                        <div class="row text-center g-2" style="border-top: 1px solid rgba(79, 70, 229, 0.2); padding-top: 12px;">
+                            <div class="col-3">
+                                <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">R² Score</div>
+                                <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">31.15%</div>
+                            </div>
+                            <div class="col-3">
+                                <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Error (MAE)</div>
+                                <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">0.96 Days</div>
+                            </div>
+                            <div class="col-3">
+                                <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Total Data</div>
+                                <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">1200</div>
+                            </div>
+                            <div class="col-3">
+                                <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">On-Time</div>
+                                <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">46.5%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Configurator -->
+                    <div class="glass-card p-4">
+                        <h5 class="fw-bold mb-4" style="color: #1e1b4b !important;">Scenario Configurator</h5>
+
+                        <form id="prediction-form">
+                            <!-- Route & Distance -->
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
+                                    <label for="origin" class="form-label">Origin City</label>
+                                    <select class="form-select form-select-glass" id="origin" required>
+                                        <option value="Mumbai" selected>Mumbai (INBOM)</option>
+                                        <option value="Delhi">Delhi (INDEL)</option>
+                                        <option value="Chennai">Chennai (INMAA)</option>
+                                        <option value="Kolkata">Kolkata (INCCU)</option>
+                                        <option value="Bengaluru">Bengaluru (INBLR)</option>
+                                        <option value="Hyderabad">Hyderabad (INHYD)</option>
+                                        <option value="Ahmedabad">Ahmedabad (INAMD)</option>
+                                        <option value="Kochi">Kochi (INCOK)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
+                                    <label for="hub" class="form-label">Transit Hub</label>
+                                    <select class="form-select form-select-glass" id="hub">
+                                        <option value="" selected>Direct (None)</option>
+                                        <option value="Mumbai">Mumbai (INBOM)</option>
+                                        <option value="Delhi">Delhi (INDEL)</option>
+                                        <option value="Chennai">Chennai (INMAA)</option>
+                                        <option value="Kolkata">Kolkata (INCCU)</option>
+                                        <option value="Bengaluru">Bengaluru (INBLR)</option>
+                                        <option value="Hyderabad">Hyderabad (INHYD)</option>
+                                        <option value="Ahmedabad">Ahmedabad (INAMD)</option>
+                                        <option value="Kochi">Kochi (INCOK)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
+                                    <label for="destination" class="form-label">Destination</label>
+                                    <select class="form-select form-select-glass" id="destination" required>
+                                        <option value="Delhi" selected>Delhi (INDEL)</option>
+                                        <option value="Mumbai">Mumbai (INBOM)</option>
+                                        <option value="Kolkata">Kolkata (INCCU)</option>
+                                        <option value="Chennai">Chennai (INMAA)</option>
+                                        <option value="Hyderabad">Hyderabad (INHYD)</option>
+                                        <option value="Bengaluru">Bengaluru (INBLR)</option>
+                                        <option value="Kochi">Kochi (INCOK)</option>
+                                        <option value="Ahmedabad">Ahmedabad (INAMD)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
+                                    <label for="distance" class="form-label">Distance (km)</label>
+                                    <input type="number" class="form-control form-control-glass" id="distance" value="2306" min="0" max="30000" readonly required>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
+                                    <label for="mode" class="form-label">Transport Mode</label>
+                                    <select class="form-select form-select-glass" id="mode" required>
+                                        <option value="Ocean" selected>Ocean Freight</option>
+                                        <option value="Air">Air Cargo</option>
+                                        <option value="Rail">Rail Intermodal</option>
+                                        <option value="Road">Over the Road (OTR)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
+                                    <label for="carrier" class="form-label">Carrier</label>
+                                    <select class="form-select form-select-glass" id="carrier" required>
+                                        <option value="Blue Dart" selected>Blue Dart</option>
+                                        <option value="Gati">Gati Express</option>
+                                        <option value="CONCOR">CONCOR</option>
+                                        <option value="TCI">TCI Freight</option>
+                                        <option value="SCI">SCI Ocean</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Load details -->
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
+                                    <label for="quantity" class="form-label">Qty (Units)</label>
+                                    <input type="number" class="form-control form-control-glass" id="quantity" value="1200" min="1" max="100000" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="weight" class="form-label">Weight (kg)</label>
+                                    <input type="number" class="form-control form-control-glass" id="weight" value="6500" min="1" max="1000000" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="volume" class="form-label">Volume (m³)</label>
+                                    <input type="number" class="form-control form-control-glass" id="volume" value="25.5" step="0.1" min="0.1" max="10000" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="value" class="form-label">Shipment Value (INR / ₹)</label>
+                                    <input type="number" class="form-control form-control-glass" id="value" value="500000" min="100" max="100000000" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="planned_days" class="form-label">Planned Duration (Days)</label>
+                                    <input type="number" class="form-control form-control-glass" id="planned_days" value="15" min="1" max="90" required>
+                                </div>
+                            </div>
+
+                            <!-- External Factors -->
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label for="weather" class="form-label">Live Weather (Auto)</label>
+                                    <input type="text" class="form-control form-control-glass" id="weather" value="Sunny" readonly required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="traffic" class="form-label">Port/Road Traffic</label>
+                                    <select class="form-select form-select-glass" id="traffic" required>
+                                        <option value="Low" selected>Low Congestion</option>
+                                        <option value="Moderate">Moderate Risk</option>
+                                        <option value="High">High Congestion</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" id="submit-btn" class="btn btn-neon-primary py-2.5">
+                                    Calculate Predicted Delay & Risk
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Loading Spinner -->
+                        <div class="spinner-container" id="loading-spinner">
+                            <div class="neon-spinner"></div>
+                            <span class="ms-3 text-muted">Running XGBoost Model Inference...</span>
+                        </div>
+
+                        <!-- Prediction Results -->
+                        <div class="prediction-box mt-4 p-4" id="result-box">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="fw-bold mb-0" style="color: #1e1b4b !important;">Inference Output</h4>
+                                <span id="res-risk-badge" class="status-badge">LOW RISK</span>
+                            </div>
+                            
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-4">
+                                    <div class="result-card text-center p-2 mb-0">
+                                        <div class="metric-label">Predicted Delay</div>
+                                        <div class="result-value" id="res-delay">+2.1 days</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="result-card text-center p-2 mb-0">
+                                        <div class="metric-label">Total Transit</div>
+                                        <div class="result-value" id="res-total-days">17.1 days</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="result-card text-center p-2 mb-0" style="border-color: rgba(220,38,38,0.3);">
+                                        <div class="metric-label">Penalty (INR)</div>
+                                        <div class="result-value text-danger" id="res-penalty">₹0</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-3 rounded mb-3" style="background: rgba(79, 70, 229, 0.12); border-left: 4px solid #4f46e5;">
+                                <div class="fw-semibold mb-1" style="font-size: 0.88rem; color: #1e1b4b !important;">Inventory Recommendation</div>
+                                <p class="mb-0" style="font-size: 0.78rem; color: #475569 !important;" id="res-reorder-suggestion">
+                                    Add extra stock cushion...
+                                </p>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="button" id="download-pdf-btn" class="btn btn-outline-primary btn-sm" style="font-size: 0.8rem; font-weight: 600; border-color: #4f46e5; color: #4f46e5;">📄 Download Risk Report (PDF)</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Info & Diagnostics -->
-                <div class="glass-card mb-4 p-4">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="badge mb-0 px-2.5 py-1 text-uppercase fw-bold" style="border: 1px solid #4f46e5; background: rgba(79, 70, 229, 0.12); color: #4f46e5; font-size: 0.72rem; letter-spacing: 0.6px;">
-                            Active ML Pipeline
-                        </span>
-                        <a href="dashboard.html" class="btn btn-neon-secondary btn-xs py-1 px-3" style="font-size: 0.75rem;">Global Dashboard →</a>
-                    </div>
-                    <p class="mb-3" style="font-size: 0.88rem; line-height: 1.45; color: #475569 !important;">
-                        Predict delays and ordering stockouts using Gradient Boosted Decision Trees (XGBoost).
-                    </p>
-                    <div class="row text-center g-2" style="border-top: 1px solid rgba(79, 70, 229, 0.2); padding-top: 12px;">
-                        <div class="col-3">
-                            <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">R² Score</div>
-                            <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">
-                                31.15%
-                            </div>
+                <!-- Right Panel (Globe Info Overlay) -->
+                <div class="col-lg-7 col-xl-7 d-none d-lg-flex flex-column justify-content-end align-items-end p-5" style="pointer-events: none; min-height: calc(100vh - 120px);">
+                    <div class="glass-card p-3 mb-4 anim-fade-in" style="pointer-events: auto; max-width: 320px;">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="pulse-glow" style="width: 10px; height: 10px; border-radius: 50%; background-color: #4f46e5;"></div>
+                            <div class="small fw-bold" style="color: #1e1b4b !important;">Interactive 3D Supply Chain Globe</div>
                         </div>
-                        <div class="col-3">
-                            <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Error (MAE)</div>
-                            <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">
-                                0.96 Days
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Total Data</div>
-                            <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">
-                                1200
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div style="font-size: 0.72rem; color: #4f46e5; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">On-Time</div>
-                            <div class="fw-bold small mt-0.5" style="font-size: 0.92rem; color: #1e1b4b !important;">
-                                46.5%
-                            </div>
-                        </div>
+                        <p class="mt-2 mb-0" style="font-size: 0.8rem; line-height: 1.55; color: #475569 !important;">
+                            • <strong>Left Click + Drag</strong> to rotate the globe<br>
+                            • <strong>Scroll Wheel</strong> to zoom in or out<br>
+                            • <strong>Right Click + Drag</strong> to pan camera<br>
+                            • Click <strong>Calculate</strong> to trace shipping routes in real-time
+                        </p>
                     </div>
                 </div>
 
-                <!-- Form Configurator -->
-                <div class="glass-card p-4">
-                    <h5 class="fw-bold mb-4" style="color: #1e1b4b !important;">Scenario Configurator</h5>
-
-                    <form id="prediction-form">
-                        
-                        <!-- Route & Distance -->
-                        <div class="row mb-3">
-                            <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
-                                <label for="origin" class="form-label" style="color: #4f46e5 !important;">Origin City</label>
-                                <select class="form-select form-select-glass" id="origin" required>
-                                    <option value="Mumbai" selected>Mumbai (INBOM)</option>
-                                    <option value="Delhi">Delhi (INDEL)</option>
-                                    <option value="Chennai">Chennai (INMAA)</option>
-                                    <option value="Kolkata">Kolkata (INCCU)</option>
-                                    <option value="Bengaluru">Bengaluru (INBLR)</option>
-                                    <option value="Hyderabad">Hyderabad (INHYD)</option>
-                                    <option value="Ahmedabad">Ahmedabad (INAMD)</option>
-                                    <option value="Kochi">Kochi (INCOK)</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
-                                <label for="hub" class="form-label" style="color: #4f46e5 !important;">Transit Hub</label>
-                                <select class="form-select form-select-glass" id="hub">
-                                    <option value="" selected>Direct (None)</option>
-                                    <option value="Mumbai">Mumbai (INBOM)</option>
-                                    <option value="Delhi">Delhi (INDEL)</option>
-                                    <option value="Chennai">Chennai (INMAA)</option>
-                                    <option value="Kolkata">Kolkata (INCCU)</option>
-                                    <option value="Bengaluru">Bengaluru (INBLR)</option>
-                                    <option value="Hyderabad">Hyderabad (INHYD)</option>
-                                    <option value="Ahmedabad">Ahmedabad (INAMD)</option>
-                                    <option value="Kochi">Kochi (INCOK)</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
-                                <label for="destination" class="form-label" style="color: #4f46e5 !important;">Destination</label>
-                                <select class="form-select form-select-glass" id="destination" required>
-                                    <option value="Delhi" selected>Delhi (INDEL)</option>
-                                    <option value="Mumbai">Mumbai (INBOM)</option>
-                                    <option value="Kolkata">Kolkata (INCCU)</option>
-                                    <option value="Chennai">Chennai (INMAA)</option>
-                                    <option value="Hyderabad">Hyderabad (INHYD)</option>
-                                    <option value="Bengaluru">Bengaluru (INBLR)</option>
-                                    <option value="Kochi">Kochi (INCOK)</option>
-                                    <option value="Ahmedabad">Ahmedabad (INAMD)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
-                                <label for="distance" class="form-label" style="color: #4f46e5 !important;">Distance (km)</label>
-                                <input type="number" class="form-control form-control-glass" id="distance" value="2306" min="0" max="30000" readonly required>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
-                                <label for="mode" class="form-label" style="color: #4f46e5 !important;">Transport Mode</label>
-                                <select class="form-select form-select-glass" id="mode" required>
-                                    <option value="Ocean" selected>Ocean Freight</option>
-                                    <option value="Air">Air Cargo</option>
-                                    <option value="Rail">Rail Intermodal</option>
-                                    <option value="Road">Over the Road (OTR)</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
-                                <label for="carrier" class="form-label" style="color: #4f46e5 !important;">Carrier</label>
-                                <select class="form-select form-select-glass" id="carrier" required>
-                                    <option value="Blue Dart" selected>Blue Dart</option>
-                                    <option value="Gati">Gati Express</option>
-                                    <option value="CONCOR">CONCOR</option>
-                                    <option value="TCI">TCI Freight</option>
-                                    <option value="SCI">SCI Ocean</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Load details -->
-                        <div class="row mb-3">
-                            <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-lg-0">
-                                <label for="quantity" class="form-label" style="color: #4f46e5 !important;">Qty (Units)</label>
-                                <input type="number" class="form-control form-control-glass" id="quantity" value="1200" min="1" max="100000" required>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="weight" class="form-label" style="color: #4f46e5 !important;">Weight (kg)</label>
-                                <input type="number" class="form-control form-control-glass" id="weight" value="6500" min="1" max="1000000" required>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="volume" class="form-label" style="color: #4f46e5 !important;">Volume (m³)</label>
-                                <input type="number" class="form-control form-control-glass" id="volume" value="25.5" step="0.1" min="0.1" max="10000" required>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="value" class="form-label" style="color: #4f46e5 !important;">Shipment Value (INR / ₹)</label>
-                                <input type="number" class="form-control form-control-glass" id="value" value="500000" min="100" max="100000000" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="planned_days" class="form-label" style="color: #4f46e5 !important;">Planned Duration (Days)</label>
-                                <input type="number" class="form-control form-control-glass" id="planned_days" value="15" min="1" max="90" required>
-                            </div>
-                        </div>
-
-                        <!-- External Factors -->
-                        <div class="row mb-4">
-                            <div class="col-md-6">
-                                <label for="weather" class="form-label" style="color: #4f46e5 !important;">Live Weather (Auto)</label>
-                                <input type="text" class="form-control form-control-glass" id="weather" value="Sunny" readonly required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="traffic" class="form-label" style="color: #4f46e5 !important;">Port/Road Traffic</label>
-                                <select class="form-select form-select-glass" id="traffic" required>
-                                    <option value="Low" selected>Low Congestion</option>
-                                    <option value="Moderate">Moderate Risk</option>
-                                    <option value="High">High Congestion</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="d-grid">
-                            <button type="submit" id="submit-btn" class="btn btn-neon-primary py-2.5">
-                                Calculate Predicted Delay & Risk
-                            </button>
-                        </div>
-                    </form>
-
-                    <!-- Loading Spinner -->
-                    <div class="spinner-container" id="loading-spinner">
-                        <div class="neon-spinner"></div>
-                        <span class="ms-3 text-muted">Running XGBoost Model Inference...</span>
-                    </div>
-
-                    <!-- Prediction Results -->
-                    <div class="prediction-box mt-4 p-4" id="result-box">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h4 class="fw-bold mb-0" style="color: #1e1b4b !important;">Inference Output</h4>
-                            <span id="res-risk-badge" class="status-badge">LOW RISK</span>
-                        </div>
-                        
-                        <div class="row g-3 mb-3">
-                            <div class="col-md-4">
-                                <div class="result-card text-center p-2 mb-0">
-                                    <div class="metric-label" style="color: #4f46e5 !important;">Predicted Delay</div>
-                                    <div class="result-value" id="res-delay" style="font-size: 1.6rem; color: #1e1b4b !important;">+2.1 days</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="result-card text-center p-2 mb-0">
-                                    <div class="metric-label" style="color: #4f46e5 !important;">Total Transit</div>
-                                    <div class="result-value" id="res-total-days" style="font-size: 1.6rem; color: #1e1b4b !important;">17.1 days</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="result-card text-center p-2 mb-0" style="border-color: rgba(220,38,38,0.3);">
-                                    <div class="metric-label" style="color: #4f46e5 !important;">Penalty (INR)</div>
-                                    <div class="result-value text-danger" id="res-penalty" style="font-size: 1.6rem;">₹0</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-3 rounded mb-3" style="background: rgba(79, 70, 229, 0.12); border-left: 4px solid #4f46e5;">
-                            <div class="fw-semibold mb-1" style="font-size: 0.88rem; color: #1e1b4b !important;">Inventory Recommendation</div>
-                            <p class="mb-0" style="font-size: 0.78rem; color: #475569 !important;" id="res-reorder-suggestion">
-                                Add extra stock cushion...
-                            </p>
-                        </div>
-                        
-                        <div class="d-grid">
-                            <button type="button" id="download-pdf-btn" class="btn btn-outline-primary btn-sm" style="font-size: 0.8rem; font-weight: 600; border-color: #4f46e5; color: #4f46e5;">📄 Download Risk Report (PDF)</button>
-                        </div>
-                    </div>
-
-                </div>
             </div>
+        </section>
 
-            <!-- Right Panel (Globe Info Overlay) -->
-            <div class="col-lg-7 col-xl-7 d-none d-lg-flex flex-column justify-content-end align-items-end p-5" style="pointer-events: none; min-height: calc(100vh - 120px);">
-                <div class="glass-card p-3 mb-4 anim-fade-in" style="pointer-events: auto; max-width: 320px;">
-                    <div class="d-flex align-items-center gap-2">
-                        <div class="pulse-glow" style="width: 10px; height: 10px; border-radius: 50%; background-color: #4f46e5;"></div>
-                        <div class="small fw-bold" style="color: #1e1b4b !important;">Interactive 3D Supply Chain Globe</div>
+        <!-- ================= VIEW 2: ANALYTICS DASHBOARD (SINGLE-PAGE TAB) ================= -->
+        <section id="view-dashboard" class="tab-view" style="display: none;">
+            <div class="container my-3 anim-fade-up">
+                
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
+                    <div>
+                        <h1 class="display-6 fw-bold mb-1" style="color: #1e1b4b !important;">Logistics Analytics Dashboard</h1>
+                        <p class="mb-0" style="color: #475569 !important;">Visual analysis of historical freight data and machine learning feature weightings.</p>
                     </div>
-                    <p class="mt-2 mb-0" style="font-size: 0.8rem; line-height: 1.55; color: #475569 !important;">
-                        • <strong>Left Click + Drag</strong> to rotate the globe<br>
-                        • <strong>Scroll Wheel</strong> to zoom in or out<br>
-                        • <strong>Right Click + Drag</strong> to pan camera<br>
-                        • Click <strong>Calculate</strong> to trace shipping routes in real-time
-                    </p>
+                    <div class="mt-3 mt-md-0">
+                        <button id="retrain-btn" class="btn btn-neon-secondary">
+                            Retrain ML Model
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-        </div>
+                <!-- Retrain Progress Indicator -->
+                <div class="glass-card mb-4 text-center py-3" id="retrain-progress" style="display: none; border-color: #4f46e5;">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="neon-spinner" style="width: 30px; height: 30px; border-width: 2px;"></div>
+                        <span class="ms-3 fw-bold" style="color: #1e1b4b !important;">Re-training XGBoost pipelines & regenerating charts...</span>
+                    </div>
+                </div>
+
+                <!-- KPI Metrics Grid -->
+                <div class="metrics-grid mb-4">
+                    <div class="metric-card">
+                        <div class="metric-label">Avg Delay (MAE)</div>
+                        <div class="metric-val mt-1" id="val-mae">0.96 Days</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Model Accuracy (R²)</div>
+                        <div class="metric-val mt-1" id="val-r2">31.15%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Dataset Records</div>
+                        <div class="metric-val mt-1" id="val-total">1200</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">On-Time Shipments</div>
+                        <div class="metric-val mt-1" id="val-ontime">46.5%</div>
+                    </div>
+                </div>
+
+                <!-- Raw History Data Table -->
+                <div class="glass-card mb-5 p-4 anim-fade-up">
+                    <h5 class="fw-bold mb-3" style="color: #1e1b4b !important;">Recent Shipment Simulations (Raw Data)</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0" id="history-table" style="background: transparent; color: #1e1b4b;">
+                            <thead style="border-bottom: 2px solid #4f46e5; color: #4f46e5;">
+                                <tr>
+                                    <th style="color: #4f46e5 !important;">Timestamp</th>
+                                    <th style="color: #4f46e5 !important;">Origin</th>
+                                    <th style="color: #4f46e5 !important;">Destination</th>
+                                    <th style="color: #4f46e5 !important;">Mode</th>
+                                    <th style="color: #4f46e5 !important;">Dist (km)</th>
+                                    <th style="color: #4f46e5 !important;">Value (₹)</th>
+                                    <th style="color: #4f46e5 !important;">Delay</th>
+                                    <th style="color: #4f46e5 !important;">Penalty (₹)</th>
+                                    <th style="color: #4f46e5 !important;">Risk</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history-body" style="color: #1e1b4b !important;">
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="small mt-3 mb-0" style="color: #475569 !important;" id="history-status">Loading history...</p>
+                </div>
+
+                <!-- Analytical Charts Grid -->
+                <div class="row g-4">
+                    <!-- Chart 1: Delay by Mode -->
+                    <div class="col-lg-6">
+                        <div class="chart-card-wrapper">
+                            <h6 class="fw-bold mb-3" style="color: #1e1b4b !important;">Average Delay (Days) by Transport Mode</h6>
+                            <div class="chart-img-container">
+                                <img src="static/img/charts/delay_by_mode.png?v=14.0" alt="Delay by Mode">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chart 2: Delay Risk Distribution -->
+                    <div class="col-lg-6">
+                        <div class="chart-card-wrapper">
+                            <h6 class="fw-bold mb-3" style="color: #1e1b4b !important;">Shipment Delay Risk Tier Distribution</h6>
+                            <div class="chart-img-container">
+                                <img src="static/img/charts/delay_by_carrier.png?v=14.0" alt="Carrier Performance">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chart 3: Weather Impact -->
+                    <div class="col-lg-6">
+                        <div class="chart-card-wrapper">
+                            <h6 class="fw-bold mb-3" style="color: #1e1b4b !important;">Weather & Traffic Impact on Freight Delay</h6>
+                            <div class="chart-img-container">
+                                <img src="static/img/charts/weather_traffic_impact.png?v=14.0" alt="Weather Impact">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chart 4: XGBoost Feature Importance -->
+                    <div class="col-lg-6">
+                        <div class="chart-card-wrapper">
+                            <h6 class="fw-bold mb-3" style="color: #1e1b4b !important;">XGBoost Feature Importance Weighting</h6>
+                            <div class="chart-img-container">
+                                <img src="static/img/charts/feature_importance.png?v=14.0" alt="Feature Importance">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -308,7 +428,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
     <!-- Custom Logic Scripts -->
-    <script src="static/js/three_bg.js?v=13.0"></script>
-    <script src="static/js/app.js?v=13.0"></script>
+    <script src="static/js/three_bg.js?v=14.0"></script>
+    <script src="static/js/app.js?v=14.0"></script>
 </body>
 </html>

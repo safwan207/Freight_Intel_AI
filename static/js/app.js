@@ -311,6 +311,37 @@ document.addEventListener('DOMContentLoaded', () => {
             html2pdf().set(opt).from(element).save();
         });
     }
+
+    // Single-Page Tab Switching Logic (Predictor <-> Analytics Dashboard)
+    const tabBtns = document.querySelectorAll('[data-tab]');
+    const predictorView = document.getElementById('view-predictor');
+    const dashboardView = document.getElementById('view-dashboard');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = btn.getAttribute('data-tab');
+            if (!target) return;
+
+            document.querySelectorAll('.nav-tab-btn').forEach(b => {
+                if (b.getAttribute('data-tab') === target) {
+                    b.classList.add('active');
+                } else {
+                    b.classList.remove('active');
+                }
+            });
+
+            if (target === 'predictor') {
+                if (predictorView) predictorView.style.display = 'block';
+                if (dashboardView) dashboardView.style.display = 'none';
+            } else if (target === 'dashboard') {
+                if (predictorView) predictorView.style.display = 'none';
+                if (dashboardView) dashboardView.style.display = 'block';
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
 });
 
 // Helper for dynamic number animations
