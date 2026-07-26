@@ -4,19 +4,13 @@ import csv
 from datetime import datetime
 
 # pyrefly: ignore [missing-import]
+import numpy as np
+# pyrefly: ignore [missing-import]
+import pandas as pd
+# pyrefly: ignore [missing-import]
+import joblib
+# pyrefly: ignore [missing-import]
 from flask import Flask, render_template, request, jsonify
-
-# Optional ML imports for serverless environments
-try:
-    import numpy as np
-    import pandas as pd
-    import joblib
-    ML_LIBS_AVAILABLE = True
-except ImportError:
-    np = None
-    pd = None
-    joblib = None
-    ML_LIBS_AVAILABLE = False
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -36,13 +30,14 @@ def load_ml_resources():
     """Attempts to load the model pipeline and performance metrics."""
     global model_pipeline, model_metrics
     
-    if ML_LIBS_AVAILABLE and os.path.exists(MODEL_PATH):
+    if os.path.exists(MODEL_PATH):
         try:
             model_pipeline = joblib.load(MODEL_PATH)
             print("Successfully loaded machine learning model pipeline.")
         except Exception as e:
             print(f"Error loading model pipeline: {e}")
             model_pipeline = None
+
 
 
 
