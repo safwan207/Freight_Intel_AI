@@ -1,14 +1,14 @@
-// Three.js 3D Background - Mild Periwinkle & Lavender Light Holographic Globe
+// Three.js 3D Background - Gorgeous Contrast (Electric Lime & Dark Charcoal)
 let scene, camera, renderer, globe, stars, routes = [];
 let controls;
 let isInteracting = false;
 const container = document.getElementById('three-canvas-container');
 
-// Shopify Editions Light Theme Palette
+// Theme 27 Palette
 const CONFIG = {
-    globeColor: 0x3D52A0,     // Deep Periwinkle
-    routeColor: 0x7091E6,     // Soft Cornflower Blue
-    starColor: 0x8697C4,      // Steel Periwinkle
+    globeColor: 0x86C232,     // Electric Lime Green
+    routeColor: 0x61892F,     // Forest Olive Green
+    starColor: 0x86C232,      // Lime Star Particles
     globeRadius: 3.5
 };
 
@@ -17,7 +17,7 @@ function initThree() {
 
     // 1. Create Scene
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0xEDE8F5, 0.04);
+    scene.fog = new THREE.FogExp2(0x222629, 0.04);
 
     // 2. Create Camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
@@ -27,7 +27,7 @@ function initThree() {
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0xEDE8F5, 1);
+    renderer.setClearColor(0x222629, 1);
     container.appendChild(renderer.domElement);
 
     // 4. Create Globe & Routes
@@ -70,7 +70,7 @@ function createGlobe() {
         color: CONFIG.globeColor,
         size: 0.045,
         transparent: true,
-        opacity: 0.65
+        opacity: 0.75
     });
 
     globe = new THREE.Points(pointsGeom, pointsMat);
@@ -79,10 +79,10 @@ function createGlobe() {
     // Inner wireframe sphere
     const wireGeom = new THREE.SphereGeometry(CONFIG.globeRadius * 0.98, 20, 20);
     const wireMat = new THREE.MeshBasicMaterial({
-        color: 0xADBBDA,
+        color: 0x61892F,
         wireframe: true,
         transparent: true,
-        opacity: 0.15
+        opacity: 0.25
     });
     const wireMesh = new THREE.Mesh(wireGeom, wireMat);
     globe.add(wireMesh);
@@ -102,9 +102,9 @@ function createStars() {
     starsGeom.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
     const starsMat = new THREE.PointsMaterial({
         color: CONFIG.starColor,
-        size: 0.05,
+        size: 0.04,
         transparent: true,
-        opacity: 0.5
+        opacity: 0.4
     });
 
     stars = new THREE.Points(starsGeom, starsMat);
@@ -141,7 +141,7 @@ function addRouteArc(coord1, coord2) {
     const mat = new THREE.LineBasicMaterial({
         color: CONFIG.routeColor,
         transparent: true,
-        opacity: 0.5,
+        opacity: 0.6,
         linewidth: 1.5
     });
 
