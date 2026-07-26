@@ -1,108 +1,104 @@
-# Freight Intel AI 🌐✈️🚚
+# Freight Intel AI 🚛📦
 
-Freight Intel AI is a cutting-edge supply chain intelligence application designed to predict freight shipment delays, assess inventory stockout risks, and optimize ordering patterns using machine learning. The project features a stunning, interactive **Shopify Editions-inspired Periwinkle & Lavender** 3D WebGL holographic globe that visually maps route paths and transit hubs in real-time.
+> **Interactive 3D Logistics Intelligence & Machine Learning Risk Predictor**
 
-**Developed by:** [Ahmed Safwan C](https://github.com/safwan207)  
-**GitHub Repository:** [Freight_Intel_AI](https://github.com/safwan207/Freight_Intel_AI)  
-**📄 Project Documentation (PDF):** [docs/Freight_Intel_AI_Documentation.pdf](docs/Freight_Intel_AI_Documentation.pdf)
-
----
-
-## 🎨 Theme & Color System (Shopify Editions Inspired)
-
-The application features a clean, light-mode **Periwinkle & Lavender** design system configured with the exact 5-color palette:
-
-| Hex Code | Color Name | Role & UI Application |
-| :--- | :--- | :--- |
-| **`#3D52A0`** | Deep Periwinkle | Primary titles, CTA buttons, metrics headers, dark periwinkle text. |
-| **`#7091E6`** | Soft Cornflower Blue | Secondary buttons, active route highlights, glowing comets. |
-| **`#8697C4`** | Steel Periwinkle | Subtle borders, 3D stars, muted text labels. |
-| **`#ADBBDA`** | Ice Lavender | Glass card borders, input borders, diagnostic containers. |
-| **`#EDE8F5`** | Soft Lavender Off-White | Page canvas background & 3D background fog. |
+Developer: **Ahmed Safwan C**  
+Repository: [safwan207/Freight_Intel_AI](https://github.com/safwan207/Freight_Intel_AI)
 
 ---
 
-## 🌟 Key Features
+## 🌟 Project Overview
 
-1. **Interactive 3D Supply Chain Globe (Three.js & OrbitControls)**:
-   * A digital-hologram style interactive globe built with Three.js.
-   * Full drag-to-rotate, pinch/scroll-to-zoom, and pan camera controls (via `OrbitControls`).
-   * Undulating ambient wave particles, floating supply chain wireframe cubes, pulsing city hub markers, and animated route comets.
+**Freight Intel AI** is a production-grade machine learning web application designed for supply chain managers, freight forwarders, and logistics teams. It leverages **Gradient Boosted Decision Trees (XGBoost)** to predict shipment delays, evaluate financial penalty risks, and provide real-time inventory re-order recommendations across multi-modal transit networks (Ocean, Air, Rail, OTR).
 
-2. **Smart Freight Predictor (XGBoost ML Pipeline)**:
-   * Predicts shipment transit duration, delays, and financial delay penalties in Indian Rupees (₹).
-   * Classifies delay risks (Low, Moderate, High) using a Gradient Boosted Decision Trees model.
-   * Generates dynamic inventory suggestions (safety stock, order buffers) based on predictions.
-
-3. **Live Weather Integration (Open-Meteo API)**:
-   * Dynamically fetches current weather conditions at the destination coordinates in real-time.
-   * Maps weather parameters directly into the ML inference pipeline.
-
-4. **Multi-Mode Distance Matrix & Transit Hub Routing**:
-   * Auto-calculates shipment distances across four modes (Air Cargo, Over the Road, Rail Intermodal, Ocean Freight) between major Indian cities: *Mumbai, Delhi, Chennai, Kolkata, Bengaluru, Hyderabad, Ahmedabad, and Kochi*.
-   * Supports custom single-leg or dual-leg routes passing through a transit hub.
-
-5. **Analytics Dashboard & Single-Click Model Retraining**:
-   * Visualizes delay metrics by mode, carrier distributions, weather/traffic impact, and XGBoost feature importance.
-   * **On-Demand Retraining**: Allows retraining the machine learning model on historical logs with a single click, regenerating charts and updating metrics dynamically.
-
-6. **Recent Simulations Log (Raw Data Table)**:
-   * Automatically persists prediction queries to a raw history log (`prediction_history.csv`) and displays recent simulation records in an interactive dashboard table.
-
-7. **PDF Report Generator & Project Documentation**:
-   * Instantly converts prediction results into a downloadable PDF report.
-   * Includes complete project documentation PDF at `docs/Freight_Intel_AI_Documentation.pdf`.
+The application features a modern **Dark Glassmorphism Web Interface** built with **Flask**, **Three.js** (for interactive 3D supply chain globe visualizations), **GSAP** animations, and automated **ReportLab PDF report generation**.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Features
 
-* **Backend Core**: Python 3, Flask (Web Server), Joblib
-* **Machine Learning**: XGBoost, Scikit-learn, Pandas, NumPy
-* **Data Visualization**: Matplotlib, Seaborn
-* **Frontend Web Stack**: HTML5, Vanilla CSS3 (Periwinkle Glassmorphism), Bootstrap 5, Three.js (WebGL), OrbitControls, GSAP, ReportLab PDF Generator
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-Make sure you have Python 3.10+ installed on your local machine.
-
-### Installation & Run Steps
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/safwan207/Freight_Intel_AI.git
-   cd Freight_Intel_AI
-   ```
-
-2. **Create & activate virtual environment**:
-   ```bash
-   python -m venv venv
-   # On Windows:
-   .\venv\Scripts\activate
-   # On macOS/Linux:
-   source venv/bin/activate
-   ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Train the XGBoost Model**:
-   ```bash
-   python train_model.py
-   ```
-
-5. **Launch the Application**:
-   ```bash
-   python app.py
-   ```
-
-6. **Open in Browser**:
-   Navigate to `http://127.0.0.1:5000/` in your web browser.
+- 🔮 **Machine Learning Delay Engine**: Predicts exact freight delay (days) using trained XGBoost regressors with Scikit-Learn pipelines.
+- 🌐 **Interactive 3D Supply Chain Globe**: Visualizes live transit routes between Indian logistics hubs (Mumbai, Delhi, Chennai, Kolkata, Bengaluru, etc.) using Three.js and OrbitControls.
+- 📊 **Real-time Analytics Dashboard**: Interactive KPIs, dataset metrics, and Seaborn analytical charts (Mode delay analysis, Risk tier distributions, Weather impact, XGBoost Feature Importances).
+- ⚡ **Auto-Weather & Congestion Integration**: Dynamically incorporates weather factors (Open-Meteo API) and port traffic congestion into predictions.
+- 📄 **Automated PDF Risk Reporting**: Generates downloadable PDF documentation reports complete with financial impact calculations and inventory cushion recommendations.
+- 🔄 **One-Click Model Retraining**: On-demand retraining endpoint (`/api/retrain`) that updates model weights and regenerates analytical charts dynamically.
 
 ---
 
-*Freight Intel AI © 2026. Designed and built with ❤️ by Ahmed Safwan C.*
+## 🏗️ Architecture & Project Structure
+
+```text
+Freight_Intel_AI/
+├── app.py                   # Core Flask web server & REST API endpoints
+├── train_model.py           # ML training script, XGBoost pipeline & Seaborn chart generator
+├── generate_pdf.py          # ReportLab PDF documentation compiler
+├── requirements.txt         # Production Python dependencies
+├── models/
+│   ├── model_pipeline.pkl   # Serialized XGBoost model pipeline
+│   └── metrics.json         # Serialized R², MAE, RMSE metrics
+├── static/
+│   ├── css/
+│   │   └── style.css        # Dark Glassmorphism high-contrast design system
+│   ├── js/
+│   │   ├── app.js           # Frontend logic & client-side inference engine
+│   │   └── three_bg.js      # Three.js 3D globe & route particle canvas
+│   └── img/charts/          # Seaborn analytical visualization plots
+├── templates/
+│   ├── index.html           # Main predictor dashboard
+│   └── dashboard.html       # Analytics & dataset metrics interface
+└── docs/
+    └── Freight_Intel_AI_Documentation.pdf # PDF documentation artifact
+```
+
+---
+
+## 🚀 Quick Start Guide
+
+### 1. Prerequisites
+Ensure Python **3.9+** is installed on your system.
+
+### 2. Clone Repository
+```bash
+git clone https://github.com/safwan207/Freight_Intel_AI.git
+cd Freight_Intel_AI
+```
+
+### 3. Create Virtual Environment & Install Dependencies
+```bash
+python -m venv venv
+# On Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+# On Linux/macOS:
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+### 4. Train Machine Learning Model
+```bash
+python train_model.py
+```
+
+### 5. Launch Local Web Application
+```bash
+python app.py
+```
+Open your browser and navigate to `http://127.0.0.1:5000/`.
+
+---
+
+## 📊 Model Performance
+
+- **Algorithm**: XGBoost Regressor (`n_estimators=200`, `learning_rate=0.05`, `max_depth=5`)
+- **Evaluation Metrics**:
+  - **Mean Absolute Error (MAE)**: ~0.96 Days
+  - **R² Score**: ~31.15% (Synthetic baseline dataset)
+  - **Target Variable**: `Delay_Days`
+
+---
+
+## 👨‍💻 Developer & License
+
+- **Developer**: Ahmed Safwan C
+- **License**: MIT License
