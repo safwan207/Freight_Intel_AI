@@ -7,9 +7,9 @@ const container = document.getElementById('three-canvas-container');
 
 // Configuration
 const CONFIG = {
-    globeColor: 0x38bdf8,     // Metallic Steel Cyan
-    routeColor: 0xcbd5e1,     // Polished Silver Platinum
-    starColor: 0xf8fafc,
+    globeColor: 0x3D52A0,     // Deep Periwinkle Blue
+    routeColor: 0x7091E6,     // Soft Cornflower Blue
+    starColor: 0x8697C4,      // Steel Periwinkle
     globeRadius: 3.5,
     numRoutes: 8
 };
@@ -25,7 +25,7 @@ function initThree() {
 
     // 1. Create Scene
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x060911, 0.045);
+    scene.fog = new THREE.FogExp2(0xEDE8F5, 0.035);
 
     // 2. Create Camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
