@@ -1,16 +1,24 @@
 import os
 import json
-# pyrefly: ignore [missing-import]
-import numpy as np
-import pandas as pd
-# pyrefly: ignore [missing-import]
 from flask import Flask, render_template, request, jsonify
-# pyrefly: ignore [missing-import]
-import joblib
 
-app = Flask(__name__)
+# Optional ML imports for serverless environments
+try:
+    import numpy as np
+    import pandas as pd
+    import joblib
+    ML_LIBS_AVAILABLE = True
+except ImportError:
+    np = None
+    pd = None
+    joblib = None
+    ML_LIBS_AVAILABLE = False
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+app = Flask(__name__,
+            template_folder=os.path.join(BASE_DIR, 'templates'),
+            static_folder=os.path.join(BASE_DIR, 'static'))
 
 # Paths
 MODEL_PATH = os.path.join(BASE_DIR, "models", "model_pipeline.pkl")
@@ -24,13 +32,14 @@ def load_ml_resources():
     """Attempts to load the model pipeline and performance metrics."""
     global model_pipeline, model_metrics
     
-    if os.path.exists(MODEL_PATH):
+    if ML_LIBS_AVAILABLE and os.path.exists(MODEL_PATH):
         try:
             model_pipeline = joblib.load(MODEL_PATH)
             print("Successfully loaded machine learning model pipeline.")
         except Exception as e:
             print(f"Error loading model pipeline: {e}")
             model_pipeline = None
+
     else:
         print(f"Warning: Model file not found at {MODEL_PATH}. Please run train_model.py first.")
         model_pipeline = None
