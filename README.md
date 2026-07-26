@@ -1,9 +1,24 @@
 # Freight Intel AI 🌐✈️🚚
 
-Freight Intel AI is a cutting-edge supply chain intelligence application designed to predict freight shipment delays, assess inventory stockout risks, and optimize ordering patterns using machine learning. The project features a stunning, interactive 3D WebGL holographic globe that visually maps route paths and transit hubs in real-time.
+Freight Intel AI is a cutting-edge supply chain intelligence application designed to predict freight shipment delays, assess inventory stockout risks, and optimize ordering patterns using machine learning. The project features a stunning, interactive **Shopify Editions-inspired Periwinkle & Lavender** 3D WebGL holographic globe that visually maps route paths and transit hubs in real-time.
 
 **Developed by:** [Ahmed Safwan C](https://github.com/safwan207)  
-**GitHub Repository:** [Freight_Intel_AI](https://github.com/safwan207/Freight_Intel_AI)
+**GitHub Repository:** [Freight_Intel_AI](https://github.com/safwan207/Freight_Intel_AI)  
+**📄 Project Documentation (PDF):** [docs/Freight_Intel_AI_Documentation.pdf](docs/Freight_Intel_AI_Documentation.pdf)
+
+---
+
+## 🎨 Theme & Color System (Shopify Editions Inspired)
+
+The application features a clean, light-mode **Periwinkle & Lavender** design system configured with the exact 5-color palette:
+
+| Hex Code | Color Name | Role & UI Application |
+| :--- | :--- | :--- |
+| **`#3D52A0`** | Deep Periwinkle | Primary titles, CTA buttons, metrics headers, dark periwinkle text. |
+| **`#7091E6`** | Soft Cornflower Blue | Secondary buttons, active route highlights, glowing comets. |
+| **`#8697C4`** | Steel Periwinkle | Subtle borders, 3D stars, muted text labels. |
+| **`#ADBBDA`** | Ice Lavender | Glass card borders, input borders, diagnostic containers. |
+| **`#EDE8F5`** | Soft Lavender Off-White | Page canvas background & 3D background fog. |
 
 ---
 
@@ -12,10 +27,10 @@ Freight Intel AI is a cutting-edge supply chain intelligence application designe
 1. **Interactive 3D Supply Chain Globe (Three.js & OrbitControls)**:
    * A digital-hologram style interactive globe built with Three.js.
    * Full drag-to-rotate, pinch/scroll-to-zoom, and pan camera controls (via `OrbitControls`).
-   * Dynamic real-time plotting of glowing logistics route curves (including transit hubs) animated by comet particles upon scenario calculation.
+   * Undulating ambient wave particles, floating supply chain wireframe cubes, pulsing city hub markers, and animated route comets.
 
 2. **Smart Freight Predictor (XGBoost ML Pipeline)**:
-   * Predicts shipment transit duration, delays, and financial delay penalties.
+   * Predicts shipment transit duration, delays, and financial delay penalties in Indian Rupees (₹).
    * Classifies delay risks (Low, Moderate, High) using a Gradient Boosted Decision Trees model.
    * Generates dynamic inventory suggestions (safety stock, order buffers) based on predictions.
 
@@ -27,56 +42,41 @@ Freight Intel AI is a cutting-edge supply chain intelligence application designe
    * Auto-calculates shipment distances across four modes (Air Cargo, Over the Road, Rail Intermodal, Ocean Freight) between major Indian cities: *Mumbai, Delhi, Chennai, Kolkata, Bengaluru, Hyderabad, Ahmedabad, and Kochi*.
    * Supports custom single-leg or dual-leg routes passing through a transit hub.
 
-5. **Analytics Dashboard**:
+5. **Analytics Dashboard & Single-Click Model Retraining**:
    * Visualizes delay metrics by mode, carrier distributions, weather/traffic impact, and XGBoost feature importance.
    * **On-Demand Retraining**: Allows retraining the machine learning model on historical logs with a single click, regenerating charts and updating metrics dynamically.
 
 6. **Recent Simulations Log (Raw Data Table)**:
    * Automatically persists prediction queries to a raw history log (`prediction_history.csv`) and displays recent simulation records in an interactive dashboard table.
 
-7. **PDF Report Generator**:
-   * Instantly converts prediction results, recommendation cards, and financial impact figures into a downloadable PDF report.
-
----
-
-## 📸 Screenshots & Interface Walkthrough
-
-### 1. Interactive Two-Column Landing Page
-The landing page features a split-screen layout. The controls and ML diagnostics cards reside on the left with a premium glassmorphic theme, while the interactive 3D Globe spins freely on the right.
-![Landing Page Split Layout](docs/screenshots/landing_page_layout_1782122217150.png)
-
-### 2. Route Calculation & Glowing 3D Comets
-When you specify a route (e.g. Origin, Hub, and Destination) and click **Calculate**, the 3D globe immediately draws glowing, animated route arcs mapping the coordinates on the sphere.
-![Logistics Routing](docs/screenshots/predictor_form_fields_1782121320259.png)
-
-### 3. Model Inference & Delay Risk Output
-In seconds, the XGBoost engine calculates the risk tier, delay margin, financial impact penalty, and provides a custom inventory recommendation.
-![Simulation Result](docs/screenshots/simulation_results_1782121574850.png)
+7. **PDF Report Generator & Project Documentation**:
+   * Instantly converts prediction results into a downloadable PDF report.
+   * Includes complete project documentation PDF at `docs/Freight_Intel_AI_Documentation.pdf`.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Backend Core**: Python 3, Flask (Web Server)
-* **Machine Learning**: XGBoost, Scikit-learn, Pandas, Numpy, Joblib
+* **Backend Core**: Python 3, Flask (Web Server), Joblib
+* **Machine Learning**: XGBoost, Scikit-learn, Pandas, NumPy
 * **Data Visualization**: Matplotlib, Seaborn
-* **Frontend Web Stack**: HTML5, Vanilla CSS3 (Glassmorphism), Bootstrap 5, Three.js (WebGL), OrbitControls, GSAP (GreenSock Animation Platform), html2pdf.js
+* **Frontend Web Stack**: HTML5, Vanilla CSS3 (Periwinkle Glassmorphism), Bootstrap 5, Three.js (WebGL), OrbitControls, GSAP, ReportLab PDF Generator
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have Python 3.9+ installed on your local machine.
+Make sure you have Python 3.10+ installed on your local machine.
 
-### Installation
+### Installation & Run Steps
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/safwan207/Freight_Intel_AI.git
    cd Freight_Intel_AI
    ```
 
-2. **Create a virtual environment** (recommended):
+2. **Create & activate virtual environment**:
    ```bash
    python -m venv venv
    # On Windows:
@@ -91,12 +91,11 @@ Make sure you have Python 3.9+ installed on your local machine.
    ```
 
 4. **Train the XGBoost Model**:
-   If the pre-trained weights are missing, generate them by running the pipeline script:
    ```bash
    python train_model.py
    ```
 
-5. **Launch the Server**:
+5. **Launch the Application**:
    ```bash
    python app.py
    ```
