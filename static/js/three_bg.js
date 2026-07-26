@@ -1,13 +1,11 @@
-// Three.js 3D Background - Light Sage Canvas & Forest Lime Particles
-let scene, camera, renderer, globe, stars, routes = [];
-let controls;
+// Three.js 3D Background - Lightweight, Ultra-Fast 60FPS Live Particle Globe
+let scene, camera, renderer, globe, stars;
 let isInteracting = false;
 const container = document.getElementById('three-canvas-container');
 
 const CONFIG = {
-    globeColor: 0x4D8B00,     // Lime Green
-    routeColor: 0x61892F,     // Forest Green
-    starColor: 0x86C232,      // Light Sage Stars
+    globeColor: 0x4f46e5,     // Indigo / Periwinkle
+    starColor: 0x3b82f6,      // Sky Blue
     globeRadius: 3.5
 };
 
@@ -16,7 +14,6 @@ function initThree() {
 
     // 1. Create Scene
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0xF4F7F0, 0.04);
 
     // 2. Create Camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
@@ -24,27 +21,13 @@ function initThree() {
 
     // 3. Create WebGL Renderer
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0xF4F7F0, 1);
     container.appendChild(renderer.domElement);
 
-    // 4. Create Globe & Routes
+    // 4. Create Lightweight 3D Globe & Particles
     createGlobe();
     createStars();
-    createRoutes();
-
-    // 5. Initialize OrbitControls
-    if (typeof THREE.OrbitControls !== 'undefined') {
-        controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.05;
-        controls.enableZoom = true;
-        controls.minDistance = 4;
-        controls.maxDistance = 15;
-        controls.addEventListener('start', () => { isInteracting = true; });
-        controls.addEventListener('end', () => { setTimeout(() => { isInteracting = false; }, 1000); });
-    }
 
     adjustGlobePosition();
     window.addEventListener('resize', onWindowResize);
@@ -52,12 +35,12 @@ function initThree() {
 }
 
 function createGlobe() {
-    const sphereGeom = new THREE.SphereGeometry(CONFIG.globeRadius, 36, 36);
+    const sphereGeom = new THREE.SphereGeometry(CONFIG.globeRadius, 24, 24);
     const particlePositions = [];
     const positions = sphereGeom.attributes.position.array;
 
     for (let i = 0; i < positions.length; i += 3) {
-        if (Math.random() > 0.15) {
+        if (Math.random() > 0.2) {
             particlePositions.push(positions[i], positions[i+1], positions[i+2]);
         }
     }
@@ -67,21 +50,21 @@ function createGlobe() {
 
     const pointsMat = new THREE.PointsMaterial({
         color: CONFIG.globeColor,
-        size: 0.045,
+        size: 0.05,
         transparent: true,
-        opacity: 0.75
+        opacity: 0.7
     });
 
     globe = new THREE.Points(pointsGeom, pointsMat);
     scene.add(globe);
 
-    // Inner wireframe sphere
-    const wireGeom = new THREE.SphereGeometry(CONFIG.globeRadius * 0.98, 20, 20);
+    // Wireframe inner sphere
+    const wireGeom = new THREE.SphereGeometry(CONFIG.globeRadius * 0.98, 16, 16);
     const wireMat = new THREE.MeshBasicMaterial({
-        color: 0x61892F,
+        color: 0x818cf8,
         wireframe: true,
         transparent: true,
-        opacity: 0.25
+        opacity: 0.2
     });
     const wireMesh = new THREE.Mesh(wireGeom, wireMat);
     globe.add(wireMesh);
@@ -89,13 +72,13 @@ function createGlobe() {
 
 function createStars() {
     const starsGeom = new THREE.BufferGeometry();
-    const starCount = 350;
+    const starCount = 150;
     const starPositions = new Float32Array(starCount * 3);
 
     for (let i = 0; i < starCount * 3; i += 3) {
-        starPositions[i] = (Math.random() - 0.5) * 40;
-        starPositions[i+1] = (Math.random() - 0.5) * 40;
-        starPositions[i+2] = (Math.random() - 0.5) * 40;
+        starPositions[i] = (Math.random() - 0.5) * 30;
+        starPositions[i+1] = (Math.random() - 0.5) * 30;
+        starPositions[i+2] = (Math.random() - 0.5) * 30;
     }
 
     starsGeom.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
@@ -108,55 +91,6 @@ function createStars() {
 
     stars = new THREE.Points(starsGeom, starsMat);
     scene.add(stars);
-}
-
-function createRoutes() {
-    // Demo routes between Indian Cities
-    const cityCoords = [
-        { lat: 19.076, lng: 72.877 }, // Mumbai
-        { lat: 28.704, lng: 77.102 }, // Delhi
-        { lat: 13.082, lng: 80.270 }, // Chennai
-        { lat: 22.572, lng: 88.363 }, // Kolkata
-        { lat: 12.971, lng: 77.594 }  // Bengaluru
-    ];
-
-    for (let i = 0; i < cityCoords.length - 1; i++) {
-        addRouteArc(cityCoords[i], cityCoords[i+1]);
-    }
-}
-
-function addRouteArc(coord1, coord2) {
-    const p1 = latLngToVector3(coord1.lat, coord1.lng, CONFIG.globeRadius);
-    const p2 = latLngToVector3(coord2.lat, coord2.lng, CONFIG.globeRadius);
-
-    const mid = new THREE.Vector3().addVectors(p1, p2).multiplyScalar(0.5);
-    const distance = p1.distanceTo(p2);
-    mid.setLength(CONFIG.globeRadius + distance * 0.25);
-
-    const curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
-    const points = curve.getPoints(40);
-    const geom = new THREE.BufferGeometry().setFromPoints(points);
-
-    const mat = new THREE.LineBasicMaterial({
-        color: CONFIG.routeColor,
-        transparent: true,
-        opacity: 0.6,
-        linewidth: 1.5
-    });
-
-    const line = new THREE.Line(geom, mat);
-    globe.add(line);
-}
-
-function latLngToVector3(lat, lng, radius) {
-    const phi = (90 - lat) * (Math.PI / 180);
-    const theta = (lng + 180) * (Math.PI / 180);
-
-    const x = -(radius * Math.sin(phi) * Math.cos(theta));
-    const z = (radius * Math.sin(phi) * Math.sin(theta));
-    const y = (radius * Math.cos(phi));
-
-    return new THREE.Vector3(x, y, z);
 }
 
 function adjustGlobePosition() {
@@ -179,14 +113,11 @@ function onWindowResize() {
 function animate() {
     requestAnimationFrame(animate);
 
-    if (globe && !isInteracting) {
+    if (globe) {
         globe.rotation.y += 0.0015;
     }
     if (stars) {
         stars.rotation.y += 0.0003;
-    }
-    if (controls) {
-        controls.update();
     }
 
     renderer.render(scene, camera);

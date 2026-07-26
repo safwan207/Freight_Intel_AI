@@ -1,19 +1,11 @@
 /* Google Fonts - Outfit */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
-/* Light Live Background Theme System */
 :root {
-    --lime-vibrant: #4D8B00;       /* Electric Lime Green (Badges, Labels) */
-    --lime-accent: #86C232;        /* Vibrant Lime Accent */
-    --forest-deep: #61892F;        /* Forest Green (Gradients, Accents) */
-    --bg-light-canvas: #F4F7F0;    /* Light Soft Sage Off-White Canvas */
-    
-    --primary: var(--lime-vibrant);
-    --secondary: var(--forest-deep);
-    
-    --text-main: #1B254B !important;      /* Deep Dark Navy Charcoal */
-    --text-muted: #475569 !important;     /* Readable Dark Slate */
-    --text-bright: #1B254B !important;
+    --primary: #4f46e5;         /* Deep Periwinkle / Indigo */
+    --secondary: #0284c7;       /* Sky Blue Accent */
+    --text-main: #1e1b4b;       /* Dark Periwinkle Navy (High Contrast) */
+    --text-muted: #475569;      /* Readable Dark Slate */
 }
 
 * {
@@ -24,13 +16,13 @@
 
 html, body {
     font-family: 'Outfit', sans-serif !important;
-    background-color: #F4F7F0 !important;
-    color: #1B254B !important;
+    background-color: #eef2ff !important;
+    color: #1e1b4b !important;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
-/* Three.js Canvas Container background */
+/* Three.js Canvas Container & Rich Live Gradient Background */
 #three-canvas-container {
     position: fixed;
     top: 0;
@@ -38,7 +30,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     z-index: -2;
-    background: linear-gradient(135deg, #FAFDF7 0%, #F4F7F0 50%, #E6EFE0 100%) !important;
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #f3e8ff 100%) !important;
 }
 
 /* Background overlay grid pattern */
@@ -50,8 +42,8 @@ html, body {
     height: 100vh;
     z-index: -1;
     background-image: 
-        linear-gradient(rgba(77, 139, 0, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(77, 139, 0, 0.05) 1px, transparent 1px) !important;
+        linear-gradient(rgba(79, 70, 229, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 70, 229, 0.05) 1px, transparent 1px) !important;
     background-size: 40px 40px;
     background-position: center center;
     pointer-events: none;
@@ -59,17 +51,17 @@ html, body {
 
 /* Navbar */
 .navbar-glass {
-    background: rgba(255, 255, 255, 0.92) !important;
+    background: rgba(255, 255, 255, 0.88) !important;
     backdrop-filter: blur(12px) !important;
-    border-bottom: 1px solid rgba(77, 139, 0, 0.25) !important;
-    box-shadow: 0 4px 20px rgba(97, 137, 47, 0.08) !important;
+    border-bottom: 1px solid rgba(79, 70, 229, 0.2) !important;
+    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.08) !important;
 }
 
 .navbar-brand {
     font-weight: 800 !important;
     font-size: 1.35rem !important;
     letter-spacing: 1px !important;
-    color: #1B254B !important;
+    color: #4f46e5 !important;
 }
 
 .nav-link {
@@ -79,21 +71,21 @@ html, body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #4D8B00 !important;
+    color: #4f46e5 !important;
 }
 
 /* Glassmorphism Cards */
 .glass-card {
-    background: rgba(255, 255, 255, 0.92) !important;
+    background: rgba(255, 255, 255, 0.88) !important;
     backdrop-filter: blur(16px) !important;
-    border: 1px solid rgba(77, 139, 0, 0.25) !important;
+    border: 1px solid rgba(79, 70, 229, 0.2) !important;
     border-radius: 16px !important;
-    box-shadow: 0 10px 30px rgba(97, 137, 47, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.1) !important;
 }
 
 /* Form Controls */
 .form-label {
-    color: #4D8B00 !important; /* Vibrant Lime Green Label */
+    color: #4f46e5 !important;
     font-size: 0.82rem !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -103,8 +95,8 @@ html, body {
 .form-select-glass,
 .form-control-glass {
     background-color: #ffffff !important;
-    border: 1px solid rgba(77, 139, 0, 0.35) !important;
-    color: #1B254B !important;
+    border: 1px solid rgba(79, 70, 229, 0.25) !important;
+    color: #1e1b4b !important;
     font-weight: 600 !important;
     font-size: 0.92rem !important;
     border-radius: 10px !important;
@@ -112,42 +104,42 @@ html, body {
 
 .form-select-glass:focus,
 .form-control-glass:focus {
-    border-color: #4D8B00 !important;
-    box-shadow: 0 0 0 3px rgba(77, 139, 0, 0.25) !important;
+    border-color: #4f46e5 !important;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25) !important;
 }
 
 /* Buttons */
 .btn-neon-primary {
-    background: linear-gradient(135deg, #61892F 0%, #4D8B00 100%) !important;
+    background: linear-gradient(135deg, #4f46e5 0%, #0284c7 100%) !important;
     color: #ffffff !important;
     font-weight: 700 !important;
     border: none !important;
     border-radius: 10px !important;
-    box-shadow: 0 4px 15px rgba(77, 139, 0, 0.35) !important;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35) !important;
 }
 
 .btn-neon-primary:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(77, 139, 0, 0.5) !important;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5) !important;
 }
 
 .btn-neon-secondary {
-    background: rgba(77, 139, 0, 0.12) !important;
-    color: #4D8B00 !important;
-    border: 1px solid #4D8B00 !important;
+    background: rgba(79, 70, 229, 0.12) !important;
+    color: #4f46e5 !important;
+    border: 1px solid #4f46e5 !important;
     font-weight: 700 !important;
     border-radius: 10px !important;
 }
 
 .btn-neon-secondary:hover {
-    background: #4D8B00 !important;
+    background: #4f46e5 !important;
     color: #ffffff !important;
 }
 
 /* Result Box */
 .prediction-box {
     background: #ffffff !important;
-    border: 1px solid rgba(77, 139, 0, 0.3) !important;
+    border: 1px solid rgba(79, 70, 229, 0.25) !important;
     border-radius: 14px !important;
 }
 
@@ -159,32 +151,32 @@ html, body {
     text-transform: uppercase !important;
 }
 
-.badge-success { background: rgba(77, 139, 0, 0.15) !important; color: #4D8B00 !important; border: 1px solid #4D8B00 !important; }
+.badge-success { background: rgba(16, 185, 129, 0.15) !important; color: #059669 !important; border: 1px solid #059669 !important; }
 .badge-warning { background: rgba(217, 119, 6, 0.15) !important; color: #d97706 !important; border: 1px solid #d97706 !important; }
 .badge-danger  { background: rgba(220, 38, 38, 0.15) !important; color: #dc2626 !important; border: 1px solid #dc2626 !important; }
 
 .result-card {
-    background: rgba(244, 247, 240, 0.8) !important;
-    border: 1px solid rgba(77, 139, 0, 0.25) !important;
+    background: rgba(238, 242, 255, 0.7) !important;
+    border: 1px solid rgba(79, 70, 229, 0.2) !important;
     border-radius: 10px !important;
 }
 
 .metric-label {
-    color: #4D8B00 !important;
+    color: #4f46e5 !important;
     font-size: 0.78rem !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
 }
 
 .result-value {
-    color: #1B254B !important;
+    color: #1e1b4b !important;
     font-weight: 800 !important;
 }
 
 /* Dashboard Metrics */
 .metric-card {
-    background: rgba(255, 255, 255, 0.92) !important;
-    border: 1px solid rgba(77, 139, 0, 0.25) !important;
+    background: rgba(255, 255, 255, 0.88) !important;
+    border: 1px solid rgba(79, 70, 229, 0.2) !important;
     border-radius: 12px !important;
     padding: 1.2rem !important;
     text-align: center !important;
@@ -193,19 +185,19 @@ html, body {
 .metric-val {
     font-size: 1.7rem !important;
     font-weight: 800 !important;
-    color: #1B254B !important;
+    color: #1e1b4b !important;
 }
 
 .chart-wrapper {
-    background: rgba(255, 255, 255, 0.92) !important;
-    border: 1px solid rgba(77, 139, 0, 0.25) !important;
+    background: rgba(255, 255, 255, 0.88) !important;
+    border: 1px solid rgba(79, 70, 229, 0.2) !important;
     border-radius: 14px !important;
     padding: 1.2rem !important;
 }
 
 footer {
-    background: rgba(255, 255, 255, 0.9) !important;
-    border-top: 1px solid rgba(77, 139, 0, 0.2) !important;
+    background: rgba(255, 255, 255, 0.88) !important;
+    border-top: 1px solid rgba(79, 70, 229, 0.18) !important;
     padding: 1.2rem 0 !important;
     color: #475569 !important;
 }
