@@ -1,0 +1,8 @@
+requirements.txt
+app.py
+train_model.py
+generate_pdf.py
+models/
+data/
+venv/
+notebook/
