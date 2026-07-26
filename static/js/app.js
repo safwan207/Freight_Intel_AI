@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     );
 
                     // Animate number count-up effect
-                    animateCountUp('res-delay-num', result.predicted_delay_days);
+                    animateCountUp('res-delay', result.predicted_delay_days);
                     
                     // Display financial impact
                     if (document.getElementById('res-penalty')) {
@@ -326,7 +326,7 @@ function animateCountUp(elementId, targetValue) {
         duration: 1.2,
         ease: 'power2.out',
         onUpdate: () => {
-            el.innerText = prefix + obj.val.toFixed(2);
+            el.innerText = prefix + obj.val.toFixed(1) + ' days';
         }
     });
 }

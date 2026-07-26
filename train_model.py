@@ -141,7 +141,7 @@ def generate_analytics_charts(df, output_dir):
     
     # 1. Delay by Shipment Mode
     plt.figure(figsize=(8, 5))
-    sns.barplot(data=df, x='Shipment_Mode', y='Delay_Days', errorbar=None, palette='mako')
+    sns.barplot(data=df, x='Shipment_Mode', y='Delay_Days', hue='Shipment_Mode', legend=False, errorbar=None, palette='mako')
     plt.title('Average Shipment Delay (Days) by Transport Mode', fontsize=14, pad=15)
     plt.xlabel('Shipment Mode', fontsize=12)
     plt.ylabel('Average Delay (Days)', fontsize=12)
@@ -151,7 +151,8 @@ def generate_analytics_charts(df, output_dir):
     
     # 2. Delay Distribution by Carrier
     plt.figure(figsize=(9, 5.5))
-    sns.boxplot(data=df, x='Carrier', y='Delay_Days', palette='viridis')
+    sns.boxplot(data=df, x='Carrier', y='Delay_Days', hue='Carrier', legend=False, palette='viridis')
+
     plt.title('Delay Distribution (Days) by Shipping Carrier', fontsize=14, pad=15)
     plt.xlabel('Carrier', fontsize=12)
     plt.ylabel('Delay (Days)', fontsize=12)
@@ -264,7 +265,8 @@ def train_model(data_path, model_dir):
         fi_df = fi_df.sort_values(by='Importance', ascending=False).head(10)
         
         plt.figure(figsize=(8, 5))
-        sns.barplot(data=fi_df, x='Importance', y='Feature', palette='mako')
+        sns.barplot(data=fi_df, x='Importance', y='Feature', hue='Feature', legend=False, palette='mako')
+
         plt.title('Top 10 Feature Importances (XGBoost)', fontsize=14, pad=15)
         plt.xlabel('Importance Value', fontsize=12)
         plt.ylabel('Feature', fontsize=12)
